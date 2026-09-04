@@ -20,7 +20,7 @@ commit_allowed: false
 
 ## Preconditions
 
-Read `AGENTS.md` and `MASTER_PROMPT.md`. Confirm the current working directory is the intended repository root for `evanmcpheron/Seminary`. Inspect `git status`, existing files, and directory structure.
+Before taking any action, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and this active prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify each precondition below. Confirm the current working directory is the intended repository root for `evanmcpheron/Seminary`.
 
 ## Objective
 

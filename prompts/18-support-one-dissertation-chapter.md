@@ -14,6 +14,8 @@ commit_allowed: false
 
 ## Preconditions
 
+Before taking any action, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and this active prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify each precondition below.
+
 1. Prospectus is approved.
 2. The chapter scope is explicit.
 3. Student-authored draft or research notes exist.

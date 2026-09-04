@@ -8,7 +8,7 @@ Build an independent, non-accredited theological education curriculum of serious
 
 ## 2. Mandatory reading
 
-Before editing, read `AGENTS.md`, `PROJECT-DECISIONS.yaml`, all root policy documents, `curriculum/curriculum.yaml`, `curriculum/curriculum.lock.yaml` when present, and the active numbered prompt. Inspect `git status` and existing files. Do not overwrite substantive work with templates.
+Before any prompt is run, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and the active numbered prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify that prompt's preconditions and dependencies. Do not overwrite substantive work with templates.
 
 ## 3. Independent-status rule
 
