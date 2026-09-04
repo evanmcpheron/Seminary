@@ -51,13 +51,13 @@ python scripts/validate.py --mode draft
 
 ## Non-negotiable production order
 
-Prompt numbers are stable identifiers, not a strict numeric execution sequence. For a newly started course, the required per-course order is **05 → 03 → 04** so that the course lifecycle remains `shell` → `researching` → `designed`.
+Prompt filenames match the normal numeric execution sequence. For a newly started course, the required per-course order is **03 → 04 → 05** so that the course lifecycle remains `shell` → `researching` → `designed`.
 
 1. Import and lock curriculum metadata.
 2. Reconcile prerequisites and workload without deleting courses.
-3. Generate one course shell (`05`).
-4. Research that course (`03`).
-5. Design that course (`04`).
+3. Generate one course shell (`03`).
+4. Research that course (`04`).
+5. Design that course (`05`).
 6. Produce one week at a time (`06`), or use the more granular `07`–`10` prompts when needed.
 7. Generate lectures before dependent assignments.
 8. Audit sources, theology, workload, and course coherence.

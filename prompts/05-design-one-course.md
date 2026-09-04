@@ -1,5 +1,5 @@
 ---
-prompt_id: 04-design-one-course
+prompt_id: 05-design-one-course
 purpose: Design One Course
 write_scope:
   - one explicitly named course README.md
@@ -20,7 +20,7 @@ commit_allowed: false
 
 Before taking any action, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and this active prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify each precondition below.
 
-1. Prompt 05 has generated the course shell and Prompt 03 has completed for this same course.
+1. Prompt 03 has generated the course shell and Prompt 04 has completed for this same course.
 2. `research-report.md` exists and `course.yaml` status is `researching`.
 3. Required sources for design are verified and no blocking research `TODO-VERIFY` remains.
 4. Course identity matches the reconciled manifest and immutable lock metadata.

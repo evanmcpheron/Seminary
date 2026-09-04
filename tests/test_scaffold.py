@@ -27,6 +27,33 @@ def test_yaml_governance_loads():
             assert yaml.safe_load(handle) is not None
 
 
+def test_course_startup_prompt_filenames_match_purposes():
+    expected = {
+        "03-generate-course-shell.md": {
+            "prompt_id": "03-generate-course-shell",
+            "purpose": "Generate One Course Shell",
+        },
+        "04-research-one-course.md": {
+            "prompt_id": "04-research-one-course",
+            "purpose": "Research One Course",
+        },
+        "05-design-one-course.md": {
+            "prompt_id": "05-design-one-course",
+            "purpose": "Design One Course",
+        },
+    }
+    actual = {}
+    for path in (ROOT / "prompts").glob("0[3-5]-*.md"):
+        _, front_matter, _ = path.read_text(encoding="utf-8").split("---", 2)
+        metadata = yaml.safe_load(front_matter)
+        actual[path.name] = {
+            "prompt_id": metadata["prompt_id"],
+            "purpose": metadata["purpose"],
+        }
+
+    assert actual == expected
+
+
 def test_twelve_year_directories_exist():
     years = [p for p in (ROOT / "courses").iterdir() if p.is_dir() and p.name.startswith("year-")]
     assert len(years) == 12

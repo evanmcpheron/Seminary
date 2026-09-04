@@ -1,5 +1,5 @@
 ---
-prompt_id: 03-research-one-course
+prompt_id: 04-research-one-course
 purpose: Research One Course
 write_scope:
   - one explicitly named course resources directory
@@ -17,7 +17,7 @@ commit_allowed: false
 Before taking any action, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and this active prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify each precondition below.
 
 1. The course exists in the reconciled `curriculum/curriculum.yaml` manifest.
-2. Prompt 05 has already generated the course shell at the reconciled path.
+2. Prompt 03 has already generated the course shell at the reconciled path.
 3. The course code is explicitly named in the invocation and resolves to exactly one canonical `record_id`.
 4. `course.yaml` identity metadata matches the curriculum manifest and lock file.
 5. `course.yaml` status is `shell` or `researching`; do not use this prompt to rewrite a course already at `designed` or later status without explicit owner authorization for a scoped research refresh.
@@ -30,7 +30,7 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 4. Mark access category and cost.
 5. Provide free article alternatives where feasible.
 6. Write or update `research-report.md` and the scoped verified source records.
-7. Update `course.yaml` only for research-state metadata: `prerequisites`, `corequisites`, `source_verification_date`, `known_unresolved_questions`, and `status: researching`. Do not populate learning outcomes, assessments, schedule design, or other Prompt 04 fields.
+7. Update `course.yaml` only for research-state metadata: `prerequisites`, `corequisites`, `source_verification_date`, `known_unresolved_questions`, and `status: researching`. Do not populate learning outcomes, assessments, schedule design, or other Prompt 05 fields.
 8. Do not design weekly content.
 
 ## Forbidden actions
@@ -51,6 +51,6 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 - Unresolvable items are explicit.
 - `course.yaml` has status `researching`.
 - No syllabus, assessment design, weekly schedule, or lecture content was generated.
-- The next permitted per-course prompt is `04-design-one-course.md` for this same course after any blocking `TODO-VERIFY` items required for design are resolved.
+- The next permitted per-course prompt is `05-design-one-course.md` for this same course after any blocking `TODO-VERIFY` items required for design are resolved.
 
 Stop and report changed files, sources, validation, unresolved items, and required human review.
