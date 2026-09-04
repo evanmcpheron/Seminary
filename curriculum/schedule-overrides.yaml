@@ -1,3 +1,62 @@
 schema_version: "1.0.0"
-status: no-overrides-recorded
-overrides: []
+status: owner-approved-applied
+prompt_id: 02a-reconcile-prerequisites-and-workload
+owner_approval_date: "2026-09-04"
+overrides:
+  - move_number: 1
+    record_id: 01-bith-301-how-we-got-the-bible
+    course_code: BITH 301
+    course_title: How We Got the Bible
+    old_project_year: 1
+    old_term: term-01-fall
+    new_project_year: 1
+    new_term: term-03-summer
+    rationale: >-
+      Complete BITH 211 before BITH 301 and reduce the Year 1 Fall
+      prerequisite-conflicted overload.
+    source_url: https://catalog.wheaton.edu/course-descriptions/bith/
+    source_accessed: "2026-09-04"
+    owner_approved: true
+  - move_number: 2
+    record_id: 01-arch-369-religions-of-israel-and-the-near-east
+    course_code: ARCH 369
+    course_title: Religions of Israel and the Near East
+    old_project_year: 1
+    old_term: term-01-fall
+    new_project_year: 2
+    new_term: term-03-summer
+    rationale: >-
+      Complete BITH 211 before ARCH 369 and distribute summer work without
+      creating a 12-credit Year 1 Summer term.
+    source_url: https://catalog.wheaton.edu/course-descriptions/arch/
+    source_accessed: "2026-09-04"
+    owner_approved: true
+  - move_number: 3
+    record_id: 02-bith-388-person-and-work-of-christ
+    course_code: BITH 388
+    course_title: Person and Work of Christ
+    old_project_year: 2
+    old_term: term-02-spring
+    new_project_year: 2
+    new_term: term-03-summer
+    rationale: >-
+      Complete BITH 315 before BITH 388 and reduce the Year 2 Spring
+      workload.
+    source_url: https://catalog.wheaton.edu/course-descriptions/bith/
+    source_accessed: "2026-09-04"
+    owner_approved: true
+  - move_number: 4
+    record_id: 01-reli-233-theological-approaches-to-religious-diversity
+    course_code: RELI 233
+    course_title: Theological Approaches to Religious Diversity
+    old_project_year: 1
+    old_term: term-02-spring
+    new_project_year: 1
+    new_term: term-03-summer
+    rationale: >-
+      Redistribute four credits from the designated Year 1 Spring overload
+      into an undergraduate summer term; the catalog states no course
+      prerequisite for RELI 233.
+    source_url: https://catalog.wheaton.edu/course-descriptions/reli/
+    source_accessed: "2026-09-04"
+    owner_approved: true

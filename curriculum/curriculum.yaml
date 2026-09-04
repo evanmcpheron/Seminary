@@ -1,5 +1,5 @@
 schema_version: 1.0.0
-status: imported-unreconciled
+status: schedule-reconciled
 source_spreadsheet:
   path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
   sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
@@ -28,7 +28,7 @@ records:
   source_year: Year 1
   source_term: Fall
   planned_year: 1
-  planned_term: term-01-fall
+  planned_term: term-03-summer
   course_code: BITH 301
   title: How We Got the Bible
   credits: 4
@@ -72,8 +72,8 @@ records:
   source_row: 7
   source_year: Year 1
   source_term: Fall
-  planned_year: 1
-  planned_term: term-01-fall
+  planned_year: 2
+  planned_term: term-03-summer
   course_code: ARCH 369
   title: Religions of Israel and the Near East
   credits: 4
@@ -219,7 +219,7 @@ records:
   source_year: Year 1
   source_term: Spring
   planned_year: 1
-  planned_term: term-02-spring
+  planned_term: term-03-summer
   course_code: RELI 233
   title: Theological Approaches to Religious Diversity
   credits: 4
@@ -379,7 +379,7 @@ records:
   source_year: Year 2
   source_term: Spring
   planned_year: 2
-  planned_term: term-02-spring
+  planned_term: term-03-summer
   course_code: BITH 388
   title: Person and Work of Christ
   credits: 4
