@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+course_id: 01-phil-241-suffering
+course_code: PHIL 241
+course_title: Suffering
+catalog_source_institution: Wheaton College
+catalog_year: 2026-27
+catalog_url: https://catalog.wheaton.edu/course-descriptions/phil/
+independent_curriculum_notice: true
+academic_stage: undergraduate
+program_year: 1
+term: term-01-fall
+credit_hours: 4
+instructional_weeks: 15
+estimated_total_hours: 180
+prerequisites: []
+corequisites: []
+course_description: Examines the philosophical and theological problem of suffering
+  and evil through major Christian and philosophical treatments of the problem of
+  pain.
+curriculum_description: TODO-VERIFY
+confessional_framework: broadly_evangelical_protestant
+learning_outcomes: []
+required_texts: []
+recommended_texts: []
+assessment_breakdown: []
+grading_scale: standard_project_scale
+meeting_pattern: TODO-VERIFY
+weekly_workload_hours: 12.0
+primary_instructor_role: independent_curriculum_facilitator
+external_evaluator_required: false
+biblical_languages_required: []
+software_required: []
+required_bible_editions:
+- ESV
+- NASB_2020
+major_assignments: []
+final_assessment_type: TODO-VERIFY
+ministry_or_fieldwork_requirement: null
+relationship_to_later_courses: []
+academic_source_standard: SOURCE-POLICY.md
+copyright_restrictions: no_unauthorized_copies
+source_verification_date: null
+last_content_audit_date: null
+known_unresolved_questions: []
+curriculum_version: 0.1.0
+status: shell

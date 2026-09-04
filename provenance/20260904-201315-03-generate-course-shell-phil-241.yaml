@@ -1,0 +1,147 @@
+schema_version: "1.0.0"
+run_id: "20260904-201315-03-generate-course-shell-phil-241"
+timestamp_utc: "2026-09-04T20:13:15Z"
+prompt_id: "03-generate-course-shell"
+scope: >-
+  Generate only the non-substantive course shell for PHIL 241 — Suffering,
+  canonical record 01-phil-241-suffering, at its reconciled Year 1 Fall path.
+agent_or_model: "OpenAI Codex (GPT-5)"
+inputs_read:
+  - AGENTS.md
+  - MASTER_PROMPT.md
+  - PROJECT-DECISIONS.yaml
+  - DISCLAIMER.md
+  - THEOLOGICAL-COMMITMENTS.md
+  - ACADEMIC-STANDARDS.md
+  - SOURCE-POLICY.md
+  - WRITING-STYLE-GUIDE.md
+  - ASSESSMENT-POLICY.md
+  - AI-USE-POLICY.md
+  - prompts/03-generate-course-shell.md
+  - courses/AGENTS.md
+  - START-HERE.md
+  - README.md
+  - PROMPT-FLOW.md
+  - docs/WORKFLOW.md
+  - prompts/README.md
+  - prompts/01-bootstrap-repository.md
+  - prompts/02-import-and-lock-curriculum.md
+  - prompts/02a-reconcile-prerequisites-and-workload.md
+  - BOOTSTRAP-REPORT.md
+  - BOOTSTRAP-MANIFEST.sha256
+  - curriculum/README.md
+  - curriculum/curriculum.yaml
+  - curriculum/curriculum.lock.yaml
+  - curriculum/import-report.md
+  - curriculum/prerequisite-report.md
+  - curriculum/workload-report.md
+  - curriculum/schedule-overrides.yaml
+  - courses/README.md
+  - provenance/README.md
+  - provenance/20260904-174726-02-import-and-lock-curriculum-canonical-import.yaml
+  - provenance/20260904-145848-02a-reconcile-prerequisites-and-workload.yaml
+  - scripts/generate_course_shells.py
+  - scripts/validate.py
+  - seminary_tools/common.py
+  - seminary_tools/validation.py
+  - schemas/course.schema.json
+  - schemas/week.schema.json
+  - schemas/provenance.schema.json
+  - tests/test_scaffold.py
+  - tests/test_validation.py
+  - templates/course/
+  - templates/week/
+  - templates/provenance/provenance.yaml
+files_created:
+  - >-
+    courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/
+    (219 generated shell files, including 15 complete week-template directories)
+  - provenance/20260904-201315-03-generate-course-shell-phil-241.yaml
+files_modified: []
+sources_consulted:
+  - type: canonical-workbook
+    path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+    sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
+    use: "Hash verification only; identity metadata was read from the imported manifest and lock."
+  - type: reconciled-curriculum-manifest
+    path: curriculum/curriculum.yaml
+    status: schedule-reconciled
+    record_id: 01-phil-241-suffering
+  - type: immutable-curriculum-lock
+    path: curriculum/curriculum.lock.yaml
+    status: locked
+    record_id: 01-phil-241-suffering
+validation_commands:
+  - git fetch origin main
+  - git rev-list --left-right --count main...origin/main
+  - .venv/bin/python scripts/bootstrap_repository.py --check
+  - .venv/bin/python scripts/validate.py --mode draft
+  - .venv/bin/python -m pytest -q
+  - >-
+    Manifest/lock/workbook integrity audit for record counts, SHA-256,
+    PHIL 241 uniqueness and identity, approved schedule deltas, and target-path absence
+  - >-
+    .venv/bin/python scripts/generate_course_shells.py --dry-run
+    --course-id 01-phil-241-suffering
+  - >-
+    .venv/bin/python scripts/generate_course_shells.py --apply
+    --course-id 01-phil-241-suffering
+  - >-
+    Course-shell integrity audit against course.schema.json and week.schema.json
+validation_results:
+  - command: git fetch origin main
+    status: passed
+    exit_code: 0
+    summary: "Local main and origin/main both resolved to da4e9023b52c7757925c921fa870eb41add82e59."
+  - command: .venv/bin/python scripts/bootstrap_repository.py --check
+    status: passed
+    exit_code: 0
+    summary: "Bootstrap scaffold check passed."
+  - command: "Pre-generation .venv/bin/python scripts/validate.py --mode draft"
+    status: passed
+    exit_code: 0
+    summary: "Validation completed with 0 errors and 0 warnings."
+  - command: "Pre-generation .venv/bin/python -m pytest -q"
+    status: passed
+    exit_code: 0
+    summary: "6 tests passed."
+  - command: "Manifest/lock/workbook integrity audit"
+    status: passed
+    exit_code: 0
+    summary: >-
+      The workbook hash matched both manifests; all 108 records and four approved
+      schedule deltas reconciled; PHIL 241 resolved uniquely to
+      01-phil-241-suffering in Year 1 Fall; locked identity matched; and the
+      destination did not exist.
+  - command: "Single-record shell generator dry run"
+    status: passed
+    exit_code: 0
+    summary: >-
+      The sole planned output was
+      courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering.
+  - command: "Single-record shell generator apply"
+    status: passed
+    exit_code: 0
+    summary: "Generated only the canonical PHIL 241 course shell."
+  - command: "Course-shell integrity audit"
+    status: passed
+    exit_code: 0
+    summary: >-
+      The course schema passed; 10 of 10 checked canonical/reconciled fields
+      matched; status was shell; all 15 numbered week schemas passed; and the
+      target contained 219 generated files.
+  - command: "Post-generation .venv/bin/python scripts/validate.py --mode draft"
+    status: passed
+    exit_code: 0
+    summary: "Validation completed with 0 errors and 0 warnings."
+  - command: "Post-generation .venv/bin/python -m pytest -q"
+    status: passed
+    exit_code: 0
+    summary: "6 tests passed."
+unresolved_items:
+  - >-
+    Expected shell-stage TODO-VERIFY fields remain for curriculum purpose,
+    meeting pattern, learning outcomes, readings, assessments, weekly topics,
+    and related design decisions. Prompt 03 does not authorize resolving them.
+human_approval_required: []
+commit_sha: null
