@@ -1,0 +1,68 @@
+schema_version: "1.0.0"
+run_id: "20260904-172329-02-import-and-lock-curriculum-canonical-import-blocked"
+timestamp_utc: "2026-09-04T17:23:29Z"
+prompt_id: "02-import-and-lock-curriculum"
+scope: "Attempt canonical curriculum import and lock; stop when the required canonical workbook precondition is unsatisfied."
+agent_or_model: "OpenAI Codex (GPT-5)"
+inputs_read:
+  - AGENTS.md
+  - MASTER_PROMPT.md
+  - PROJECT-DECISIONS.yaml
+  - DISCLAIMER.md
+  - THEOLOGICAL-COMMITMENTS.md
+  - ACADEMIC-STANDARDS.md
+  - SOURCE-POLICY.md
+  - WRITING-STYLE-GUIDE.md
+  - ASSESSMENT-POLICY.md
+  - AI-USE-POLICY.md
+  - prompts/02-import-and-lock-curriculum.md
+  - curriculum/curriculum.yaml
+  - curriculum/README.md
+  - curriculum/source/README.md
+  - scripts/import_curriculum.py
+  - scripts/validate.py
+  - seminary_tools/common.py
+  - seminary_tools/curriculum_import.py
+  - seminary_tools/validation.py
+  - schemas/curriculum.schema.json
+  - schemas/provenance.schema.json
+  - tests/test_scaffold.py
+  - tests/test_validation.py
+  - pyproject.toml
+  - templates/provenance/provenance.yaml
+files_created:
+  - curriculum/import-report.md
+  - provenance/20260904-172329-02-import-and-lock-curriculum-canonical-import-blocked.yaml
+files_modified: []
+sources_consulted:
+  - type: repository-workbook-presence-check
+    required_path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+    result: missing
+  - type: noncanonical-workbook-diagnostic
+    path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27.xlsx
+    sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
+    imported: false
+validation_commands:
+  - python scripts/import_curriculum.py --input curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx --output curriculum/curriculum.yaml --lock-output curriculum/curriculum.lock.yaml
+  - python scripts/validate.py --mode draft
+  - pytest
+validation_results:
+  - command: python scripts/import_curriculum.py --input curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx --output curriculum/curriculum.yaml --lock-output curriculum/curriculum.lock.yaml
+    status: blocked
+    exit_code: 1
+    summary: "Canonical spreadsheet not found; no manifest or lock output was written."
+  - command: python scripts/validate.py --mode draft
+    status: passed-with-warning
+    exit_code: 0
+    summary: "0 errors and 1 warning: curriculum has not yet been imported."
+  - command: pytest
+    status: passed
+    exit_code: 0
+    summary: "5 tests passed."
+unresolved_items:
+  - "TODO-VERIFY: Supply or restore curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx and verify its SHA-256 before importing."
+  - "Canonical record counts, Princeton non-course classifications, numeric credits, prerequisites, and workload overloads remain unavailable because no canonical dataset was imported."
+  - "curriculum/curriculum.lock.yaml was not created because generating a lock from the observed unswapped workbook would substitute a noncanonical source."
+human_approval_required:
+  - "The owner must supply or explicitly resolve the identity of the missing owner-approved _Swapped.xlsx workbook before prompt 02 can continue."
+commit_sha: null
