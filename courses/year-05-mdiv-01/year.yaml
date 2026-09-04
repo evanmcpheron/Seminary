@@ -1,0 +1,10 @@
+schema_version: "1.0.0"
+project_year: 5
+year_id: year-05-mdiv-01
+stage: mdiv-01
+status: scaffold
+terms:
+  - term-01-fall
+  - term-02-january
+  - term-03-spring
+  - term-04-summer

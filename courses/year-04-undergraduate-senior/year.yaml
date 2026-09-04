@@ -1,0 +1,9 @@
+schema_version: "1.0.0"
+project_year: 4
+year_id: year-04-undergraduate-senior
+stage: undergraduate-senior
+status: scaffold
+terms:
+  - term-01-fall
+  - term-02-spring
+  - term-03-summer

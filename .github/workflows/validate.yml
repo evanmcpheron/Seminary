@@ -1,0 +1,36 @@
+name: Validate curriculum repository
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[dev]'
+
+      - name: Verify bootstrap scaffold
+        run: python scripts/bootstrap_repository.py --check
+
+      - name: Validate repository
+        run: python scripts/validate.py --mode draft
+
+      - name: Run tests
+        run: pytest

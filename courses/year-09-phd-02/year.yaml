@@ -1,0 +1,10 @@
+schema_version: "1.0.0"
+project_year: 9
+year_id: year-09-phd-02
+stage: phd-02
+status: scaffold
+terms:
+  - term-01-fall
+  - term-02-spring
+  - term-03-summer
+  - milestones

@@ -1,0 +1,46 @@
+---
+prompt_id: 06-generate-one-week
+purpose: Generate One Week of One Course
+write_scope:
+  - one explicitly named course/week directory
+  - related source records
+  - related instructor materials for that week
+  - provenance/
+commit_allowed: false
+---
+
+# Generate One Week of One Course
+
+## Preconditions
+
+1. Course design is approved.
+2. Week objectives and workload are approved.
+3. Required sources are verified.
+
+## Authorized actions
+
+1. Generate objectives and lecture outlines.
+2. Generate and source-audit lectures before dependent assignments.
+3. Generate readings, study guide, guided discussion, assignment, quiz, rubric, and answer key only for this week.
+4. Respect the week's workload budget.
+5. Separate practice from graded work.
+
+## Forbidden actions
+
+- Do not modify files outside the declared write scope.
+- Do not invent unverified facts or sources.
+- Do not begin a later prompt automatically.
+- Do not commit unless the active prompt is explicitly overridden with owner authorization.
+
+## Required validation
+
+Run `python scripts/validate.py --mode draft` and the relevant tests. Add a provenance record.
+
+## Exit criteria
+
+- One week is complete.
+- All claims and sources are auditable.
+- Workload is within budget.
+- No other week was modified.
+
+Stop and report changed files, sources, validation, unresolved items, and required human review.

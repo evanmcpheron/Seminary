@@ -1,0 +1,15 @@
+schema_version: "1.0.0"
+run_id: __RUN_ID__
+timestamp_utc: __TIMESTAMP_UTC__
+prompt_id: __PROMPT_ID__
+scope: __SCOPE__
+agent_or_model: __AGENT_OR_MODEL__
+inputs_read: []
+files_created: []
+files_modified: []
+sources_consulted: []
+validation_commands: []
+validation_results: []
+unresolved_items: []
+human_approval_required: []
+commit_sha: null

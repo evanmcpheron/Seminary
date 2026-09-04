@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/curriculum.schema.json",
+  "title": "Seminary Curriculum Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "source_spreadsheet",
+    "program",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "awaiting-import",
+        "imported-unreconciled",
+        "schedule-reconciled",
+        "locked"
+      ]
+    },
+    "source_spreadsheet": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "program": {
+      "type": "object"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "record_id",
+          "record_type",
+          "institution",
+          "source_sheet",
+          "source_row",
+          "source_year",
+          "source_term",
+          "planned_year",
+          "planned_term",
+          "title"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "record_type": {
+            "enum": [
+              "course",
+              "milestone",
+              "competency",
+              "examination",
+              "doctoral-seminar-category"
+            ]
+          },
+          "course_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "credits": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "planned_year": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "planned_term": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

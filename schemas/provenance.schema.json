@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/provenance.schema.json",
+  "title": "Generation Provenance",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "timestamp_utc",
+    "prompt_id",
+    "scope",
+    "inputs_read",
+    "files_created",
+    "files_modified",
+    "validation_results",
+    "unresolved_items"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "timestamp_utc": {
+      "type": "string"
+    },
+    "prompt_id": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "inputs_read": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "files_created": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "files_modified": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources_consulted": {
+      "type": "array"
+    },
+    "validation_results": {
+      "type": "array"
+    },
+    "unresolved_items": {
+      "type": "array"
+    },
+    "human_approval_required": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

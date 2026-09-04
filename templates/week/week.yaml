@@ -1,0 +1,12 @@
+schema_version: "1.0.0"
+course_id: __COURSE_ID__
+week_number: __WEEK_NUMBER__
+title: "__WEEK_TITLE__"
+status: shell
+estimated_hours: 0
+learning_outcomes: []
+lectures: []
+readings: []
+assignments: []
+assessments: []
+source_records: []

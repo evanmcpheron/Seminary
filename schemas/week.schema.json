@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/week.schema.json",
+  "title": "Course Week Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "course_id",
+    "week_number",
+    "title",
+    "status",
+    "estimated_hours",
+    "learning_outcomes",
+    "lectures",
+    "readings",
+    "assignments",
+    "assessments",
+    "source_records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "course_id": {
+      "type": "string"
+    },
+    "week_number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "shell",
+        "draft",
+        "ready-for-audit",
+        "released"
+      ]
+    },
+    "estimated_hours": {
+      "type": "number",
+      "minimum": 0
+    },
+    "learning_outcomes": {
+      "type": "array"
+    },
+    "lectures": {
+      "type": "array"
+    },
+    "readings": {
+      "type": "array"
+    },
+    "assignments": {
+      "type": "array"
+    },
+    "assessments": {
+      "type": "array"
+    },
+    "source_records": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,360 @@
+.gitattributes
+.github/
+  pull_request_template.md
+  workflows/
+    validate.yml
+.gitignore
+ACADEMIC-STANDARDS.md
+AGENTS.md
+AI-USE-POLICY.md
+ASSESSMENT-POLICY.md
+BOOTSTRAP-MANIFEST.sha256
+BOOTSTRAP-REPORT.md
+BOOTSTRAP_PROMPT.md
+CONTRIBUTING.md
+DISCLAIMER.md
+INSTALL.md
+LICENSE.md
+MASTER_PROMPT.md
+Makefile
+PROJECT-DECISIONS.yaml
+README.md
+SOURCE-POLICY.md
+START-HERE.md
+THEOLOGICAL-COMMITMENTS.md
+TREE.txt
+WRITING-STYLE-GUIDE.md
+courses/
+  AGENTS.md
+  README.md
+  year-01-undergraduate-freshman/
+    README.md
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    term-03-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-02-undergraduate-sophomore/
+    README.md
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    term-03-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-03-undergraduate-junior/
+    README.md
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    term-03-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-04-undergraduate-senior/
+    README.md
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    term-03-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-05-mdiv-01/
+    README.md
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-january/
+      README.md
+      term.yaml
+    term-03-spring/
+      README.md
+      term.yaml
+    term-04-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-06-mdiv-02/
+    README.md
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-january/
+      README.md
+      term.yaml
+    term-03-spring/
+      README.md
+      term.yaml
+    term-04-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-07-mdiv-03/
+    README.md
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-january/
+      README.md
+      term.yaml
+    term-03-spring/
+      README.md
+      term.yaml
+    term-04-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-08-phd-01/
+    README.md
+    milestones/
+      README.md
+      term.yaml
+    pre-matriculation/
+      README.md
+      term.yaml
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    term-03-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-09-phd-02/
+    README.md
+    milestones/
+      README.md
+      term.yaml
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    term-03-summer/
+      README.md
+      term.yaml
+    year.yaml
+  year-10-phd-03/
+    README.md
+    milestones/
+      README.md
+      term.yaml
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    year.yaml
+  year-11-phd-04/
+    README.md
+    milestones/
+      README.md
+      term.yaml
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    year.yaml
+  year-12-phd-05/
+    README.md
+    milestones/
+      README.md
+      term.yaml
+    term-01-fall/
+      README.md
+      term.yaml
+    term-02-spring/
+      README.md
+      term.yaml
+    year.yaml
+curriculum/
+  README.md
+  curriculum.yaml
+  degree-map.md
+  prerequisites.yaml
+  schedule-overrides.yaml
+  source/
+    .gitkeep
+    README.md
+dissertation/
+  README.md
+  annotated-bibliographies/
+    README.md
+  chapters/
+    README.md
+  committee/
+    README.md
+  comprehensive-exams/
+    README.md
+  conference-paper-revisions/
+    README.md
+  defense/
+    README.md
+  final-submission/
+    README.md
+  language-competencies/
+    README.md
+  methodology-review/
+    README.md
+  prospectus/
+    README.md
+  research-interests/
+    README.md
+  seminar-papers/
+    README.md
+docs/
+  ARCHITECTURE.md
+  DECISION-LOG.md
+  WORKFLOW.md
+  source-inputs/
+    README.md
+    project-decisions-original.md
+formation/
+  README.md
+  annual-reviews/
+    README.md
+  church-participation/
+    README.md
+  mentored-ministry/
+    README.md
+  preaching-portfolio/
+    README.md
+  safeguarding-and-ethics/
+    README.md
+  spiritual-formation/
+    README.md
+  teaching-portfolio/
+    README.md
+prompts/
+  00-master-project-constitution.md
+  01-bootstrap-repository.md
+  02-import-and-lock-curriculum.md
+  02a-reconcile-prerequisites-and-workload.md
+  03-research-one-course.md
+  04-design-one-course.md
+  05-generate-course-shell.md
+  06-generate-one-week.md
+  07-generate-one-lecture.md
+  08-generate-one-assignment.md
+  09-generate-one-assessment.md
+  10-generate-answer-key.md
+  11-audit-sources.md
+  12-audit-theology.md
+  13-audit-course-coherence.md
+  14-audit-semester.md
+  15-revise-after-audit.md
+  16-build-comprehensive-exam.md
+  17-build-dissertation-prospectus.md
+  18-support-one-dissertation-chapter.md
+  19-release-course-version.md
+  README.md
+provenance/
+  .gitkeep
+  README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+schemas/
+  README.md
+  course.schema.json
+  curriculum.schema.json
+  provenance.schema.json
+  source.schema.json
+  week.schema.json
+scripts/
+  bootstrap_repository.py
+  export_markdown.py
+  generate_course_shells.py
+  import_curriculum.py
+  reconcile_schedule.py
+  validate.py
+seminary_tools/
+  __init__.py
+  common.py
+  curriculum_import.py
+  validation.py
+templates/
+  course/
+    README.md
+    assessments/
+      final-exam/
+        README.md
+      midterm/
+        README.md
+      oral-examinations/
+        README.md
+      quiz-template.md
+      quizzes/
+        README.md
+    assignments/
+      README.md
+      assignment-template.md
+      final-project.md
+    bibliography.md
+    course.yaml
+    instructor-materials/
+      answer-keys/
+        README.md
+        answer-key-template.md
+      grading-guides/
+        README.md
+      sample-responses/
+        README.md
+    learning-outcomes.md
+    policies.md
+    resources/
+      primary-sources.md
+      recommended-reading.md
+      required-reading.md
+      videos-and-lectures.md
+    rubrics/
+      rubric-template.md
+    schedule.md
+    syllabus.md
+  evaluation/
+    human-evaluator-form.md
+  milestone/
+    milestone.yaml
+  paper/
+    student-paper.md
+  provenance/
+    provenance.yaml
+  week/
+    README.md
+    assignment.md
+    discussion.md
+    language-lesson-template.md
+    lecture-01-outline.md
+    lecture-01.md
+    lecture-02-outline.md
+    lecture-02.md
+    objectives.md
+    quiz.md
+    readings.md
+    study-guide.md
+    week.yaml
+tests/
+  test_scaffold.py
+  test_validation.py

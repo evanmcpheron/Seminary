@@ -1,0 +1,130 @@
+schema_version: "1.0.0"
+repository:
+  full_name: evanmcpheron/Seminary
+  default_branch: main
+  branch_strategy: one-focused-feature-branch-per-course-or-unit
+  codex_commit_policy: local_commit_only_when_active_prompt_explicitly_allows
+  push_merge_policy: explicit_owner_authorization_required
+
+identity:
+  independent: true
+  accredited: false
+  institutional_endorsement: false
+  catalog_source_institutions:
+    - Wheaton College
+    - Gordon-Conwell Theological Seminary
+    - Princeton Theological Seminary
+
+curriculum:
+  canonical_inventory: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+  preserve_all_courses: true
+  allow_undergraduate_term_reassignment_for_prerequisites: true
+  redistribute_undergraduate_overload_to_summer: true
+  silent_course_metadata_changes_forbidden: true
+  normal_term_weeks: 15
+  instructional_weeks: 14
+  final_assessment_weeks: 1
+  credit_hour_total_work: 45
+
+confessional_framework:
+  tradition: broadly_evangelical_protestant
+  historic_creeds:
+    - Apostles' Creed
+    - Nicene Creed
+    - Chalcedonian Definition
+  biblical_inerrancy: true
+  inerrancy_reference: substantially aligned with the Chicago Statement on Biblical Inerrancy
+  canon: 66-book Protestant canon
+  apocrypha_status: historically_and_theologically_important_not_canonical
+  pastoral_office_constructive_default: complementarian
+  secondary_issues_method: accurate_comparative_treatment
+  political_party_alignment: forbidden
+
+scholarship:
+  critical_and_non_christian_sources_allowed: true
+  steelman_opposing_arguments: true
+  description_is_not_endorsement: true
+  coercive_deconversion_or_ridicule: forbidden
+  confessional_evaluation_required: true
+
+instruction:
+  standard_week_lectures: 2
+  language_week_lessons: 3_to_4
+  lectures_include_outline_and_full_transcript: true
+  formal_citations_required: true
+  videos_supplement_not_replace_written_instruction: true
+  media_duration_cap: none_when_academically_justified
+  guided_media_questions: where_possible
+
+writing:
+  canonical_format: markdown
+  encoding: UTF-8
+  metadata: YAML_front_matter
+  citation_style: SBL_with_Chicago_notes_and_bibliography
+  student_format: Turabian_compatible
+  primary_bible: ESV
+  required_comparison_bible: NASB_2020
+  additional_comparison_bible: NIV
+  light_reading_bible: NLT
+  greek_pronunciation: reconstructed_Koine_primary_with_Erasmian_recognition
+  hebrew_pronunciation: modern_Israeli_Sephardic_classroom
+
+resources:
+  formats_allowed: [print, Kindle, Logos]
+  budget: reasonable_quality_first_avoid_unnecessary_cost
+  public_library_access: true
+  subscription_database_access_assumed: false
+  free_article_alternative_where_feasible: true
+  lower_cost_book_alternative_only_if_quality_matches: true
+  expensive_language_tools_allowed_with_alternative_on_request: true
+
+assessment:
+  undergraduate_minimum_progression_grade: C
+  graduate_minimum_progression_grade: B
+  language_minimum_for_advanced_exegesis: B
+  one_structured_retake_after_remediation: true
+  examination_modes: mixed
+  timed_examinations: true
+  oral_examinations_recorded_when_practical: true
+  failed_prerequisite_blocks_progression: true
+
+human_evaluation:
+  years_1_to_3_routine_external_mentor_required: false
+  year_4_capstone_human_review: strongly_recommended
+  mdiv_human_ministry_evaluation_required: true
+  phd_human_supervisor_required: true
+  phd_additional_readers_required: 2
+  paid_tutoring: sparing_and_only_when_needed
+
+formation:
+  local_church_membership: required
+  weekly_worship: required
+  scripture_and_prayer: required
+  private_devotional_records_committed: false
+  completion_and_redacted_reflections_committed: true
+  mentored_ministry: required_at_later_stages
+  preaching_and_teaching_portfolios: required
+  safeguarding_and_ministerial_ethics: required
+
+prompt_scope:
+  default_course_design_unit: one_course
+  default_content_generation_unit: one_week_of_one_course
+  lectures_before_dependent_assignments: true
+  semester_shell_generation_allowed: true
+  semester_full_content_single_pass_forbidden: true
+  mandatory_audit_before_release: true
+
+student_profile:
+  academic_reading_and_writing: 7_of_10
+  research_paper_experience: true
+  bible_knowledge: 3_of_10
+  theology_and_philosophy: 4_of_10
+  greek: 0_of_10
+  hebrew: 0_of_10
+  current_church_tradition: unspecified
+  regular_preaching_or_teaching: false
+  weekly_hours: whatever_is_required_by_credit_hour_model
+  learning_preference: balanced
+  timed_tests: comfortable
+  recorded_presentations: comfortable
+  equipment_available: [printer, microphone, webcam, word_processor]

@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Private and sensitive material
+private/
+formation/private-journal/
+**/pastoral-confidences/
+**/counseling-notes/
+**/unredacted-evaluations/
+
+# Local exports and temporary files
+build/
+dist/
+exports/
+*.tmp
+*.bak
+~$*.docx
+~$*.xlsx
+
+# Do not ignore the canonical spreadsheet if the owner chooses to track it.

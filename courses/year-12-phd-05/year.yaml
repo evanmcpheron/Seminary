@@ -1,0 +1,9 @@
+schema_version: "1.0.0"
+project_year: 12
+year_id: year-12-phd-05
+stage: phd-05
+status: scaffold
+terms:
+  - term-01-fall
+  - term-02-spring
+  - milestones

@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: seminary-curriculum-tools
+Version: 0.1.0
+Summary: Validation and scaffolding tools for an independent theological curriculum
+Requires-Python: >=3.11
+License-File: LICENSE.md
+Requires-Dist: PyYAML>=6
+Requires-Dist: jsonschema>=4
+Requires-Dist: openpyxl>=3.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Dynamic: license-file

@@ -1,0 +1,13 @@
+schema_version: "1.0.0"
+status: awaiting-import
+source_spreadsheet:
+  path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+  sha256: null
+  imported_at: null
+  catalog_basis: "2026-27 current catalogs represented in owner-approved spreadsheet"
+program:
+  title: Independent Theological Education Curriculum
+  total_project_years: 12
+  canonical_course_count: null
+  imported_numeric_credits: null
+records: []

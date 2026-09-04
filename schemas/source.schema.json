@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/source.schema.json",
+  "title": "Verified Source Record",
+  "type": "object",
+  "required": [
+    "source_id",
+    "source_type",
+    "title",
+    "verification_status",
+    "accessed_at"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "source_type": {
+      "enum": [
+        "scripture",
+        "primary-text",
+        "book",
+        "article",
+        "chapter",
+        "reference-work",
+        "video",
+        "podcast",
+        "website",
+        "catalog"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publisher": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "year": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "edition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isbn": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "accessed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "unverified",
+        "partially-verified",
+        "verified",
+        "unavailable"
+      ]
+    },
+    "access_category": {
+      "enum": [
+        "required-purchase",
+        "required-free",
+        "recommended",
+        "optional-reference",
+        "not-applicable"
+      ]
+    },
+    "copyright_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
