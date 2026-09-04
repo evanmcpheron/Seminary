@@ -1,0 +1,177 @@
+schema_version: "1.0.0"
+run_id: "20260904-203706-04-research-one-course-phil-241"
+timestamp_utc: "2026-09-04T20:37:06Z"
+prompt_id: "04-research-one-course"
+scope: >-
+  Research only PHIL 241 — Suffering, canonical record
+  01-phil-241-suffering, using its existing Prompt 03 shell; verify catalog
+  identity, prerequisites, sources, access, cost, and comparable academic
+  models without performing Prompt 05 course design.
+agent_or_model: "OpenAI Codex (GPT-5)"
+inputs_read:
+  - AGENTS.md
+  - MASTER_PROMPT.md
+  - PROJECT-DECISIONS.yaml
+  - DISCLAIMER.md
+  - THEOLOGICAL-COMMITMENTS.md
+  - ACADEMIC-STANDARDS.md
+  - SOURCE-POLICY.md
+  - WRITING-STYLE-GUIDE.md
+  - ASSESSMENT-POLICY.md
+  - AI-USE-POLICY.md
+  - prompts/04-research-one-course.md
+  - courses/AGENTS.md
+  - curriculum/curriculum.yaml
+  - curriculum/curriculum.lock.yaml
+  - curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/
+  - provenance/README.md
+  - provenance/20260904-201315-03-generate-course-shell-phil-241.yaml
+  - schemas/course.schema.json
+  - schemas/source.schema.json
+  - schemas/provenance.schema.json
+  - scripts/validate.py
+  - seminary_tools/validation.py
+  - tests/test_scaffold.py
+  - tests/test_validation.py
+files_created:
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/research-report.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/ (23 verified .source.yaml records)
+  - provenance/20260904-203706-04-research-one-course-phil-241.yaml
+files_modified:
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/primary-sources.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/recommended-reading.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/required-reading.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/videos-and-lectures.md
+sources_consulted:
+  - type: canonical-workbook
+    path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+    sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
+    use: Hash verification only; identity metadata came from the imported manifest and lock.
+  - type: reconciled-curriculum-manifest
+    path: curriculum/curriculum.yaml
+    status: schedule-reconciled
+    record_id: 01-phil-241-suffering
+  - type: immutable-curriculum-lock
+    path: curriculum/curriculum.lock.yaml
+    status: locked
+    record_id: 01-phil-241-suffering
+  - type: official-catalog
+    url: https://catalog.wheaton.edu/course-descriptions/phil/
+    publisher: Wheaton College
+    use: Code, title, credits, description, named authors, and prerequisite/corequisite check.
+  - type: official-publisher-and-scripture-sites
+    urls:
+      - https://www.esv.org/about/
+      - https://www.crossway.org/permissions/
+      - https://www.lockman.org/nasb-2020/
+      - https://www.cslewis.com/uk/books/paperback/the-problem-of-pain/9780060652968/
+      - https://undpress.nd.edu/9780268038472/the-problem-of-evil/
+      - https://www.eerdmans.com/9781467421683/god-freedom-and-evil/
+      - https://academic.oup.com/book/12824
+      - https://link.springer.com/book/10.1057/9780230283961
+      - https://www.crossway.org/books/the-many-faces-of-evil-tpb/
+      - https://www.ivpress.com/evil-and-the-justice-of-god
+  - type: bibliographic-and-book-platform-records
+    urls:
+      - https://books.google.com/books/about/The_Idea_of_the_Holy.html?id=0-9YrD6H0xUC
+      - https://search.worldcat.org/title/idea-of-the-holy-an-inquiry-into-the-non-rational-factor-in-the-idea-of-the-divine-and-its-relation-to-the-rational/oclc/2680193?tab=details
+      - https://www.degruyterbrill.com/document/doi/10.7591/9781501735929-fm/pdf
+      - https://utpdistribution.com/9780801436116/horrendous-evils-and-the-goodness-of-god/
+      - https://www.jstor.org/stable/10.7591/j.ctv75d38q
+      - https://www.jstor.org/stable/j.ctvpj7gm2
+  - type: journal-doi-and-repository-records
+    urls:
+      - https://academic.oup.com/mind/article/LXIV/254/200/943307/IV-EVIL-AND-OMNIPOTENCE
+      - https://www.jstor.org/stable/20009775
+      - https://philpapers.org/versions/ROWTPO-3
+      - https://philpapers.org/s/Roderick%20Chisholm
+      - https://relbib.de/Record/1821414667
+      - https://doi.org/10.1007/BF00136567
+      - https://doi.org/10.2307/2215486
+      - https://academic.oup.com/aristoteliansupp/issue/63/1
+      - https://philpapers.org/versions/ADAHEA-3
+  - type: free-reference-works
+    urls:
+      - https://iep.utm.edu/evil-log/
+      - https://iep.utm.edu/evil-evi/
+      - https://plato.stanford.edu/archives/spr2023/entries/skeptical-theism/
+  - type: official-media
+    url: https://closertotruth.com/video/eastern-traditions-why-are-suffering-and-ritual-vital/
+    use: Title, host, contributors, date, duration, access, and transcript availability.
+  - type: comparable-academic-model
+    urls:
+      - https://campuspress.yale.edu/keithderose/philosophy-of-religion-readings/
+      - https://campuspress.yale.edu/keithderose/phil-114-fall-2000-revised/
+    publisher: Yale University
+    use: Research architecture only; no syllabus content copied.
+  - type: dated-price-checks
+    urls:
+      - https://www.vitalsource.com/products/the-problem-of-pain-c-s-lewis-v9780061947643
+      - https://www.vitalsource.com/products/evil-and-the-god-of-love-j-hick-v9780230283961
+    use: Access-price observations only, not bibliographic identity.
+validation_commands:
+  - .venv/bin/python scripts/validate.py --mode draft
+  - .venv/bin/python -m pytest -q
+  - Manifest/lock/workbook integrity audit for PHIL 241 uniqueness, identity, and SHA-256
+  - Source-record uniqueness, status, accessed-date, and Markdown-link audit
+  - Prompt 04 write-scope and course.yaml field-delta audit
+validation_results:
+  - command: Pre-research .venv/bin/python scripts/validate.py --mode draft
+    status: passed
+    exit_code: 0
+    summary: Validation completed with 0 errors and 0 warnings.
+  - command: Pre-research .venv/bin/python -m pytest -q
+    status: passed
+    exit_code: 0
+    summary: 6 tests passed.
+  - command: Manifest/lock/workbook integrity audit
+    status: passed
+    exit_code: 0
+    summary: >-
+      PHIL 241 resolved uniquely in both manifests; record identity agreed; and
+      the workbook SHA-256 matched both recorded values.
+  - command: Post-research .venv/bin/python scripts/validate.py --mode draft
+    status: passed
+    exit_code: 0
+    summary: Validation completed with 0 errors and 0 warnings.
+  - command: Post-research .venv/bin/python -m pytest -q
+    status: passed
+    exit_code: 0
+    summary: 6 tests passed.
+  - command: Source-record and Markdown-link audit
+    status: passed
+    exit_code: 0
+    summary: 23 unique records were verified; 25 source-record links resolved; no links were missing.
+  - command: Final .venv/bin/python scripts/validate.py --mode draft including provenance
+    status: passed
+    exit_code: 0
+    summary: Validation completed with 0 errors and 0 warnings.
+  - command: Final .venv/bin/python -m pytest -q
+    status: passed
+    exit_code: 0
+    summary: 6 tests passed.
+  - command: Prompt 04 write-scope, course.yaml delta, and immutable-file audit
+    status: passed
+    exit_code: 0
+    summary: >-
+      All 30 changed or untracked paths were within Prompt 04 scope; only status
+      and source_verification_date changed in course.yaml; the canonical
+      manifests and workbook were unchanged; and the workbook hash still matched.
+  - command: git diff --check
+    status: passed
+    exit_code: 0
+    summary: No whitespace errors found.
+unresolved_items:
+  - >-
+    Prompt 05 must decide the final required/recommended list and verify exact
+    excerpt pagination against acquired editions. These are deferred design
+    choices, not research blockers.
+  - >-
+    Shell-stage TODO-VERIFY placeholders remain in files outside Prompt 04's
+    authorized write scope. They were not modified and are expected to be
+    addressed only by later prompts.
+human_approval_required: []
+commit_sha: null
