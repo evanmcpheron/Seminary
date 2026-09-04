@@ -20,9 +20,10 @@ commit_allowed: false
 
 Before taking any action, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and this active prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify each precondition below.
 
-1. Course research audit has passed.
-2. Required sources are verified.
-3. Course identity matches the lock file.
+1. Prompt 05 has generated the course shell and Prompt 03 has completed for this same course.
+2. `research-report.md` exists and `course.yaml` status is `researching`.
+3. Required sources for design are verified and no blocking research `TODO-VERIFY` remains.
+4. Course identity matches the reconciled manifest and immutable lock metadata.
 
 ## Authorized actions
 
@@ -46,8 +47,9 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 
 ## Exit criteria
 
-- Course status may advance to designed.
+- Course status advances from `researching` to `designed`.
 - Outcomes, assessment map, schedule, and workload are coherent.
 - No substantive weekly content was generated.
+- The next production step is one approved week (`06`) or a more granular lecture/assignment/assessment prompt (`07`–`10`), subject to each prompt's preconditions.
 
 Stop and report changed files, sources, validation, unresolved items, and required human review.

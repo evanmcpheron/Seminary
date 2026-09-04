@@ -12,25 +12,25 @@ Import the spreadsheet into YAML, record the source SHA-256 hash, and create a l
 
 Move courses only when required by prerequisites or workload. Preserve every course. Record each move, old term, new term, rationale, and approval in `curriculum/schedule-overrides.yaml`.
 
-## Phase 3 — Research one course
+## Phase 3 — Generate one course shell (`05`)
 
-Verify textbooks, editions, articles, primary sources, media, and comparable academic course models. Produce a source audit before design.
+Create the course folder from templates and reconciled curriculum metadata. The generated `course.yaml` begins with status `shell`. Do not create substantive weekly content.
 
-## Phase 4 — Design one course
+## Phase 4 — Research one course (`03`)
 
-Define outcomes, assessment map, workload, calendar, bibliography, prerequisites, and human-evaluation requirements. No lecture production yet.
+Work inside the generated shell. Verify textbooks, editions, articles, primary sources, media, prerequisites, and comparable academic course models. Produce `research-report.md`, verified source records, and research-state metadata before design. The course advances to `researching`.
 
-## Phase 5 — Generate shell
+## Phase 5 — Design one course (`04`)
 
-Create the course folder from templates and approved metadata. Do not create substantive weekly content.
+Using the completed research pass, define outcomes, assessment map, workload, calendar, bibliography, prerequisites, and human-evaluation requirements. No lecture production yet. The course advances to `designed`.
 
 ## Phase 6 — Produce one week
 
-Generate objectives, lectures, readings, study guide, discussion, assignment, and quiz for one week. Lectures come before dependent assignments.
+Generate objectives, lectures, readings, study guide, discussion, assignment, and quiz for one week. Lectures come before dependent assignments. The first substantive production run advances the course from `designed` to `in-production`.
 
 ## Phase 7 — Audit
 
-Audit sources, theology, coherence, workload, outcome alignment, copyright, and student authorship boundaries.
+When substantive production is complete, run a full-course source audit as the lifecycle gate to `ready-for-audit`, then audit theology, coherence, workload, outcome alignment, copyright, and student authorship boundaries.
 
 ## Phase 8 — Revise and release
 

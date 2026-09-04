@@ -13,17 +13,19 @@ commit_allowed: false
 
 Before taking any action, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and this active prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify each precondition below.
 
-1. Course exists in reconciled curriculum.
-2. Target year and term are approved.
-3. No course directory conflict exists.
+1. The course exists in the reconciled `curriculum/curriculum.yaml` manifest.
+2. The invocation explicitly names the course code; resolve its canonical `record_id` from the reconciled manifest rather than inventing an ID.
+3. Target year and term match the reconciled manifest, including approved schedule overrides.
+4. No course directory conflict exists.
 
 ## Authorized actions
 
-1. Run the shell generator for the one named course.
-2. Populate locked metadata only.
-3. Create 15 empty week shells for taught courses.
-4. Use milestone structure for dissertation work.
-5. Do not generate substantive content.
+1. Resolve the one named course to exactly one canonical `record_id` in `curriculum/curriculum.yaml`.
+2. Run the shell generator for that `record_id` only.
+3. Populate locked/reconciled metadata only.
+4. Create 15 empty week shells for taught courses.
+5. Use milestone structure for dissertation work.
+6. Do not generate substantive content or begin Prompt 03 automatically.
 
 ## Forbidden actions
 
@@ -39,7 +41,10 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 ## Exit criteria
 
 - Shell exists and validates.
+- `course.yaml` has status `shell`.
+- The generated path and canonical `record_id` are reported.
 - No placeholders are replaced with invented content.
 - No other course was modified.
+- The next permitted per-course prompt is `03-research-one-course.md` for this same explicitly named course.
 
 Stop and report changed files, sources, validation, unresolved items, and required human review.

@@ -25,6 +25,7 @@ The project is designed to approximate the rigor, sequence, workload, formative 
 3. Place the canonical curriculum spreadsheet in `curriculum/source/`.
 4. Run the bootstrap and validation commands described below.
 5. Import and lock the curriculum before creating any course content.
+6. Follow [`PROMPT-FLOW.md`](PROMPT-FLOW.md) for the required execution order and per-prompt inputs.
 
 ```bash
 python -m venv .venv
@@ -50,16 +51,20 @@ python scripts/validate.py --mode draft
 
 ## Non-negotiable production order
 
+Prompt numbers are stable identifiers, not a strict numeric execution sequence. For a newly started course, the required per-course order is **05 → 03 → 04** so that the course lifecycle remains `shell` → `researching` → `designed`.
+
 1. Import and lock curriculum metadata.
 2. Reconcile prerequisites and workload without deleting courses.
-3. Research one course.
-4. Design one course.
-5. Generate one course shell.
-6. Produce one week at a time.
+3. Generate one course shell (`05`).
+4. Research that course (`03`).
+5. Design that course (`04`).
+6. Produce one week at a time (`06`), or use the more granular `07`–`10` prompts when needed.
 7. Generate lectures before dependent assignments.
 8. Audit sources, theology, workload, and course coherence.
 9. Revise only approved findings.
 10. Release a version only after validation succeeds.
+
+See [`PROMPT-FLOW.md`](PROMPT-FLOW.md) for invocation examples, required information, status transitions, semester-audit timing, and the role of the canonical spreadsheet versus the machine-readable curriculum manifests.
 
 Semester-level **scaffolding and indexes** may be generated together. Full instructional content for an entire semester may not be generated in one undifferentiated pass.
 

@@ -2,6 +2,7 @@
 prompt_id: 19-release-course-version
 purpose: Release One Audited Course Version
 write_scope:
+  - the explicitly named course's course.yaml
   - one course version metadata file
   - course changelog
   - release provenance record
@@ -15,8 +16,9 @@ commit_allowed: false
 Before taking any action, apply `AGENTS.md` and complete its required reading order, including `MASTER_PROMPT.md`, `PROJECT-DECISIONS.yaml`, every root policy file, and this active prompt. Also read `curriculum/curriculum.yaml` and `curriculum/curriculum.lock.yaml` when present, inspect `git status` and relevant existing files, check for any more-specific `AGENTS.md` governing the write scope, and read the files needed to verify each precondition below.
 
 1. Source, theology, coherence, and copyright audits pass.
-2. Required human review is complete.
-3. No TODO-VERIFY markers remain.
+2. `course.yaml` status is `ready-for-audit`.
+3. Required human review is complete.
+4. No TODO-VERIFY markers remain.
 
 ## Authorized actions
 
@@ -39,7 +41,7 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 ## Exit criteria
 
 - Release validation passes.
-- Version metadata and changelog are complete.
+- `course.yaml` status is `released` and version metadata/changelog are complete.
 - No unauthorized Git operation occurred.
 
 Stop and report changed files, sources, validation, unresolved items, and required human review.

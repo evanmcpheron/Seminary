@@ -4,6 +4,7 @@ purpose: Audit Sources for One Scoped Unit
 write_scope:
   - one audit report
   - source record corrections within the scoped unit
+  - the explicitly named course's course.yaml when a full-course audit advances lifecycle status
   - provenance/
 commit_allowed: false
 ---
@@ -16,6 +17,7 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 
 1. The target course, week, lecture, or assessment is named.
 2. All claimed sources are available for inspection.
+3. If this is the full-course audit used as the lifecycle gate, substantive production is complete and `course.yaml` status is `in-production`.
 
 ## Authorized actions
 
@@ -23,6 +25,7 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 2. Flag uncited claims and inaccessible sources.
 3. Do not replace sources merely for theological agreement.
 4. Require free alternatives for paid articles where feasible.
+5. For a full-course audit only, if production is complete and the source audit passes without blocking verification issues, advance `course.yaml` status from `in-production` to `ready-for-audit`. Unit-scoped audits do not change course status.
 
 ## Forbidden actions
 
@@ -40,5 +43,6 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 - Every required source is verified or explicitly blocked.
 - No fabricated or inaccessible citation remains hidden.
 - Audit verdict is recorded.
+- A passing full-course lifecycle-gate audit leaves `course.yaml` at `ready-for-audit`; unit-scoped audits leave course status unchanged.
 
 Stop and report changed files, sources, validation, unresolved items, and required human review.
