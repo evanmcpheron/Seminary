@@ -1,0 +1,131 @@
+schema_version: "1.0.0"
+run_id: "20260904-145848-02a-reconcile-prerequisites-and-workload"
+timestamp_utc: "2026-09-04T14:58:48Z"
+prompt_id: "02a-reconcile-prerequisites-and-workload"
+scope: >-
+  Apply the four owner-approved undergraduate schedule moves, document the
+  prerequisite reconciliation and workload impact, and preserve every locked
+  course identity field.
+agent_or_model: "OpenAI Codex (GPT-5)"
+inputs_read:
+  - AGENTS.md
+  - MASTER_PROMPT.md
+  - PROJECT-DECISIONS.yaml
+  - DISCLAIMER.md
+  - THEOLOGICAL-COMMITMENTS.md
+  - ACADEMIC-STANDARDS.md
+  - SOURCE-POLICY.md
+  - WRITING-STYLE-GUIDE.md
+  - ASSESSMENT-POLICY.md
+  - AI-USE-POLICY.md
+  - prompts/02a-reconcile-prerequisites-and-workload.md
+  - curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+  - curriculum/curriculum.yaml
+  - curriculum/curriculum.lock.yaml
+  - curriculum/import-report.md
+  - curriculum/prerequisites.yaml
+  - curriculum/schedule-overrides.yaml
+  - scripts/reconcile_schedule.py
+  - scripts/validate.py
+  - seminary_tools/validation.py
+  - schemas/curriculum.schema.json
+  - schemas/provenance.schema.json
+  - templates/provenance/provenance.yaml
+  - tests/test_scaffold.py
+  - tests/test_validation.py
+files_created:
+  - curriculum/prerequisite-report.md
+  - curriculum/workload-report.md
+  - provenance/20260904-145848-02a-reconcile-prerequisites-and-workload.yaml
+files_modified:
+  - curriculum/schedule-overrides.yaml
+  - curriculum/curriculum.yaml
+sources_consulted:
+  - type: authoritative-institutional-catalog
+    institution: Wheaton College
+    catalog_year: "2026-2027"
+    accessed: "2026-09-04"
+    urls:
+      - https://catalog.wheaton.edu/course-descriptions/bith/
+      - https://catalog.wheaton.edu/course-descriptions/arch/
+      - https://catalog.wheaton.edu/course-descriptions/grek/
+      - https://catalog.wheaton.edu/course-descriptions/hebr/
+      - https://catalog.wheaton.edu/course-descriptions/clal/
+      - https://catalog.wheaton.edu/course-descriptions/phil/
+      - https://catalog.wheaton.edu/course-descriptions/reli/
+      - https://catalog.wheaton.edu/course-descriptions/cfm/
+  - type: canonical-workbook
+    path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+    sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
+  - type: repository-governance
+    paths:
+      - PROJECT-DECISIONS.yaml
+      - ACADEMIC-STANDARDS.md
+validation_commands:
+  - >-
+    Isolated temporary-environment Python audit of override application,
+    manifest-to-lock identity preservation, record counts, prerequisite
+    ordering, and workload totals
+  - >-
+    Isolated temporary-environment Python invocation of
+    scripts/validate.py --mode draft
+  - >-
+    Isolated temporary-environment pytest executable with cache and bytecode
+    writes disabled
+  - >-
+    Isolated temporary-environment python -m pytest with cache and bytecode
+    writes disabled
+validation_results:
+  - command: "Applied-schedule preservation and prerequisite audit"
+    status: passed
+    exit_code: 0
+    summary: >-
+      Canonical workbook hash matched; 108 of 108 records and all locked
+      non-schedule fields matched; exactly four approved schedule deltas were
+      present; audited prerequisites were ordered correctly; 36 undergraduate
+      courses, 133 credits, and the reported term totals were preserved.
+  - command: "python scripts/validate.py --mode draft"
+    status: passed
+    exit_code: 0
+    summary: "Validation completed with 0 errors and 0 warnings."
+  - command: "pytest executable from the isolated temporary environment"
+    status: failed-environment-invocation
+    exit_code: 2
+    summary: >-
+      Test collection could not import the repository-local seminary_tools
+      package because this executable entry point did not place the repository
+      root on sys.path; no test ran and no repository file was changed.
+  - command: "python -m pytest from the isolated temporary environment"
+    status: passed
+    exit_code: 0
+    summary: "5 tests passed in 0.32 seconds."
+unresolved_items:
+  - >-
+    TODO-VERIFY: BITH 388 is cataloged as offered occasionally; a specific
+    summer offering is not established.
+  - >-
+    TODO-VERIFY: The catalog pages do not guarantee summer availability for
+    BITH 301, ARCH 369, or RELI 233.
+  - >-
+    TODO-VERIFY: Define the actual undergraduate summer-term length before
+    weekly summer schedules are generated.
+  - >-
+    The current ARCH catalog display title for ARCH 369 differs from the
+    owner-approved locked title; the locked title was preserved.
+  - >-
+    CFM 216 requires the applicable approved ministry leadership arrangement
+    before enrollment.
+  - >-
+    BITH 392 is offered occasionally; Year 4 Fall availability remains
+    unverified.
+  - >-
+    Four 16-credit fall/spring terms remain heavy at 48 hours per week, but
+    the project decisions do not define them as overloads requiring more moves.
+human_approval_required:
+  - >-
+    The owner approved moves 1 through 4 on 2026-09-04; no additional schedule
+    move was applied.
+  - >-
+    Human planning remains required to define summer duration and resolve the
+    catalog offering-frequency items before delivery schedules are generated.
+commit_sha: null
