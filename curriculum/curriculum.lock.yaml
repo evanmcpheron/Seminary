@@ -1,5 +1,5 @@
 schema_version: 1.0.0
-status: imported-unreconciled
+status: locked
 source_spreadsheet:
   path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
   sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
@@ -36,12 +36,8 @@ records:
   catalog_description: Investigates how the Christian Bible reached its canonical
     form, including composition, textual transmission, canonization, manuscript evidence,
     Apocryphal/Deuterocanonical literature, and theological reflection on the canon.
-  selection_rationale: Strengthens biblical scholarship and apologetics concerning
-    canon, textual transmission, and the history of Scripture.
   prerequisite_note: 'Catalog prerequisite applies: BITH 211, BITH 213, BITH 221,
     BITH 312, ARCH 211, or ARCH 213.'
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap; this term placement may require prior prerequisite credit or approval.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 01-phil-241-suffering
   record_type: course
@@ -59,11 +55,7 @@ records:
   catalog_description: Examines the philosophical and theological problem of suffering
     and evil through major Christian and philosophical treatments of the problem of
     pain.
-  selection_rationale: Directly develops preparation for one of the central philosophical
-    objections addressed in Christian apologetics.
   prerequisite_note: None stated in the current catalog.
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/phil/
 - record_id: 01-arch-369-religions-of-israel-and-the-near-east
   record_type: course
@@ -81,11 +73,7 @@ records:
   catalog_description: Introduces theoretical approaches to religion and studies religious
     traditions of ancient Mesopotamia, Israel, and Canaan, including questions about
     divinity, religious humanity, evil and suffering, and monotheism.
-  selection_rationale: Strengthens Ancient Near Eastern background, Old Testament
-    scholarship, and philosophy-of-religion preparation.
   prerequisite_note: 'Prerequisite: BITH 211, BITH 221, or BITH 312, or ARCH 211.'
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap; this term placement may require prior prerequisite credit or approval.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/arch/
 - record_id: 01-grek-101-elementary-greek-i
   record_type: course
@@ -102,10 +90,7 @@ records:
   requirement_status: Major requirement
   catalog_description: Begins intensive study of Ancient Greek grammar, syntax, vocabulary,
     and translation, including readings relevant to the New Testament.
-  selection_rationale: First course in the required Greek sequence for the integrated
-    major.
   prerequisite_note: None stated.
-  offering_accuracy_note: Normally begins the fall-to-spring elementary sequence.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/grek/
 - record_id: 01-phil-101-introduction-to-philosophy
   record_type: course
@@ -122,11 +107,7 @@ records:
   requirement_status: Thematic Core choice
   catalog_description: Introduces major philosophical questions, figures, and arguments
     in metaphysics, epistemology, ethics, and related fields.
-  selection_rationale: Builds the conceptual and argumentative foundation needed for
-    Protestant apologetics.
   prerequisite_note: None stated.
-  offering_accuracy_note: Selected as the philosophy/integrative choice; alternatives
-    are listed separately.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/phil/
 - record_id: 01-grek-102-elementary-greek-ii
   record_type: course
@@ -143,9 +124,7 @@ records:
   requirement_status: Major requirement
   catalog_description: Continues elementary Ancient Greek grammar, syntax, vocabulary,
     and translation, preparing students for intermediate reading.
-  selection_rationale: Completes the elementary portion of the required Greek sequence.
   prerequisite_note: GREK 101.
-  offering_accuracy_note: Normally follows GREK 101.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/grek/
 - record_id: 01-bith-211-old-testament-literature-and-interpretation
   record_type: course
@@ -162,10 +141,7 @@ records:
   requirement_status: Shared Core requirement
   catalog_description: Surveys the Old Testament books, genres, historical and cultural
     settings, transmission, geography, and major theological themes.
-  selection_rationale: Required biblical foundation and preparation for Hebrew and
-    advanced Old Testament study.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required shared-core biblical course.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 01-reli-356-the-jewish-tradition
   record_type: course
@@ -183,11 +159,7 @@ records:
   catalog_description: Introduces the history, beliefs, and practices of Judaism with
     special attention to contemporary Jewish life and identity; a synagogue visit
     is an integral part of the course.
-  selection_rationale: Provides essential Jewish religious and historical context
-    for New Testament scholarship and informed Christian-Jewish engagement.
   prerequisite_note: None stated in the current catalog.
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/reli/
 - record_id: 01-reli-225-major-world-religions
   record_type: course
@@ -205,11 +177,7 @@ records:
   catalog_description: Surveys major world religions, methods used in religious studies,
     and the histories, beliefs, and practices of the traditions studied while developing
     a Christian theological perspective on non-Christian religions.
-  selection_rationale: Provides broad comparative-religion preparation for Protestant
-    apologetics and cross-cultural ministry.
   prerequisite_note: None stated in the current catalog.
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/reli/
 - record_id: 01-reli-233-theological-approaches-to-religious-diversity
   record_type: course
@@ -226,11 +194,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Surveys current methodologies in comparative religious studies,
     including theology of religions, comparative theology, and missiology.
-  selection_rationale: Develops a more rigorous theological framework for evaluating
-    religious diversity and competing truth claims.
   prerequisite_note: None stated in the current catalog.
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/reli/
 - record_id: 02-grek-201-intermediate-greek
   record_type: course
@@ -247,10 +211,7 @@ records:
   requirement_status: Major requirement
   catalog_description: Advances Greek grammar, syntax, vocabulary, and sustained reading
     of ancient texts, including New Testament material.
-  selection_rationale: Completes the lower-division Greek sequence required by the
-    major.
   prerequisite_note: GREK 102.
-  offering_accuracy_note: Required prerequisite for upper-division Greek work.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/grek/
 - record_id: 02-hebr-101-elementary-hebrew-i
   record_type: course
@@ -267,11 +228,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Introduces Biblical Hebrew grammar, syntax, vocabulary, and
     guided reading from the Hebrew Bible.
-  selection_rationale: Adds the second principal biblical language expected for advanced
-    biblical scholarship.
   prerequisite_note: None stated.
-  offering_accuracy_note: Not required by the Greek-integrated major; deliberately
-    added as an elective.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/hebr/
 - record_id: 02-bith-213-new-testament-literature-and-interpretation
   record_type: course
@@ -288,9 +245,7 @@ records:
   requirement_status: Shared Core requirement
   catalog_description: Surveys the New Testament in its historical, literary, and
     theological dimensions, with attention to responsible interpretation.
-  selection_rationale: Required New Testament foundation for later Greek exegesis.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required shared-core biblical course.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 02-phil-245-logic
   record_type: course
@@ -307,9 +262,7 @@ records:
   requirement_status: Thematic Core choice
   catalog_description: Studies informal and formal reasoning, analysis of arguments,
     and logical applications to philosophical and theological questions.
-  selection_rationale: Provides essential formal reasoning for scholarship and apologetics.
   prerequisite_note: None stated.
-  offering_accuracy_note: Selected quantitative/analytic-reasoning option.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/phil/
 - record_id: 02-hebr-102-elementary-hebrew-ii
   record_type: course
@@ -326,9 +279,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Continues elementary Biblical Hebrew grammar, syntax, vocabulary,
     and reading of the Hebrew Bible.
-  selection_rationale: Completes the elementary Hebrew sequence.
   prerequisite_note: HEBR 101.
-  offering_accuracy_note: Elective added for doctoral preparation.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/hebr/
 - record_id: 02-bith-325-biblical-interpretation-and-hermeneutics
   record_type: course
@@ -345,11 +296,7 @@ records:
   requirement_status: Major companion requirement
   catalog_description: Studies hermeneutical theory and the responsible interpretation
     of biblical and theological texts.
-  selection_rationale: Required companion course and methodological foundation for
-    exegesis.
   prerequisite_note: BITH 211 and BITH 213 are appropriate prior foundations.
-  offering_accuracy_note: Required by the integrated Greek/Biblical and Theological
-    Studies major.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 02-bith-315-christian-thought
   record_type: course
@@ -366,10 +313,7 @@ records:
   requirement_status: Shared Core requirement
   catalog_description: Introduces the major beliefs and intellectual structure of
     the Christian faith.
-  selection_rationale: Required theological foundation for ministry, scholarship,
-    and apologetics.
   prerequisite_note: None stated for this plan.
-  offering_accuracy_note: Required shared-core Christian thought course.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 02-bith-388-person-and-work-of-christ
   record_type: course
@@ -386,13 +330,8 @@ records:
   requirement_status: Supporting elective
   catalog_description: Studies the doctrines of Christ and salvation and their relationship,
     including classic debates and formulations in church history and systematic theology.
-  selection_rationale: Deepens Christology and soteriology for preaching, systematic
-    theology, and Protestant apologetics.
   prerequisite_note: 'Prerequisite: BITH 315, BITH 318, BITH 372, BITH 374, or BITH
     376.'
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap. The catalog lists this course as offered occasionally, and the prerequisite
-    must be completed or otherwise approved before enrollment.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 03-hebr-201-intermediate-hebrew
   record_type: course
@@ -409,9 +348,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Develops intermediate Biblical Hebrew grammar and reading competence
     through sustained work in the Masoretic Text.
-  selection_rationale: Moves Hebrew beyond elementary grammar toward exegetical use.
   prerequisite_note: HEBR 102.
-  offering_accuracy_note: Elective added for biblical-scholarship preparation.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/hebr/
 - record_id: 03-grek-346-readings-in-paul-and-the-apostolic-fathers
   record_type: course
@@ -428,10 +365,7 @@ records:
   requirement_status: Major requirement
   catalog_description: Provides extensive Greek reading in Pauline texts and the Apostolic
     Fathers, with continued vocabulary and grammar development.
-  selection_rationale: Supplies upper-division Greek work and expands early-Christian
-    textual competence.
   prerequisite_note: GREK 201 or catalog-equivalent preparation.
-  offering_accuracy_note: Counts toward the required upper-division Greek hours.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/grek/
 - record_id: 03-phil-311-history-of-philosophy-ancient-and-medieval
   record_type: course
@@ -449,10 +383,7 @@ records:
   catalog_description: Studies ancient and medieval philosophy, including questions
     about God, faith and reason, freedom, justice, and the interaction of philosophy
     with monotheistic traditions.
-  selection_rationale: Strengthens historical and philosophical foundations for classical
-    Christian apologetics.
   prerequisite_note: Introductory philosophy is appropriate preparation.
-  offering_accuracy_note: Elective selected for apologetics and intellectual history.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/phil/
 - record_id: 03-reli-375-the-muslim-tradition
   record_type: course
@@ -469,10 +400,7 @@ records:
   requirement_status: Thematic Core choice
   catalog_description: Studies Islam as a diverse, historically developing religious
     tradition across cultural and intellectual contexts.
-  selection_rationale: Supports informed Christian engagement with Islam and comparative
-    religion.
   prerequisite_note: None stated.
-  offering_accuracy_note: Selected global-perspectives option.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/reli/
 - record_id: 03-grek-347-the-gospel-of-luke-and-the-acts-of-the-apostles
   record_type: course
@@ -489,10 +417,7 @@ records:
   requirement_status: Major requirement
   catalog_description: Reads Luke extensively in Greek and examines Acts and its apostolic
     setting while reinforcing vocabulary and grammar.
-  selection_rationale: Completes the selected eight upper-division Greek credits and
-    supports New Testament specialization.
   prerequisite_note: GREK 201 or catalog-equivalent preparation.
-  offering_accuracy_note: Counts toward the required upper-division Greek hours.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/grek/
 - record_id: 03-bith-459-greek-exegesis
   record_type: course
@@ -509,10 +434,7 @@ records:
   requirement_status: Major Greek-exegesis requirement
   catalog_description: Conducts exegetical study of the Greek New Testament with emphasis
     on interpretation, assuming competence in translation and grammatical analysis.
-  selection_rationale: Fulfills the major Greek-exegesis requirement and directly
-    prepares for graduate New Testament work.
   prerequisite_note: Advanced Greek competence; catalog prerequisites apply.
-  offering_accuracy_note: Required category in the integrated major.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 03-reli-385-islam-in-america
   record_type: course
@@ -529,10 +451,7 @@ records:
   requirement_status: Thematic Core choice
   catalog_description: Examines Muslim communities in the United States, including
     religious life, social location, stereotypes, and Islamophobia.
-  selection_rationale: Provides contemporary religious-literacy and cultural context
-    for apologetic and pastoral engagement.
   prerequisite_note: None stated.
-  offering_accuracy_note: Selected diversity-in-the-United-States/social-inquiry option.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/reli/
 - record_id: 03-bith-396-roman-catholic-theology
   record_type: course
@@ -549,12 +468,8 @@ records:
   requirement_status: Supporting elective
   catalog_description: Introduces Roman Catholic theology and practice with attention
     to similarities and differences between Roman Catholic and Protestant theology.
-  selection_rationale: Provides direct preparation for informed Protestant theological
-    comparison and apologetic engagement with Roman Catholic claims.
   prerequisite_note: 'Prerequisite: BITH 315, BITH 318, BITH 372, BITH 374, or BITH
     376.'
-  offering_accuracy_note: Placed in the existing slot per the requested one-for-one
-    swap.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 04-bith-457-john
   record_type: course
@@ -571,10 +486,7 @@ records:
   requirement_status: Major companion elective
   catalog_description: Studies the Gospel of John comprehensively in conversation
     with current critical scholarship and Christian spirituality.
-  selection_rationale: Deepens the New Testament concentration and supports the later
-    Princeton New Testament field.
   prerequisite_note: BITH 213 and advanced biblical study are appropriate preparation.
-  offering_accuracy_note: Selected from the approved BITH companion options.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 04-bith-456-jewish-backgrounds-of-the-new-testament
   record_type: course
@@ -591,11 +503,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Examines literary, archaeological, political, and religious
     dimensions of Second Temple Judaism as background to the New Testament.
-  selection_rationale: Provides Second Temple Jewish historical context directly relevant
-    to New Testament doctoral preparation.
   prerequisite_note: BITH 213 is appropriate preparation.
-  offering_accuracy_note: Catalog-listed elective; it is not one of the integrated
-    major specifically approved companion courses.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 04-bith-372-historical-theology
   record_type: course
@@ -612,10 +520,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Studies major people, movements, controversies, and developments
     that shaped Christian doctrine through history.
-  selection_rationale: Provides historical-theological breadth needed for preaching
-    and apologetics.
   prerequisite_note: None stated for this plan.
-  offering_accuracy_note: Elective selected for theological breadth.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 04-bith-392-scripture
   record_type: course
@@ -632,12 +537,8 @@ records:
   requirement_status: Major companion elective
   catalog_description: Studies the Christian doctrine of Scripture, including its
     authority, inspiration, interpretation, and major evangelical approaches.
-  selection_rationale: Adds an approved Biblical and Theological Studies companion
-    course and strengthens doctrine-of-Scripture preparation for apologetics.
   prerequisite_note: BITH 315, BITH 318, BITH 372, BITH 374, or BITH 376, according
     to the catalog.
-  offering_accuracy_note: Approved for the integrated major; the catalog marks this
-    course as offered occasionally.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 04-bith-386-qur-an-and-bible
   record_type: course
@@ -654,10 +555,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Places the Qur’an and Bible in dialogue through their origins,
     interpretation, Christian-Muslim history, and doctrines of Scripture.
-  selection_rationale: Directly supports informed Protestant apologetics and interreligious
-    engagement.
   prerequisite_note: Prior biblical and religious-studies coursework is helpful.
-  offering_accuracy_note: Elective selected for stated apologetics goals.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 04-clal-494-senior-capstone
   record_type: course
@@ -674,10 +572,7 @@ records:
   requirement_status: Major requirement
   catalog_description: Requires senior research using ancient texts in Greek, Hebrew,
     or Latin and relates the research topic to Christian faith.
-  selection_rationale: Completes the major and produces substantial research suitable
-    for graduate-school preparation.
   prerequisite_note: Senior standing and major language preparation.
-  offering_accuracy_note: Required capstone for the integrated major.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/clal/
 - record_id: 04-bith-452-issues-in-modern-new-testament-studies
   record_type: course
@@ -694,10 +589,7 @@ records:
   requirement_status: Major companion elective
   catalog_description: Surveys the history, current methods, and contested issues
     of modern New Testament scholarship and evaluates their use.
-  selection_rationale: Introduces the academic debates and methods expected in graduate
-    New Testament study.
   prerequisite_note: BITH 213 and advanced biblical study are appropriate preparation.
-  offering_accuracy_note: Selected from the approved BITH companion options.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/bith/
 - record_id: 04-phil-315-philosophy-of-religion
   record_type: course
@@ -714,10 +606,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Studies arguments about God existence and nature, evil and
     suffering, foreknowledge and freedom, religious experience, and religious pluralism.
-  selection_rationale: Provides the most directly relevant philosophy course for Protestant
-    apologetics.
   prerequisite_note: Prior philosophy coursework is appropriate preparation.
-  offering_accuracy_note: Elective selected for apologetics.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/phil/
 - record_id: 04-cfm-335-teaching-the-bible
   record_type: course
@@ -734,10 +623,7 @@ records:
   requirement_status: Thematic Core choice
   catalog_description: Develops the theory and practice of effective biblical instruction
     with attention to interpretation and the Bible literary features.
-  selection_rationale: Fulfills the literary-explorations area and prepares for preaching
-    and teaching Scripture.
   prerequisite_note: Prior Bible coursework is appropriate preparation.
-  offering_accuracy_note: Selected thematic-core option.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/cfm/
 - record_id: 04-cfm-216-discipleship-practicum
   record_type: course
@@ -754,9 +640,7 @@ records:
   requirement_status: Supporting elective
   catalog_description: Combines approved campus-ministry leadership with guided reflection
     integrating ministry practice and Christian formation.
-  selection_rationale: Adds supervised ministry experience before seminary.
   prerequisite_note: Approved ministry placement and catalog procedures.
-  offering_accuracy_note: Pass/fail practicum; placement requirements apply.
   catalog_url: https://catalog.wheaton.edu/course-descriptions/cfm/
 - record_id: 05-ot-500-exploring-the-old-testament
   record_type: course
@@ -773,9 +657,7 @@ records:
   requirement_status: Biblical Studies requirement
   catalog_description: Introduces the history, literature, and thought of the Old
     Testament.
-  selection_rationale: Required Old Testament survey.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required MDiv course.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-nt-501-exploring-the-new-testament
   record_type: course
@@ -792,9 +674,7 @@ records:
   requirement_status: Biblical Studies requirement
   catalog_description: Introduces the New Testament in historical, literary, and theological
     perspective.
-  selection_rationale: Required New Testament survey.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required MDiv course.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-gl-501-basic-greek-i
   record_type: course
@@ -811,9 +691,7 @@ records:
   requirement_status: Biblical Studies requirement
   catalog_description: Introduces New Testament Greek grammar, vocabulary, translation,
     and analysis.
-  selection_rationale: Begins the Greek sequence.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required MDiv course.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-mc-sf-501-spiritual-formation-for-ministry
   record_type: course
@@ -829,9 +707,7 @@ records:
   credits: 3
   requirement_status: Practical Theology choice
   catalog_description: Integrates practical theology and spiritual formation for ministry.
-  selection_rationale: Establishes spiritual and ministerial formation.
   prerequisite_note: None stated.
-  offering_accuracy_note: Published requirement choice.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-mm-505-mentored-ministry-course-1
   record_type: course
@@ -847,9 +723,7 @@ records:
   credits: 1
   requirement_status: Mentored Ministry requirement
   catalog_description: First supervised mentored-ministry course.
-  selection_rationale: Begins the mentored-ministry sequence.
   prerequisite_note: Approved placement.
-  offering_accuracy_note: Required sequence.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-is-wm-520-understanding-culture
   record_type: course
@@ -865,9 +739,7 @@ records:
   credits: 3
   requirement_status: Christian Thought requirement
   catalog_description: Develops Christian analysis of culture and cross-cultural understanding.
-  selection_rationale: Supports ministry and apologetic communication.
   prerequisite_note: None stated.
-  offering_accuracy_note: Term placement proposed.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-gl-502-basic-greek-ii
   record_type: course
@@ -883,9 +755,7 @@ records:
   credits: 3
   requirement_status: Biblical Studies requirement
   catalog_description: Continues basic New Testament Greek.
-  selection_rationale: Completes basic Greek.
   prerequisite_note: GL 501.
-  offering_accuracy_note: Required MDiv course.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-th-501-theology-survey-i
   record_type: course
@@ -902,9 +772,7 @@ records:
   requirement_status: Christian Thought requirement
   catalog_description: Surveys theological method, revelation, Scripture, God, creation,
     humanity, and sin.
-  selection_rationale: Required theology survey.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required MDiv course.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-ch-501-the-church-to-the-reformation
   record_type: course
@@ -920,9 +788,7 @@ records:
   credits: 3
   requirement_status: Christian Thought requirement
   catalog_description: Surveys church history from Pentecost through the Reformation.
-  selection_rationale: Required church-history survey.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required MDiv course.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-ap-601-introduction-to-christian-apologetics
   record_type: course
@@ -939,9 +805,7 @@ records:
   requirement_status: General elective
   catalog_description: Studies scriptural and historical models of apologetics and
     contemporary applications.
-  selection_rationale: Explicit apologetics training.
   prerequisite_note: None stated.
-  offering_accuracy_note: Elective.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-mm-605-mentored-ministry-course-2
   record_type: course
@@ -957,9 +821,7 @@ records:
   credits: 1
   requirement_status: Mentored Ministry requirement
   catalog_description: Second supervised mentored-ministry course.
-  selection_rationale: Continues field formation.
   prerequisite_note: MM 505.
-  offering_accuracy_note: Required sequence.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 05-se-571-christian-ethics-social-issues
   record_type: course
@@ -976,9 +838,7 @@ records:
   requirement_status: Christian Thought ethics choice
   catalog_description: Applies Christian ethical reasoning to personal, social, and
     public issues.
-  selection_rationale: Fulfills ethics requirement.
   prerequisite_note: None stated.
-  offering_accuracy_note: Summer placement proposed.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-nt-502-interpreting-the-new-testament
   record_type: course
@@ -995,9 +855,7 @@ records:
   requirement_status: Biblical Studies requirement
   catalog_description: Introduces textual, lexical, grammatical, historical, and literary
     methods.
-  selection_rationale: Gateway to Greek exegesis.
   prerequisite_note: GL 502, NT 501, OT 500.
-  offering_accuracy_note: Required.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-ol-501-hebrew-i
   record_type: course
@@ -1013,9 +871,7 @@ records:
   credits: 3
   requirement_status: Biblical Studies requirement
   catalog_description: Introduces Biblical Hebrew grammar, vocabulary, and reading.
-  selection_rationale: Begins Hebrew sequence.
   prerequisite_note: None stated.
-  offering_accuracy_note: Required.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-th-502-theology-survey-ii
   record_type: course
@@ -1032,9 +888,7 @@ records:
   requirement_status: Christian Thought requirement
   catalog_description: Surveys Christ, salvation, Spirit, church, sacraments, and
     eschatology.
-  selection_rationale: Completes theology survey.
   prerequisite_note: TH 501.
-  offering_accuracy_note: Required.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-ch-502-the-church-since-the-reformation
   record_type: course
@@ -1050,9 +904,7 @@ records:
   credits: 3
   requirement_status: Christian Thought requirement
   catalog_description: Surveys church history from the Reformation to the present.
-  selection_rationale: Completes church-history survey.
   prerequisite_note: CH 501.
-  offering_accuracy_note: Required.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-mm-705-mentored-ministry-course-3
   record_type: course
@@ -1068,9 +920,7 @@ records:
   credits: 1
   requirement_status: Mentored Ministry requirement
   catalog_description: Third supervised mentored-ministry course.
-  selection_rationale: Completes mentored ministry.
   prerequisite_note: MM 605.
-  offering_accuracy_note: Required sequence.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-th-wm-602-theology-of-mission
   record_type: course
@@ -1086,9 +936,7 @@ records:
   credits: 3
   requirement_status: Christian Thought mission choice
   catalog_description: Studies biblical and theological foundations of mission.
-  selection_rationale: Supports mission and global apologetics.
   prerequisite_note: Prior theology helpful.
-  offering_accuracy_note: Published option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-ol-502-hebrew-ii
   record_type: course
@@ -1104,9 +952,7 @@ records:
   credits: 3
   requirement_status: Biblical Studies requirement
   catalog_description: Continues Biblical Hebrew and introduces rudimentary exegesis.
-  selection_rationale: Completes basic Hebrew.
   prerequisite_note: OL 501.
-  offering_accuracy_note: Required.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-nt-617-gospel-of-john
   record_type: course
@@ -1122,9 +968,7 @@ records:
   credits: 3
   requirement_status: New Testament narrative exegesis choice
   catalog_description: Conducts Greek exegesis of John.
-  selection_rationale: Fulfills narrative exegesis requirement.
   prerequisite_note: GL 502 and NT 502.
-  offering_accuracy_note: Selected option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-pc-511-introduction-to-pastoral-counseling
   record_type: course
@@ -1140,9 +984,7 @@ records:
   credits: 3
   requirement_status: Practical Theology choice
   catalog_description: Introduces foundational pastoral-counseling theories and skills.
-  selection_rationale: Supports pastoral care.
   prerequisite_note: None stated.
-  offering_accuracy_note: Published option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-ev-701-evangelism-discipleship-through-the-local-church
   record_type: course
@@ -1158,9 +1000,7 @@ records:
   credits: 3
   requirement_status: Practical Theology choice
   catalog_description: Develops congregational evangelism and discipleship.
-  selection_rationale: Supports preaching and evangelism.
   prerequisite_note: Prior ministry helpful.
-  offering_accuracy_note: Elective.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 06-ap-mc-612-practical-apologetics
   record_type: course
@@ -1176,9 +1016,7 @@ records:
   credits: 3
   requirement_status: Practical Theology broad elective
   catalog_description: Applies apologetic theory in secular contexts.
-  selection_rationale: Practice-oriented apologetics.
   prerequisite_note: AP 601 helpful.
-  offering_accuracy_note: Uses MC cross-listing.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-ot-511-interpreting-the-old-testament
   record_type: course
@@ -1194,9 +1032,7 @@ records:
   credits: 3
   requirement_status: Biblical Studies requirement
   catalog_description: Introduces methods and principles of Old Testament interpretation.
-  selection_rationale: Gateway to Hebrew exegesis.
   prerequisite_note: OL 502, OT 500, NT 501.
-  offering_accuracy_note: Required.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-nt-620-exegesis-of-romans
   record_type: course
@@ -1212,9 +1048,7 @@ records:
   credits: 3
   requirement_status: New Testament epistle exegesis choice
   catalog_description: Conducts Greek exegesis and theological study of Romans.
-  selection_rationale: Fulfills epistle exegesis requirement.
   prerequisite_note: GL 502 and NT 502.
-  offering_accuracy_note: Selected option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-pr-601-preaching-principles-practices-in-preparing-relevant-biblical-sermons
   record_type: course
@@ -1230,9 +1064,7 @@ records:
   credits: 3
   requirement_status: Practical Theology requirement
   catalog_description: Teaches biblical sermon preparation and preaching with critique.
-  selection_rationale: Core homiletics.
   prerequisite_note: NT 502 or OT 511.
-  offering_accuracy_note: Required.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-gl-601-intermediate-greek
   record_type: course
@@ -1248,9 +1080,7 @@ records:
   credits: 3
   requirement_status: General elective
   catalog_description: Advances Greek grammar and grammatical analysis.
-  selection_rationale: Strengthens language competence.
   prerequisite_note: GL 502.
-  offering_accuracy_note: General elective.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-th-662-retrieving-classical-theism
   record_type: course
@@ -1266,9 +1096,7 @@ records:
   credits: 3
   requirement_status: Theology elective
   catalog_description: Examines evangelical retrieval of classical theism.
-  selection_rationale: Supports doctrine-of-God and apologetics.
   prerequisite_note: TH 501 and TH 502 helpful.
-  offering_accuracy_note: Term placement proposed.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-ot-626-exegesis-in-genesis
   record_type: course
@@ -1284,9 +1112,7 @@ records:
   credits: 3
   requirement_status: Old Testament 600-level exegesis choice
   catalog_description: Conducts Hebrew exegesis of Genesis.
-  selection_rationale: Fulfills OT exegesis category.
   prerequisite_note: OT 511.
-  offering_accuracy_note: Selected option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-ot-750-old-testament-prophetical-books
   record_type: course
@@ -1302,9 +1128,7 @@ records:
   credits: 3
   requirement_status: Old Testament 700-level exegesis choice
   catalog_description: Surveys prophetic books and selected Hebrew exegesis.
-  selection_rationale: Fulfills second OT exegesis category.
   prerequisite_note: OT 511.
-  offering_accuracy_note: Selected option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-pr-602-preaching-for-modern-listeners
   record_type: course
@@ -1320,9 +1144,7 @@ records:
   credits: 3
   requirement_status: Advanced preaching choice
   catalog_description: Develops sermon preparation for contemporary audiences.
-  selection_rationale: Advanced preaching formation.
   prerequisite_note: PR 601.
-  offering_accuracy_note: Published option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 07-mc-701-pastoral-ministry
   record_type: course
@@ -1339,9 +1161,7 @@ records:
   requirement_status: Pastoral ministry capstone choice
   catalog_description: Examines pastoral call, identity, character, relationships,
     and formation.
-  selection_rationale: Pastoral capstone.
   prerequisite_note: Advanced MDiv standing.
-  offering_accuracy_note: Published option.
   catalog_url: https://www.gordonconwell.edu/wp-content/uploads/2026/08/Academic-Catalog-2026-27.pdf
 - record_id: 08-modern-research-language-german-reading-competency
   record_type: competency
@@ -1357,9 +1177,7 @@ records:
   credits: Not assigned a universal course credit
   requirement_status: Required competency
   catalog_description: German competence must ordinarily be demonstrated before matriculation.
-  selection_rationale: Provides access to major New Testament scholarship.
   prerequisite_note: Demonstrate competence by approved process.
-  offering_accuracy_note: Requirement, not a universal course.
   catalog_url: https://ptsem.edu/academics/phd-studies/requirements/
 - record_id: 08-ancient-language-preparation-greek-and-hebrew-readiness
   record_type: competency
@@ -1376,9 +1194,7 @@ records:
   requirement_status: Required preparation
   catalog_description: New Testament students must demonstrate competence in Greek
     and Hebrew.
-  selection_rationale: Necessary for doctoral seminars and exams.
   prerequisite_note: Enter with advanced Greek and sufficient Hebrew.
-  offering_accuracy_note: No invented preparatory course.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-required-interdisciplinary-seminar-first-year-interdisciplinary-seminar
   record_type: doctoral-seminar-category
@@ -1394,9 +1210,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Required doctoral seminar
   catalog_description: Required first-year interdisciplinary seminar.
-  selection_rationale: Introduces doctoral-level interdisciplinary research.
   prerequisite_note: Complete during first year.
-  offering_accuracy_note: Exact section/topic varies.
   catalog_url: https://catalog.ptsem.edu/
 - record_id: 08-required-teaching-seminar-foundations-for-teaching-fall-portion
   record_type: doctoral-seminar-category
@@ -1412,9 +1226,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Required yearlong seminar
   catalog_description: Fall portion of the required yearlong teaching seminar.
-  selection_rationale: Develops theological teaching preparation.
   prerequisite_note: Remain enrolled through year.
-  offering_accuracy_note: Term label is scheduling notation.
   catalog_url: https://catalog.ptsem.edu/
 - record_id: 08-new-testament-core-area-5000-9000-level-new-testament-text-corpus-seminar-i
   record_type: doctoral-seminar-category
@@ -1430,9 +1242,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Doctoral seminar centered on a New Testament text or corpus.
-  selection_rationale: Begins required depth in texts and corpora.
   prerequisite_note: Residence-committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-new-testament-core-area-5000-9000-level-greco-roman-environment-seminar
   record_type: doctoral-seminar-category
@@ -1448,9 +1258,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Seminar addressing the Greco-Roman environment of the New Testament.
-  selection_rationale: Fulfills core-area requirement.
   prerequisite_note: Residence-committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-departmental-colloquium-new-testament-research-colloquium-i
   record_type: milestone
@@ -1467,9 +1275,7 @@ records:
   credits: No universal public credit value stated
   requirement_status: Required during residence
   catalog_description: Participation in the New Testament research colloquium.
-  selection_rationale: Builds scholarly community.
   prerequisite_note: Attend throughout residence.
-  offering_accuracy_note: Roman numeral indicates term only.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-required-teaching-seminar-foundations-for-teaching-spring-portion
   record_type: doctoral-seminar-category
@@ -1485,9 +1291,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Required yearlong seminar
   catalog_description: Spring continuation of teaching seminar.
-  selection_rationale: Completes teaching-foundations sequence.
   prerequisite_note: Continue from fall.
-  offering_accuracy_note: Term label is scheduling notation.
   catalog_url: https://catalog.ptsem.edu/
 - record_id: 08-new-testament-core-area-5000-9000-level-new-testament-text-corpus-seminar-ii
   record_type: doctoral-seminar-category
@@ -1503,9 +1307,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Second seminar centered on a New Testament text or corpus.
-  selection_rationale: Completes minimum of two text/corpus seminars.
   prerequisite_note: Residence-committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-new-testament-core-area-5000-9000-level-early-jewish-environment-seminar
   record_type: doctoral-seminar-category
@@ -1522,9 +1324,7 @@ records:
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Seminar addressing the early Jewish environment of the New
     Testament.
-  selection_rationale: Fulfills core-area requirement.
   prerequisite_note: Residence-committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-doctoral-elective-5000-9000-level-doctoral-elective-i
   record_type: doctoral-seminar-category
@@ -1541,9 +1341,7 @@ records:
   requirement_status: Advisor-selected elective
   catalog_description: Approved doctoral seminar in Biblical Studies, another Seminary
     department, or Princeton University.
-  selection_rationale: Adds breadth or specialization.
   prerequisite_note: Residence-committee approval.
-  offering_accuracy_note: No universal title.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 08-departmental-colloquium-new-testament-research-colloquium-ii
   record_type: milestone
@@ -1560,9 +1358,7 @@ records:
   credits: No universal public credit value stated
   requirement_status: Required during residence
   catalog_description: Continued participation in research colloquium.
-  selection_rationale: Supports first-year response.
   prerequisite_note: Present one response during Year 1.
-  offering_accuracy_note: Term sequence only.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-language-examination-new-testament-greek-competency-examination
   record_type: examination
@@ -1578,9 +1374,7 @@ records:
   credits: Examination; no course credit
   requirement_status: Required examination
   catalog_description: NT Greek examination in May of the first year.
-  selection_rationale: Demonstrates doctoral-level Greek competence.
   prerequisite_note: Pass exam.
-  offering_accuracy_note: Exam, not class.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 08-modern-research-language-second-modern-research-language-preparation-competency
   record_type: competency
@@ -1596,9 +1390,7 @@ records:
   credits: Not assigned a universal course credit
   requirement_status: Required competency
   catalog_description: Second modern research language selected with residence committee.
-  selection_rationale: Supports dissertation research.
   prerequisite_note: Ordinarily demonstrate before Year 2.
-  offering_accuracy_note: No universal course.
   catalog_url: https://ptsem.edu/academics/phd-studies/requirements/
 - record_id: 08-third-ancient-language-latin-preparation-competency
   record_type: competency
@@ -1615,9 +1407,7 @@ records:
   requirement_status: Recommended selection within required competency
   catalog_description: One additional ancient language from Aramaic, Syriac, Latin,
     or Coptic; Latin recommended.
-  selection_rationale: Supports historical interpretation.
   prerequisite_note: Demonstrate by exam or approved coursework.
-  offering_accuracy_note: Latin is a permitted choice.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 09-doctoral-seminar-5000-9000-level-doctoral-seminar-elective-ii
   record_type: doctoral-seminar-category
@@ -1634,9 +1424,7 @@ records:
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Approved seminar to develop field, methods, or dissertation
     direction.
-  selection_rationale: Continues doctoral residence.
   prerequisite_note: Committee approval.
-  offering_accuracy_note: Exact title depends on offerings.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 09-doctoral-seminar-5000-9000-level-doctoral-seminar-elective-iii
   record_type: doctoral-seminar-category
@@ -1652,9 +1440,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Second approved seminar in term.
-  selection_rationale: Builds breadth and specialization.
   prerequisite_note: Committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 09-doctoral-seminar-5000-9000-level-doctoral-seminar-elective-iv
   record_type: doctoral-seminar-category
@@ -1670,9 +1456,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Third approved seminar in term.
-  selection_rationale: Maintains normal seminar load.
   prerequisite_note: Committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 09-departmental-colloquium-new-testament-research-colloquium-iii
   record_type: milestone
@@ -1689,9 +1473,7 @@ records:
   credits: No universal public credit value stated
   requirement_status: Required during residence
   catalog_description: Continued participation in research colloquium.
-  selection_rationale: Prepares second-year paper.
   prerequisite_note: Attend and participate.
-  offering_accuracy_note: Term sequence only.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 09-program-review-first-year-review-and-self-evaluation
   record_type: milestone
@@ -1708,9 +1490,7 @@ records:
   credits: No course credit
   requirement_status: Required milestone
   catalog_description: First-year review and self-evaluation.
-  selection_rationale: Confirms progress.
   prerequisite_note: Complete according to procedures.
-  offering_accuracy_note: Milestone.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 09-doctoral-seminar-5000-9000-level-doctoral-seminar-elective-v
   record_type: doctoral-seminar-category
@@ -1726,9 +1506,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Approved seminar from current offerings.
-  selection_rationale: Advances specialization.
   prerequisite_note: Committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 09-doctoral-seminar-5000-9000-level-doctoral-seminar-elective-vi
   record_type: doctoral-seminar-category
@@ -1744,9 +1522,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Second approved seminar in term.
-  selection_rationale: Completes remaining preparation.
   prerequisite_note: Committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 09-doctoral-seminar-5000-9000-level-doctoral-seminar-elective-vii
   record_type: doctoral-seminar-category
@@ -1762,9 +1538,7 @@ records:
   credits: Not publicly fixed per seminar
   requirement_status: Advisor-selected doctoral seminar
   catalog_description: Third approved seminar in term.
-  selection_rationale: Brings second-year plan to ordinary six-course load.
   prerequisite_note: Committee approval.
-  offering_accuracy_note: Exact title varies.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 09-departmental-colloquium-new-testament-research-colloquium-iv
   record_type: milestone
@@ -1781,9 +1555,7 @@ records:
   credits: No universal public credit value stated
   requirement_status: Required during residence
   catalog_description: Final normal residence term of colloquium.
-  selection_rationale: Includes second-year paper.
   prerequisite_note: Present paper.
-  offering_accuracy_note: Term sequence only.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 09-dissertation-planning-dissertation-topic-statement
   record_type: milestone
@@ -1800,9 +1572,7 @@ records:
   credits: No course credit
   requirement_status: Required milestone
   catalog_description: Submit dissertation topic statement in February of second year.
-  selection_rationale: Defines dissertation field.
   prerequisite_note: Meet deadline.
-  offering_accuracy_note: Milestone.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 09-language-examination-septuagint-greek-competency-examination
   record_type: examination
@@ -1818,9 +1588,7 @@ records:
   credits: Examination; no course credit
   requirement_status: Required examination
   catalog_description: Septuagint Greek exam in May of second year.
-  selection_rationale: Demonstrates LXX competence.
   prerequisite_note: Pass exam.
-  offering_accuracy_note: Exam.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 09-ancient-language-competencies-hebrew-and-third-ancient-language-competency
   record_type: competency
@@ -1836,9 +1604,7 @@ records:
   credits: Examination/coursework; no universal credit
   requirement_status: Required competency
   catalog_description: Demonstrate Hebrew and one additional ancient language.
-  selection_rationale: Completes ancient-language expectations.
   prerequisite_note: Program-approved method.
-  offering_accuracy_note: Individualized.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 09-program-review-second-year-review
   record_type: milestone
@@ -1855,9 +1621,7 @@ records:
   credits: No course credit
   requirement_status: Required milestone
   catalog_description: Residence committee evaluates progress.
-  selection_rationale: Determines readiness for comprehensives.
   prerequisite_note: Complete review.
-  offering_accuracy_note: Milestone.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 10-comprehensive-examination-gospels-and-acts
   record_type: examination
@@ -1873,9 +1637,7 @@ records:
   credits: Examination; no course credit
   requirement_status: Required written comprehensive exam
   catalog_description: Written comprehensive field in Gospels and Acts.
-  selection_rationale: Tests broad command.
   prerequisite_note: Complete during exam period.
-  offering_accuracy_note: Exam.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 10-comprehensive-examination-epistles-and-apocalypse
   record_type: examination
@@ -1891,9 +1653,7 @@ records:
   credits: Examination; no course credit
   requirement_status: Required written comprehensive exam
   catalog_description: Written comprehensive field in Epistles and Apocalypse.
-  selection_rationale: Tests broad command.
   prerequisite_note: Complete during exam period.
-  offering_accuracy_note: Exam.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 10-comprehensive-examination-historical-contexts
   record_type: examination
@@ -1909,9 +1669,7 @@ records:
   credits: Examination; no course credit
   requirement_status: Required written comprehensive exam
   catalog_description: Written comprehensive field in historical contexts.
-  selection_rationale: Tests Greco-Roman and Jewish context competence.
   prerequisite_note: Complete during exam period.
-  offering_accuracy_note: Exam.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 10-comprehensive-examination-special-research-area
   record_type: examination
@@ -1927,9 +1685,7 @@ records:
   credits: Examination; no course credit
   requirement_status: Required written comprehensive exam
   catalog_description: Comprehensive field tailored to dissertation specialization.
-  selection_rationale: Tests depth in research area.
   prerequisite_note: Area approved by department.
-  offering_accuracy_note: Exam.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 10-comprehensive-examination-oral-defense-of-comprehensive-examinations
   record_type: examination
@@ -1945,9 +1701,7 @@ records:
   credits: Examination; no course credit
   requirement_status: Required oral examination
   catalog_description: Oral examination after written comprehensives.
-  selection_rationale: Integrates written work.
   prerequisite_note: Pass written exams first.
-  offering_accuracy_note: Exam.
   catalog_url: https://ptsem.edu/academics/departments/biblical-studies/phd-program/
 - record_id: 10-dissertation-development-dissertation-committee-formation-and-proposal-development
   record_type: milestone
@@ -1964,9 +1718,7 @@ records:
   credits: No course credit
   requirement_status: Required milestone
   catalog_description: Form dissertation committee and develop proposal.
-  selection_rationale: Transitions to original research.
   prerequisite_note: Successful comprehensives.
-  offering_accuracy_note: Milestone.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 10-dissertation-milestone-dissertation-proposal-approval
   record_type: milestone
@@ -1984,9 +1736,7 @@ records:
   requirement_status: Required milestone
   catalog_description: Proposal approved by final PhD Studies Committee meeting of
     third year.
-  selection_rationale: Authorizes full research.
   prerequisite_note: Approved committee and comprehensives.
-  offering_accuracy_note: Milestone.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 10-dissertation-research-initial-dissertation-research-and-writing
   record_type: milestone
@@ -2003,9 +1753,7 @@ records:
   credits: No universal course credit stated
   requirement_status: Required doctoral work
   catalog_description: Begins sustained dissertation research and writing.
-  selection_rationale: Starts original contribution.
   prerequisite_note: Approved proposal.
-  offering_accuracy_note: No universal registration title.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 11-dissertation-research-dissertation-research-and-writing-fall
   record_type: milestone
@@ -2022,9 +1770,7 @@ records:
   credits: No universal course credit stated
   requirement_status: Required doctoral work
   catalog_description: Full-time dissertation research and writing.
-  selection_rationale: Develops chapters and argument.
   prerequisite_note: Maintain satisfactory progress.
-  offering_accuracy_note: No fabricated seminar title.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 11-dissertation-research-dissertation-research-and-writing-spring
   record_type: milestone
@@ -2041,9 +1787,7 @@ records:
   credits: No universal course credit stated
   requirement_status: Required doctoral work
   catalog_description: Continues dissertation research, drafting, and revision.
-  selection_rationale: Moves toward complete draft.
   prerequisite_note: Maintain satisfactory progress.
-  offering_accuracy_note: Teaching may also apply.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 12-dissertation-completion-dissertation-completion-and-external-review-preparation
   record_type: milestone
@@ -2060,9 +1804,7 @@ records:
   credits: No universal course credit stated
   requirement_status: Required doctoral work
   catalog_description: Completes and revises dissertation for review.
-  selection_rationale: Prepares for final examination.
   prerequisite_note: Meet deadlines.
-  offering_accuracy_note: Registration notation may vary.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/
 - record_id: 12-final-examination-dissertation-defense-and-final-submission
   record_type: examination
@@ -2078,7 +1820,5 @@ records:
   credits: No course credit
   requirement_status: Required final milestone
   catalog_description: Defends dissertation and submits approved final version.
-  selection_rationale: Completes PhD.
   prerequisite_note: Successful defense and submission.
-  offering_accuracy_note: Milestone.
   catalog_url: https://ptsem.edu/academics/phd-studies/phd-program/

@@ -1,0 +1,112 @@
+schema_version: "1.0.0"
+run_id: "20260904-174726-02-import-and-lock-curriculum-canonical-import"
+timestamp_utc: "2026-09-04T17:47:26Z"
+prompt_id: "02-import-and-lock-curriculum"
+scope: "Import and lock the canonical curriculum workbook; classify every Princeton non-course record; report but do not correct prerequisite, workload, and offering anomalies."
+agent_or_model: "OpenAI Codex (GPT-5)"
+inputs_read:
+  - AGENTS.md
+  - MASTER_PROMPT.md
+  - PROJECT-DECISIONS.yaml
+  - DISCLAIMER.md
+  - THEOLOGICAL-COMMITMENTS.md
+  - ACADEMIC-STANDARDS.md
+  - SOURCE-POLICY.md
+  - WRITING-STYLE-GUIDE.md
+  - ASSESSMENT-POLICY.md
+  - AI-USE-POLICY.md
+  - prompts/02-import-and-lock-curriculum.md
+  - curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+  - curriculum/curriculum.yaml
+  - curriculum/import-report.md
+  - curriculum/README.md
+  - curriculum/source/README.md
+  - curriculum/prerequisites.yaml
+  - curriculum/schedule-overrides.yaml
+  - provenance/20260904-172329-02-import-and-lock-curriculum-canonical-import-blocked.yaml
+  - provenance/README.md
+  - scripts/import_curriculum.py
+  - scripts/validate.py
+  - seminary_tools/common.py
+  - seminary_tools/curriculum_import.py
+  - seminary_tools/validation.py
+  - schemas/curriculum.schema.json
+  - schemas/provenance.schema.json
+  - tests/test_scaffold.py
+  - tests/test_validation.py
+  - pyproject.toml
+  - templates/provenance/provenance.yaml
+  - docs/DECISION-LOG.md
+  - docs/source-inputs/project-decisions-original.md
+files_created:
+  - curriculum/curriculum.lock.yaml
+  - provenance/20260904-174726-02-import-and-lock-curriculum-canonical-import.yaml
+files_modified:
+  - curriculum/curriculum.yaml
+  - curriculum/import-report.md
+sources_consulted:
+  - type: canonical-workbook
+    path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+    sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
+    inventory_sheets:
+      - name: Wheaton Plan
+        records: 36
+        numeric_credits: 133
+      - name: GCTS Plan
+        records: 32
+        numeric_credits: 90
+      - name: Princeton Plan
+        records: 40
+        numeric_credits: 0
+  - type: repository-decision-record
+    path: docs/source-inputs/project-decisions-original.md
+    scope: "The section identifying the two 20-credit Wheaton freshman semesters as overloads and selecting summer redistribution."
+validation_commands:
+  - sha256sum curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+  - python scripts/import_curriculum.py --input curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx --output curriculum/curriculum.yaml --lock-output curriculum/curriculum.lock.yaml
+  - "Runtime-compatible invocation of scripts/import_curriculum.py using normal openpyxl workbook mode"
+  - "Inline Python source-to-manifest and manifest-to-lock preservation audit"
+  - python scripts/validate.py --mode draft
+  - pytest
+validation_results:
+  - command: sha256sum curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+    status: passed
+    exit_code: 0
+    summary: "Canonical workbook SHA-256 is 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1."
+  - command: python scripts/import_curriculum.py --input curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx --output curriculum/curriculum.yaml --lock-output curriculum/curriculum.lock.yaml
+    status: failed-tooling-compatibility
+    exit_code: 1
+    summary: "The workbook's worksheets expose no cached dimensions in openpyxl read-only mode, so sheet.max_row was None before any record read."
+  - command: "Runtime-compatible invocation of scripts/import_curriculum.py using normal openpyxl workbook mode"
+    status: passed
+    exit_code: 0
+    summary: "The unchanged import tool imported 108 records and wrote both authorized manifests from the canonical workbook."
+  - command: "Inline Python source-to-manifest and manifest-to-lock preservation audit"
+    status: passed
+    exit_code: 0
+    summary: "108 of 108 records accounted for; 108 unique IDs; required source metadata matched exactly; category counts matched 5/8/14/4/4/5; manifest and lock identity metadata matched."
+  - command: python scripts/validate.py --mode draft
+    status: passed
+    exit_code: 0
+    summary: "Validation completed with 0 errors and 0 warnings."
+  - command: pytest
+    status: passed
+    exit_code: 0
+    summary: "5 tests passed."
+unresolved_items:
+  - "Prerequisite conflict: Wheaton Plan row 5, BITH 301, is scheduled before every prerequisite option represented in the plan."
+  - "Prerequisite conflict: Wheaton Plan row 7, ARCH 369, is scheduled before every prerequisite option represented in the plan."
+  - "Prerequisite conflict: Wheaton Plan row 22, BITH 388, is concurrent with the earliest represented prerequisite rather than after it."
+  - "TODO-VERIFY: Wheaton Plan row 28, BITH 459, says catalog prerequisites apply but does not name the complete prerequisite set."
+  - "Workload overload: Wheaton Year 1 Fall contains 20 credits, or 900 total hours and a 60-hour weekly average over 15 weeks."
+  - "Workload overload: Wheaton Year 1 Spring contains 20 credits, or 900 total hours and a 60-hour weekly average over 15 weeks."
+  - "The customized Wheaton plan does not establish completion of all general-education requirements after the eight owner-requested swaps."
+  - "Wheaton BITH 388 and BITH 392 are marked offered occasionally; planned-term availability is not verified."
+  - "Gordon-Conwell term placements are planning assumptions; IS/WM 520, SE 571, and TH 662 are explicitly labeled proposed placements."
+  - "Princeton advisor-selected seminar titles and per-seminar numeric credits remain intentionally unspecified by the canonical source."
+  - "The direct importer retains a compatibility defect for this workbook because read-only worksheet dimensions are unavailable; the completed import used a runtime-only normal-mode shim."
+human_approval_required:
+  - "Owner approval is required for every schedule override or overload redistribution in prompt 02a."
+  - "Prior-credit or institutional-permission resolutions are required if the three prerequisite-conflicted courses are not moved."
+  - "Later ministry and doctoral competency, review, committee, supervision, defense, and submission milestones require the designated human evaluators."
+commit_sha: null
