@@ -2,7 +2,7 @@
 
 `00-master-project-constitution.md` governs every task. Numbered prompts are executed separately and define the permitted write scope. The `02a` prompt is an intentionally separate scheduling gate added between import and course work.
 
-**Prompt numbers are stable identifiers, not a strict numeric execution sequence.** For every newly instantiated course, run **05 → 03 → 04** so the course lifecycle remains `shell` → `researching` → `designed`. Do not run Prompt 03 against a new course until Prompt 05 has created its shell.
+Prompt filenames match the normal numeric execution sequence. For every newly instantiated course, run **03 → 04 → 05** so the course lifecycle remains `shell` → `researching` → `designed`. Do not run Prompt 04 against a new course until Prompt 03 has created its shell.
 
 | Execution order | Prompt | Purpose |
 |---:|---|---|
@@ -10,9 +10,9 @@
 | 2 | 01 | Bootstrap repository |
 | 3 | 02 | Import and lock curriculum |
 | 4 | 02a | Reconcile prerequisites and workload |
-| 5 | 05 | Generate one course shell |
-| 6 | 03 | Research that course |
-| 7 | 04 | Design that course |
+| 5 | 03 | Generate one course shell |
+| 6 | 04 | Research that course |
+| 7 | 05 | Design that course |
 | 8 | 06 | Generate one week |
 | as needed | 07 | Generate one lecture |
 | as needed | 08 | Generate one assignment and rubric |

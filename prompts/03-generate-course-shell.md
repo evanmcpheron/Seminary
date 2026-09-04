@@ -1,5 +1,5 @@
 ---
-prompt_id: 05-generate-course-shell
+prompt_id: 03-generate-course-shell
 purpose: Generate One Course Shell
 write_scope:
   - one explicitly named course directory
@@ -25,7 +25,7 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 3. Populate locked/reconciled metadata only.
 4. Create 15 empty week shells for taught courses.
 5. Use milestone structure for dissertation work.
-6. Do not generate substantive content or begin Prompt 03 automatically.
+6. Do not generate substantive content or begin Prompt 04 automatically.
 
 ## Forbidden actions
 
@@ -45,6 +45,6 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 - The generated path and canonical `record_id` are reported.
 - No placeholders are replaced with invented content.
 - No other course was modified.
-- The next permitted per-course prompt is `03-research-one-course.md` for this same explicitly named course.
+- The next permitted per-course prompt is `04-research-one-course.md` for this same explicitly named course.
 
 Stop and report changed files, sources, validation, unresolved items, and required human review.

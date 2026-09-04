@@ -252,9 +252,9 @@ prompts/
   01-bootstrap-repository.md
   02-import-and-lock-curriculum.md
   02a-reconcile-prerequisites-and-workload.md
-  03-research-one-course.md
-  04-design-one-course.md
-  05-generate-course-shell.md
+  03-generate-course-shell.md
+  04-research-one-course.md
+  05-design-one-course.md
   06-generate-one-week.md
   07-generate-one-lecture.md
   08-generate-one-assignment.md

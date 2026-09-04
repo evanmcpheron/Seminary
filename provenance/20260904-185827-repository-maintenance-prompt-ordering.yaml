@@ -1,0 +1,96 @@
+schema_version: "1.0.0"
+run_id: "20260904-185827-repository-maintenance-prompt-ordering"
+timestamp_utc: "2026-09-04T18:58:27Z"
+prompt_id: "repository-maintenance-prompt-ordering"
+scope: >-
+  Renumber the course startup prompts so filenames, prompt IDs, live workflow
+  documentation, tree documentation, and regression tests consistently define
+  03 shell, 04 research, and 05 design without generating course content or
+  changing curriculum identity data.
+agent_or_model: "OpenAI Codex"
+inputs_read:
+  - AGENTS.md
+  - MASTER_PROMPT.md
+  - PROJECT-DECISIONS.yaml
+  - DISCLAIMER.md
+  - THEOLOGICAL-COMMITMENTS.md
+  - ACADEMIC-STANDARDS.md
+  - SOURCE-POLICY.md
+  - WRITING-STYLE-GUIDE.md
+  - ASSESSMENT-POLICY.md
+  - AI-USE-POLICY.md
+  - README.md
+  - PROMPT-FLOW.md
+  - TREE.txt
+  - docs/ARCHITECTURE.md
+  - docs/DECISION-LOG.md
+  - docs/WORKFLOW.md
+  - docs/source-inputs/README.md
+  - prompts/README.md
+  - prompts/01-bootstrap-repository.md
+  - prompts/02-import-and-lock-curriculum.md
+  - prompts/02a-reconcile-prerequisites-and-workload.md
+  - prompts/03-research-one-course.md
+  - prompts/04-design-one-course.md
+  - prompts/05-generate-course-shell.md
+  - prompts/06-generate-one-week.md
+  - scripts/bootstrap_repository.py
+  - tests/test_scaffold.py
+  - tests/test_validation.py
+  - templates/provenance/provenance.yaml
+  - schemas/provenance.schema.json
+files_created:
+  - provenance/20260904-185827-repository-maintenance-prompt-ordering.yaml
+files_modified:
+  - PROMPT-FLOW.md
+  - README.md
+  - TREE.txt
+  - docs/WORKFLOW.md
+  - prompts/03-generate-course-shell.md
+  - prompts/04-research-one-course.md
+  - prompts/05-design-one-course.md
+  - prompts/README.md
+  - tests/test_scaffold.py
+files_renamed:
+  - from: prompts/05-generate-course-shell.md
+    to: prompts/03-generate-course-shell.md
+  - from: prompts/03-research-one-course.md
+    to: prompts/04-research-one-course.md
+  - from: prompts/04-design-one-course.md
+    to: prompts/05-design-one-course.md
+historical_files_preserved:
+  - BOOTSTRAP-MANIFEST.sha256
+  - docs/source-inputs/README.md
+  - docs/source-inputs/project-decisions-original.md
+sources_consulted:
+  - type: repository-governance-and-workflow
+    paths:
+      - AGENTS.md
+      - MASTER_PROMPT.md
+      - PROMPT-FLOW.md
+      - prompts/README.md
+validation_commands:
+  - python scripts/bootstrap_repository.py --check
+  - python scripts/validate.py --mode draft
+  - python -m pytest -q
+  - git diff --check
+validation_results:
+  - command: "python scripts/bootstrap_repository.py --check"
+    status: passed
+    exit_code: 0
+    summary: "Bootstrap scaffold check passed with the repository virtual environment on PATH."
+  - command: "python scripts/validate.py --mode draft"
+    status: passed
+    exit_code: 0
+    summary: "Validation completed with 0 errors and 0 warnings."
+  - command: "python -m pytest -q"
+    status: passed
+    exit_code: 0
+    summary: "6 tests passed, including the new prompt filename-to-purpose regression test."
+  - command: "git diff --check"
+    status: passed
+    exit_code: 0
+    summary: "No whitespace errors were reported."
+unresolved_items: []
+human_approval_required: []
+commit_sha: null

@@ -1,15 +1,19 @@
 # Seminary Prompt Execution Flow
 
-This file is the operational guide for running the numbered prompts in `prompts/`. It resolves the important distinction between **prompt ID order** and **execution order**.
+This file is the operational guide for running the numbered prompts in `prompts/`. Prompt filenames match the normal startup dependency order.
 
-The prompt filenames remain numbered for stable references, but a newly started course must **not** be processed in simple numeric order. After curriculum reconciliation, the correct per-course sequence begins:
+After the repository bootstrap, curriculum setup and the per-course startup sequence proceed numerically:
 
 ```text
-05 Generate shell
+02 Import and lock curriculum
    ↓
-03 Research course
+02a Reconcile prerequisites and workload
    ↓
-04 Design course
+03 Generate shell
+   ↓
+04 Research course
+   ↓
+05 Design course
    ↓
 06/07–10 Produce instructional units
    ↓
@@ -44,7 +48,7 @@ Before asking Codex or another agent to run any numbered prompt:
 A good invocation always identifies the prompt and target together. For example:
 
 ```text
-Run prompts/05-generate-course-shell.md for PHIL 241 — Suffering only.
+Run prompts/03-generate-course-shell.md for PHIL 241 — Suffering only.
 Resolve the canonical record_id and reconciled path from curriculum/curriculum.yaml.
 Do not modify any other course. Stop after the prompt's validation and report.
 ```
@@ -137,11 +141,11 @@ curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
 
 **Current repository:** The four approved undergraduate moves have been applied and the manifest status is `schedule-reconciled`.
 
-## 4. Required per-course startup order: 05 → 03 → 04
+## 4. Required per-course startup order: 03 → 04 → 05
 
 This is the most important sequencing rule.
 
-### Prompt 05 — Generate one course shell
+### Prompt 03 — Generate one course shell
 
 **Run first for every new course.**
 
@@ -154,9 +158,9 @@ Codex must resolve the canonical `record_id`, reconciled year, term, and destina
 **Example:**
 
 ```text
-Run prompts/05-generate-course-shell.md for PHIL 241 — Suffering only.
+Run prompts/03-generate-course-shell.md for PHIL 241 — Suffering only.
 Resolve the canonical record_id and reconciled target path from curriculum/curriculum.yaml.
-Generate only this shell. Do not start Prompt 03.
+Generate only this shell. Do not start Prompt 04.
 ```
 
 **Expected result:**
@@ -168,11 +172,11 @@ Generate only this shell. Do not start Prompt 03.
 - no substantive teaching content
 - provenance and validation
 
-**Why Prompt 05 comes before Prompt 03:** Prompt 03 writes research artifacts into a course directory. Creating research files before shell generation would either require an ad hoc target path or create a directory conflict when the shell generator later runs.
+**Why Prompt 03 comes before Prompt 04:** Prompt 04 writes research artifacts into a course directory. Creating research files before shell generation would either require an ad hoc target path or create a directory conflict when the shell generator later runs.
 
-### Prompt 03 — Research one course
+### Prompt 04 — Research one course
 
-**Run after Prompt 05 for the same course.**
+**Run after Prompt 03 for the same course.**
 
 **Explicit invocation information:**
 
@@ -188,8 +192,8 @@ Generate only this shell. Do not start Prompt 03.
 **Example:**
 
 ```text
-Run prompts/03-research-one-course.md for PHIL 241 — Suffering only.
-Use the existing shell created by Prompt 05 and the reconciled curriculum record.
+Run prompts/04-research-one-course.md for PHIL 241 — Suffering only.
+Use the existing shell created by Prompt 03 and the reconciled curriculum record.
 Research and verify sources only; do not design the syllabus or weekly schedule.
 Stop after validation and report the next permitted prompt.
 ```
@@ -206,9 +210,9 @@ Stop after validation and report the next permitted prompt.
 
 A required source that cannot be verified blocks dependent design when the prompt or source policy says it is required. Do not substitute invented bibliographic data.
 
-### Prompt 04 — Design one course
+### Prompt 05 — Design one course
 
-**Run after Prompt 03 is complete and blocking research questions are resolved.**
+**Run after Prompt 04 is complete and blocking research questions are resolved.**
 
 **Explicit invocation information:**
 
@@ -216,7 +220,7 @@ A required source that cannot be verified blocks dependent design when the promp
 
 **Repository preconditions:**
 
-- Prompt 03 research report exists.
+- Prompt 04 research report exists.
 - Required design sources are verified.
 - `course.yaml` status is `researching`.
 - Identity metadata still agrees with the reconciled manifest and lock.
@@ -224,8 +228,8 @@ A required source that cannot be verified blocks dependent design when the promp
 **Example:**
 
 ```text
-Run prompts/04-design-one-course.md for PHIL 241 — Suffering only.
-Use the completed Prompt 03 research and verified source records.
+Run prompts/05-design-one-course.md for PHIL 241 — Suffering only.
+Use the completed Prompt 04 research and verified source records.
 Design the course but do not write lectures, full assignments, or substantive week content.
 ```
 
@@ -467,7 +471,7 @@ Those rows are represented in `curriculum/curriculum.yaml`, with immutable ident
 - offering/accuracy note in the mutable manifest
 - catalog URL
 
-For Prompt 05, Prompt 03, and Prompt 04, Codex should normally use `curriculum/curriculum.yaml` plus the lock and reconciliation reports rather than reparsing the workbook for basic course identity.
+For Prompt 03, Prompt 04, and Prompt 05, Codex should normally use `curriculum/curriculum.yaml` plus the lock and reconciliation reports rather than reparsing the workbook for basic course identity.
 
 ### What has not been imported into the curriculum manifest
 
@@ -498,9 +502,9 @@ The curriculum has already been imported and reconciled. The four approved under
 For the **first course**, the next operational action is therefore:
 
 ```text
-Prompt 05 for one explicitly named course
-→ Prompt 03 for that same course
+Prompt 03 for one explicitly named course
 → Prompt 04 for that same course
+→ Prompt 05 for that same course
 ```
 
-Do not start with Prompt 03 on a course that does not yet have its Prompt 05 shell.
+Do not start with Prompt 04 on a course that does not yet have its Prompt 03 shell.
