@@ -1,0 +1,20 @@
+source_id: esv-2025
+course_id: 01-phil-241-suffering
+source_type: scripture
+title: The Holy Bible, English Standard Version
+authors: []
+publisher: Crossway
+year: 2001
+edition: ESV Text Edition 2025
+isbn: null
+doi: null
+url: https://www.esv.org/about/
+accessed_at: '2026-09-04'
+verification_status: verified
+access_category: required-free
+verification_sources:
+- https://www.esv.org/about/
+- https://www.crossway.org/permissions/
+access_note: The publisher provides the biblical text online without charge; print formats vary.
+cost_note: USD 0 for publisher-hosted online access.
+copyright_note: ESV quotations must follow Crossway's current permissions guidelines.
