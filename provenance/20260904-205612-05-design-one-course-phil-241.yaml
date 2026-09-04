@@ -1,0 +1,171 @@
+schema_version: "1.0.0"
+run_id: "20260904-205612-05-design-one-course-phil-241"
+timestamp_utc: "2026-09-04T20:56:12Z"
+prompt_id: "05-design-one-course"
+scope: >-
+  Design only PHIL 241 — Suffering, canonical record 01-phil-241-suffering,
+  using its completed Prompt 03 shell and Prompt 04 verified research; define
+  outcomes, assessment mapping, exact 180-hour workload, 15-week sequence,
+  syllabus, bibliography, policies, and design metadata without producing
+  lectures, full assignments, rubrics, exam questions, or detailed weekly content.
+agent_or_model: "OpenAI Codex (GPT-5)"
+branch: "course/phil-241-design"
+inputs_read:
+  - AGENTS.md
+  - MASTER_PROMPT.md
+  - PROJECT-DECISIONS.yaml
+  - DISCLAIMER.md
+  - THEOLOGICAL-COMMITMENTS.md
+  - ACADEMIC-STANDARDS.md
+  - SOURCE-POLICY.md
+  - WRITING-STYLE-GUIDE.md
+  - ASSESSMENT-POLICY.md
+  - AI-USE-POLICY.md
+  - prompts/05-design-one-course.md
+  - courses/AGENTS.md
+  - curriculum/curriculum.yaml
+  - curriculum/curriculum.lock.yaml
+  - curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/README.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/research-report.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/syllabus.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/bibliography.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/learning-outcomes.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/policies.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/primary-sources.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/required-reading.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/recommended-reading.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/videos-and-lectures.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/ (23 verified records)
+  - provenance/20260904-201315-03-generate-course-shell-phil-241.yaml
+  - provenance/20260904-203706-04-research-one-course-phil-241.yaml
+  - schemas/course.schema.json
+  - schemas/provenance.schema.json
+  - scripts/validate.py
+  - seminary_tools/validation.py
+  - tests/test_scaffold.py
+  - tests/test_validation.py
+files_created:
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/assessment-map.md
+  - provenance/20260904-205612-05-design-one-course-phil-241.yaml
+files_modified:
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/README.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/syllabus.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/bibliography.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/learning-outcomes.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/policies.md
+sources_consulted:
+  - type: canonical-workbook
+    path: curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+    sha256: 876f558fae72b407292d0aac3f36692fb23c0290774b434fcc8a0abc6313cbb1
+    use: Hash verification only; the imported manifest and immutable lock supplied identity metadata.
+  - type: reconciled-curriculum-manifest
+    path: curriculum/curriculum.yaml
+    status: schedule-reconciled
+    record_id: 01-phil-241-suffering
+  - type: immutable-curriculum-lock
+    path: curriculum/curriculum.lock.yaml
+    status: locked
+    record_id: 01-phil-241-suffering
+  - type: completed-course-research
+    path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/research-report.md
+    research_status: complete
+    use: Domain coverage, access strategy, comparative models, and absence of blocking research dependencies.
+  - type: verified-source-record-set
+    path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/
+    record_count: 23
+    verification_status: verified
+    use: >-
+      Required and recommended bibliography decisions, weekly source groupings,
+      Scripture editions, and comparative media. No new external web research
+      was performed in Prompt 05.
+validation_commands:
+  - .venv/bin/python scripts/validate.py --mode draft
+  - .venv/bin/python -m pytest -q
+  - Manifest/lock/workbook identity and SHA-256 precondition audit
+  - Prompt 04 research TODO-VERIFY and source-verification audit
+  - Course design consistency audit for outcomes, mappings, sources, workload, and schedule arithmetic
+  - Local Markdown link audit
+  - Prompt 05 write-scope and immutable-curriculum audit
+  - git diff --check
+validation_results:
+  - command: Pre-design .venv/bin/python scripts/validate.py --mode draft
+    status: passed
+    exit_code: 0
+    summary: Validation completed with 0 errors and 0 warnings.
+  - command: Pre-design .venv/bin/python -m pytest -q
+    status: passed
+    exit_code: 0
+    summary: 6 tests passed.
+  - command: Manifest/lock/workbook identity and SHA-256 precondition audit
+    status: passed
+    exit_code: 0
+    summary: >-
+      The research report existed and was complete; course.yaml was researching;
+      PHIL 241 resolved uniquely and identically in the reconciled manifest and
+      lock; and both recorded workbook hashes matched the actual workbook.
+  - command: Prompt 04 research TODO-VERIFY and source-verification audit
+    status: passed
+    exit_code: 0
+    summary: >-
+      No TODO-VERIFY occurred in the research report, source records, or research
+      resource inventories, and all 23 source records were verified.
+  - command: Course design consistency audit
+    status: passed
+    exit_code: 0
+    summary: >-
+      Seven unique outcomes mapped to at least two direct assessments each;
+      seven assessments totaled 100 percent and 54 hours; all adopted source IDs
+      resolved; 15 weekly rows each totaled 12 hours; and category totals were
+      42 lecture, 56 reading, 28 practice, 54 assessment, and 180 overall.
+  - command: Initial post-design validation and tests
+    status: corrected
+    exit_code: 1
+    summary: >-
+      A negated phrase in the syllabus triggered the institutional-misrepresentation
+      regular expression, causing one validation error and one dependent test
+      failure. The independence notice was rephrased without changing its meaning.
+  - command: Post-correction .venv/bin/python scripts/validate.py --mode draft
+    status: passed
+    exit_code: 0
+    summary: Validation completed with 0 errors and 0 warnings.
+  - command: Post-correction .venv/bin/python -m pytest -q
+    status: passed
+    exit_code: 0
+    summary: 6 tests passed.
+  - command: Local Markdown link audit
+    status: passed
+    exit_code: 0
+    summary: All 32 local Markdown links in the Prompt 05 design documents resolved.
+  - command: Immutable-curriculum audit
+    status: passed
+    exit_code: 0
+    summary: The canonical manifest, lock, and source workbook were unchanged.
+  - command: git diff --check
+    status: passed
+    exit_code: 0
+    summary: No whitespace errors found.
+  - command: Final .venv/bin/python scripts/validate.py --mode draft including provenance
+    status: passed
+    exit_code: 0
+    summary: Validation completed with 0 errors and 0 warnings.
+  - command: Final .venv/bin/python -m pytest -q
+    status: passed
+    exit_code: 0
+    summary: 6 tests passed.
+unresolved_items:
+  - >-
+    Expected shell-stage TODO-VERIFY placeholders remain in week, lecture,
+    assignment, assessment, rubric, and instructor-material templates outside
+    Prompt 05's write scope. They are not research blockers and must be resolved
+    only by authorized later prompts.
+  - >-
+    Exact Peterson anthology pagination is intentionally omitted. A later week
+    guide may add page ranges only after checking the student's acquired edition;
+    this does not block Prompt 06 production.
+human_approval_required: []
+commit_sha: null

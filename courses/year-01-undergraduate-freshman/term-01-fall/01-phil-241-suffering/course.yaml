@@ -10,37 +10,170 @@ academic_stage: undergraduate
 program_year: 1
 term: term-01-fall
 credit_hours: 4
-instructional_weeks: 15
+instructional_weeks: 14
 estimated_total_hours: 180
 prerequisites: []
 corequisites: []
 course_description: Examines the philosophical and theological problem of suffering
   and evil through major Christian and philosophical treatments of the problem of
   pain.
-curriculum_description: TODO-VERIFY
+curriculum_description: An undergraduate study of the philosophical and theological
+  problem of suffering and evil that develops argument analysis, biblical-theological
+  interpretation, charitable comparison of major positions, confessional synthesis,
+  and pastorally responsible judgment.
 confessional_framework: broadly_evangelical_protestant
-learning_outcomes: []
-required_texts: []
-recommended_texts: []
-assessment_breakdown: []
+learning_outcomes:
+- id: LO-01
+  statement: Distinguish and correctly use the central concepts, argument forms,
+    and methodological categories in philosophical and theological treatments of
+    suffering and evil.
+  bloom_level: analyze
+- id: LO-02
+  statement: Reconstruct and evaluate major logical and evidential arguments from
+    evil in premise-conclusion form without caricaturing their proponents.
+  bloom_level: evaluate
+- id: LO-03
+  statement: Compare leading Christian defenses and theodicies, including their
+    claims, limits, and principal objections.
+  bloom_level: evaluate
+- id: LO-04
+  statement: Interpret representative biblical texts and canonical themes concerning
+    suffering, evil, lament, providence, judgment, and hope using the ESV and NASB
+    2020 responsibly.
+  bloom_level: analyze
+- id: LO-05
+  statement: Present major non-Christian, skeptical, and intra-Christian perspectives
+    accurately and charitably before offering confessional evaluation.
+  bloom_level: evaluate
+- id: LO-06
+  statement: Formulate and defend a coherent broadly evangelical Protestant response
+    to the problem of evil that integrates philosophical reasoning, Scripture, and
+    historical theology while acknowledging unresolved objections.
+  bloom_level: create
+- id: LO-07
+  statement: Differentiate philosophical explanation from pastoral response and
+    apply trauma-aware, non-coercive, and appropriately bounded judgment to a case
+    involving suffering.
+  bloom_level: apply
+required_texts:
+- source_id: lewis-problem-of-pain
+  designation: required-purchase
+- source_id: peterson-problem-of-evil
+  designation: required-purchase
+- source_id: esv-2025
+  designation: required-free
+- source_id: nasb-2020
+  designation: required-existing-copy-or-purchase
+- source_id: beebe-logical-problem-of-evil
+  designation: required-free
+- source_id: trakakis-evidential-problem-of-evil
+  designation: required-free
+- source_id: perrine-skeptical-theism
+  designation: required-free
+- source_id: closer-to-truth-eastern-traditions
+  designation: required-free-media
+recommended_texts:
+- plantinga-god-freedom-evil
+- otto-idea-of-the-holy
+- adams-horrendous-evils
+- adams-sutherland-horrendous-evils
+- chisholm-defeat-of-good-and-evil
+- draper-pain-and-pleasure
+- feinberg-many-faces-of-evil
+- hick-evil-and-the-god-of-love
+- mackie-evil-and-omnipotence
+- rowe-problem-of-evil
+- stump-wandering-in-darkness
+- wright-evil-and-the-justice-of-god
+- wykstra-humean-obstacle
+assessment_breakdown:
+- id: A-01
+  title: Reading and argument journals
+  weight_percent: 10
+  estimated_hours: 6
+  mode: open-book written
+  learning_outcomes: [LO-01, LO-03, LO-04, LO-05, LO-07]
+- id: A-02
+  title: Retrieval quizzes
+  weight_percent: 10
+  estimated_hours: 3
+  mode: closed-book timed
+  learning_outcomes: [LO-01, LO-02, LO-03, LO-04]
+- id: A-03
+  title: Argument reconstruction brief
+  weight_percent: 10
+  estimated_hours: 5
+  mode: open-book written
+  learning_outcomes: [LO-01, LO-02]
+- id: A-04
+  title: Midterm examination
+  weight_percent: 15
+  estimated_hours: 7
+  mode: closed-book timed written
+  learning_outcomes: [LO-01, LO-02, LO-03, LO-04]
+- id: A-05
+  title: Comparative analysis paper
+  weight_percent: 20
+  estimated_hours: 10
+  mode: take-home written
+  learning_outcomes: [LO-02, LO-03, LO-05]
+- id: A-06
+  title: Oral defense dialogue
+  weight_percent: 10
+  estimated_hours: 5
+  mode: recorded oral
+  learning_outcomes: [LO-02, LO-03, LO-05, LO-06, LO-07]
+- id: A-07
+  title: Final integrative examination
+  weight_percent: 25
+  estimated_hours: 18
+  mode: cumulative time-limited take-home written
+  learning_outcomes: [LO-01, LO-02, LO-03, LO-04, LO-05, LO-06, LO-07]
 grading_scale: standard_project_scale
-meeting_pattern: TODO-VERIFY
+meeting_pattern: Fourteen instructional weeks with two substantial written lectures
+  per week, guided source study and argument practice, followed by a final-assessment
+  week.
 weekly_workload_hours: 12.0
+term_structure:
+  total_weeks: 15
+  instructional_weeks_with_new_content: 14
+  final_assessment_week: 15
+workload_breakdown_hours:
+  written_lectures: 42
+  required_reading_and_source_study: 56
+  guided_argument_practice_and_discussion: 28
+  graded_assessment_work: 54
+  total: 180
 primary_instructor_role: independent_curriculum_facilitator
 external_evaluator_required: false
+human_evaluation:
+  mandatory_external_signoff: false
+  oral_assessment_recorded_when_practical: true
+  optional_human_review: permitted for oral communication or writing feedback
 biblical_languages_required: []
-software_required: []
+software_required:
+- word processor capable of footnotes and PDF export
+- audio-recording capability for the oral assessment
 required_bible_editions:
 - ESV
 - NASB_2020
-major_assignments: []
-final_assessment_type: TODO-VERIFY
+major_assignments: [A-03, A-05, A-06, A-07]
+final_assessment_type: cumulative_time_limited_take_home_integrative_examination
 ministry_or_fieldwork_requirement: null
-relationship_to_later_courses: []
+relationship_to_later_courses:
+- Develops problem-of-evil analysis used later in PHIL 315 and AP 601; this curriculum
+  relationship does not create an institutional prerequisite.
 academic_source_standard: SOURCE-POLICY.md
 copyright_restrictions: no_unauthorized_copies
+design_metadata:
+  prompt_id: 05-design-one-course
+  designed_on: '2026-09-04'
+  assessment_map: assessment-map.md
+  schedule: schedule.md
+  bibliography: bibliography.md
+  design_basis: completed_prompt_04_verified_research
 source_verification_date: '2026-09-04'
 last_content_audit_date: null
 known_unresolved_questions: []
-curriculum_version: 0.1.0
-status: researching
+curriculum_version: 0.2.0
+status: designed
