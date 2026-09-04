@@ -1,0 +1,193 @@
+schema_version: 1.0.0
+run_id: 20260904-211731-06-generate-one-week-phil-241-week-01
+timestamp_utc: '2026-09-04T21:17:31Z'
+prompt_id: 06-generate-one-week
+scope: >-
+  Produce PHIL 241 — Suffering Week 1 only from the approved Prompt 05 design:
+  objectives, two source-audited lectures and outlines, the verified reading
+  plan, study guide, guided discussion, ungraded retrieval practice, A-01
+  Reading and Argument Journal 1 with rubric, and separate instructor materials;
+  reconcile the week to exactly 12 hours and advance only the course production
+  status from designed to in-production.
+agent_or_model: OpenAI Codex (GPT-5)
+branch: course/phil-241-week-01
+base_commit: 4d92fae18a7a50090d61c5697cc5b5d180fe1db0
+inputs_read:
+- AGENTS.md
+- MASTER_PROMPT.md
+- PROJECT-DECISIONS.yaml
+- DISCLAIMER.md
+- THEOLOGICAL-COMMITMENTS.md
+- ACADEMIC-STANDARDS.md
+- SOURCE-POLICY.md
+- WRITING-STYLE-GUIDE.md
+- ASSESSMENT-POLICY.md
+- AI-USE-POLICY.md
+- prompts/06-generate-one-week.md
+- courses/AGENTS.md
+- curriculum/curriculum.yaml
+- curriculum/curriculum.lock.yaml
+- curriculum/source/Theological_Education_Curriculum_Plan_2026-27_Swapped.xlsx
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/README.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/syllabus.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/learning-outcomes.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/assessment-map.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/bibliography.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/policies.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/research-report.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/required-reading.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/lewis-problem-of-pain.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/trakakis-evidential-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/esv-2025.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/nasb-2020.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/
+- templates/week/
+- templates/provenance/provenance.yaml
+- schemas/week.schema.json
+- schemas/course.schema.json
+- schemas/provenance.schema.json
+- provenance/20260904-205612-05-design-one-course-phil-241.yaml
+- scripts/validate.py
+- tests/test_scaffold.py
+- tests/test_validation.py
+files_created:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/source-audit.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/rubric.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/instructor-materials/retrieval-practice-key.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/instructor-materials/discussion-facilitation-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/instructor-materials/journal-01-grading-guide.md
+- provenance/20260904-211731-06-generate-one-week-phil-241-week-01.yaml
+files_modified:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/README.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/week.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/objectives.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/lecture-01-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/lecture-01.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/lecture-02-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/lecture-02.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/study-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/discussion.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/quiz.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/assignment.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/language-lesson-template.md
+sources_consulted:
+- type: approved-course-design
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+  use: Authoritative Week 1 topic, lecture slots, required source study, outcomes, graded work, and 12-hour allocation.
+- type: verified-book-record
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/lewis-problem-of-pain.source.yaml
+  source_id: lewis-problem-of-pain
+  verification_status: verified
+  use: Bibliographic identity and lawful-access requirement.
+- type: publisher-record
+  url: https://www.cslewis.com/uk/books/paperback/the-problem-of-pain/9780060652968/
+  accessed_at: '2026-09-04'
+  use: Lewis edition identity and ISBN verification.
+- type: bibliographic-preview
+  url: https://books.google.com/books/about/The_Problem_of_Pain.html?id=9XQ9AAAAYAAJ
+  accessed_at: '2026-09-04'
+  use: Earlier-edition table of contents and assigned chapter-title verification; no page range transferred to the 2015 edition.
+- type: chapter-text-check
+  url: https://www.gutenberg.ca/ebooks/lewiscs-problemofpain/lewiscs-problemofpain-00-h.html
+  accessed_at: '2026-09-04'
+  use: Chapter-content cross-check only; not assigned as student access, and no extended text copied.
+- type: verified-book-record
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+  source_id: peterson-problem-of-evil
+  verification_status: verified
+  use: Bibliographic identity, DOI, and lawful-access requirement.
+- type: publisher-record
+  url: https://undpress.nd.edu/9780268038472/the-problem-of-evil/
+  accessed_at: '2026-09-04'
+  use: Second-edition metadata, introduction title, contents, and field organization.
+- type: chapter-record
+  url: https://www.jstor.org/stable/j.ctvpj7gm2.4
+  doi: 10.2307/j.ctvpj7gm2.4
+  accessed_at: '2026-09-04'
+  use: Peterson introduction title, verified pages 1–14, and opening classical-theist framing.
+- type: verified-reference-record
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/trakakis-evidential-problem-of-evil.source.yaml
+  url: https://iep.utm.edu/evil-evi/
+  accessed_at: '2026-09-04'
+  verification_status: verified
+  use: Supplemental check of the standard moral/natural-evil distinction.
+- type: verified-scripture-records
+  paths:
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/esv-2025.source.yaml
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/nasb-2020.source.yaml
+  verification_status: verified
+  use: Bible-edition policy and canonical Scripture references; no extended quotation reproduced.
+validation_commands:
+- python scripts/validate.py --mode draft
+- python3 scripts/validate.py --mode draft
+- .venv/bin/python scripts/validate.py --mode draft
+- .venv/bin/python -m pytest -q
+- Week 1 lecture word-count and required-section audit
+- Week 1 lecture claim, source, copyright, and pastoral-boundary audit
+- Week 1 local Markdown link audit
+- Week 1 YAML workload and course-status audit
+- Prompt 06 write-scope and no-other-week audit
+- git diff --check
+validation_results:
+- command: python scripts/validate.py --mode draft
+  status: unavailable
+  exit_code: 127
+  summary: The shell has no bare python executable; validation was rerun with the repository virtual-environment interpreter.
+- command: python3 scripts/validate.py --mode draft
+  status: unavailable-dependency
+  exit_code: 1
+  summary: The system Python 3.14 interpreter lacks PyYAML; validation was rerun with the repository virtual-environment interpreter.
+- command: Baseline .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings before editing.
+- command: Baseline .venv/bin/python -m pytest -q
+  status: passed
+  exit_code: 0
+  summary: 6 tests passed before editing.
+- command: Week 1 lecture word-count and required-section audit
+  status: passed
+  exit_code: 0
+  summary: Lecture 1 has 2,802 words and Lecture 2 has 3,010 words; both contain every required lecture section, Scripture references, citations, revision dates, and provenance identifiers.
+- command: Week 1 lecture claim, source, copyright, and pastoral-boundary audit
+  status: passed
+  exit_code: 0
+  summary: Assigned source claims and locations were verified; categories of claim were signaled; skeptical positions were represented charitably; no extended copyrighted text, private case, diagnosis, or invented divine explanation appears.
+- command: Initial post-generation .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings before the provenance file was added.
+- command: Initial post-generation .venv/bin/python -m pytest -q
+  status: passed
+  exit_code: 0
+  summary: 6 tests passed before the provenance file was added.
+- command: Week 1 local Markdown link audit
+  status: passed
+  exit_code: 0
+  summary: All relative Markdown links in Week 1 resolve.
+- command: Week 1 YAML workload and course-status audit
+  status: passed
+  exit_code: 0
+  summary: Lecture 3.0 + reading 4.0 + guided practice 4.5 + graded assessment 0.5 equals 12.0 hours; course status is in-production.
+- command: Prompt 06 write-scope and no-other-week audit
+  status: passed
+  exit_code: 0
+  summary: Changes are limited to PHIL 241 course.yaml production metadata, Week 1, and this provenance record; no other week changed.
+- command: git diff --check
+  status: passed
+  exit_code: 0
+  summary: No whitespace errors found.
+- command: Final validation and tests including provenance
+  status: passed
+  exit_code: 0
+  summary: Draft validation completed with 0 errors and 0 warnings; all 6 pytest tests passed; git diff check passed.
+unresolved_items: []
+human_approval_required:
+- Independent human review of philosophical accuracy, theological faithfulness, pastoral sensitivity, and edition fit before the week advances beyond draft.
+- Course-level source, theology, coherence, workload, copyright, and assessment audits before any later ready-for-audit or release state.
+commit_sha: null

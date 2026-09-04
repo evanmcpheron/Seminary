@@ -1,12 +1,67 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 course_id: 01-phil-241-suffering
 week_number: 1
-title: "TODO-VERIFY"
-status: shell
-estimated_hours: 0
-learning_outcomes: []
-lectures: []
-readings: []
-assignments: []
-assessments: []
-source_records: []
+title: Framing Suffering and Evil
+status: draft
+estimated_hours: 12.0
+learning_outcomes: [LO-01, LO-05, LO-07]
+workload:
+  lectures: 3.0
+  required_reading_and_source_study: 4.0
+  guided_practice_and_discussion: 4.5
+  graded_assessment: 0.5
+  total: 12.0
+lectures:
+- id: lecture-01
+  title: Concepts and Distinctions
+  file: lecture-01.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+- id: lecture-02
+  title: Philosophical, Theological, Existential, and Pastoral Questions
+  file: lecture-02.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+readings:
+- source_id: lewis-problem-of-pain
+  assignment: Chapters 1–2
+  estimated_hours: 2.5
+- source_id: peterson-problem-of-evil
+  assignment: 'Introduction: The Problem of Evil, pages 1–14'
+  estimated_hours: 1.5
+guided_practice:
+- id: week-01-study-guide
+  file: study-guide.md
+  estimated_hours: 1.5
+  graded: false
+- id: week-01-guided-discussion
+  file: discussion.md
+  estimated_hours: 1.5
+  graded: false
+- id: week-01-retrieval-practice
+  file: quiz.md
+  estimated_hours: 1.5
+  graded: false
+assignments:
+- id: A-01-J01
+  parent_assessment: A-01
+  title: Reading and Argument Journal 1
+  file: assignment.md
+  rubric: rubric.md
+  estimated_hours: 0.5
+assessments:
+- id: A-01
+  weekly_item: A-01-J01
+  graded: true
+  learning_outcomes: [LO-01, LO-05, LO-07]
+instructor_materials:
+- instructor-materials/retrieval-practice-key.md
+- instructor-materials/discussion-facilitation-guide.md
+- instructor-materials/journal-01-grading-guide.md
+source_records:
+- lewis-problem-of-pain
+- peterson-problem-of-evil
+- trakakis-evidential-problem-of-evil
+- esv-2025
+- nasb-2020
+source_audit: source-audit.md
