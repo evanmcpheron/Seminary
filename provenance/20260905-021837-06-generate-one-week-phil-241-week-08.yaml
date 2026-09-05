@@ -1,0 +1,227 @@
+schema_version: 1.0.0
+run_id: 20260905-021837-06-generate-one-week-phil-241-week-08
+timestamp_utc: '2026-09-05T02:18:37Z'
+prompt_id: 06-generate-one-week
+scope: >-
+  Produce PHIL 241 — Suffering Week 8 only from the approved Prompt 05 course
+  design, verified sources, and completed Weeks 1–7: preserve LO-01, LO-02,
+  LO-03, and LO-05; generate two source-audited lectures and outlines on
+  Rowe's evidential argument and the inference from apparently gratuitous
+  suffering; assign Rowe's opening contribution in Peterson chapter 9 and
+  Trakakis sections 1–2; generate clearly ungraded study, discussion, and
+  retrieval practice; generate graded A-01 Journal 7 and the ungraded
+  three-hour A-05 evidential-argument dossier; reconcile the week to exactly
+  12 hours; and update only the drafted-week production metadata outside the
+  Week 8 directory.
+agent_or_model: OpenAI Codex (GPT-5)
+branch: course/phil-241-week-08
+base_commit: 17fddf89e4ec5a7a44dc395abde487c13f953f58
+inputs_read:
+- AGENTS.md
+- MASTER_PROMPT.md
+- PROJECT-DECISIONS.yaml
+- DISCLAIMER.md
+- THEOLOGICAL-COMMITMENTS.md
+- ACADEMIC-STANDARDS.md
+- SOURCE-POLICY.md
+- WRITING-STYLE-GUIDE.md
+- ASSESSMENT-POLICY.md
+- AI-USE-POLICY.md
+- prompts/06-generate-one-week.md
+- courses/AGENTS.md
+- curriculum/curriculum.yaml
+- curriculum/curriculum.lock.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/README.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/syllabus.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/learning-outcomes.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/assessment-map.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/bibliography.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/research-report.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/required-reading.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/primary-sources.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/recommended-reading.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/rowe-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/trakakis-evidential-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-02/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-03/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-05/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-06/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-07/
+- provenance/20260904-205612-05-design-one-course-phil-241.yaml
+- provenance/20260905-011451-06-generate-one-week-phil-241-week-06.yaml
+- provenance/20260905-015527-06-generate-one-week-phil-241-week-07.yaml
+- schemas/week.schema.json
+- schemas/course.schema.json
+- schemas/provenance.schema.json
+- scripts/validate.py
+- tests/test_scaffold.py
+- tests/test_validation.py
+files_created:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/rubric.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/source-audit.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/instructor-materials/study-guide-key.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/instructor-materials/retrieval-practice-key.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/instructor-materials/discussion-facilitation-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/instructor-materials/journal-07-grading-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/instructor-materials/a-05-development-guide.md
+- provenance/20260905-021837-06-generate-one-week-phil-241-week-08.yaml
+files_modified:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/README.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/week.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/objectives.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/lecture-01-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/lecture-01.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/lecture-02-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/lecture-02.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/study-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/discussion.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/assignment.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/quiz.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/language-lesson-template.md
+sources_consulted:
+- type: approved-course-design
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+  use: Authoritative Week 8 topics, lecture slots, outcomes, sources, assessments, and exact 12-hour allocation.
+- type: verified-anthology-record
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+  source_id: peterson-problem-of-evil
+  verification_status: verified
+  use: Second-edition bibliographic identity, DOI, ISBN, lawful-access requirement, and anthology structure.
+- type: publisher-record
+  url: https://undpress.nd.edu/9780268038472/the-problem-of-evil/
+  accessed_at: '2026-09-04'
+  use: Peterson second-edition metadata and chapter/contributor cross-check.
+- type: chapter-record
+  url: https://www.jstor.org/stable/j.ctvpj7gm2.13
+  accessed_at: '2026-09-04'
+  use: Verified chapter 9 title, contributors, print-edition pages 130–165, DOI, and opening debate question.
+- type: verified-primary-article-record-and-text-check
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/rowe-problem-of-evil.source.yaml
+  source_id: rowe-problem-of-evil
+  verification_status: verified
+  urls:
+  - https://www.jstor.org/stable/20009775
+  - https://philpapers.org/versions/ROWTPO-3
+  - https://rintintin.colorado.edu/~vancecd/phil201/Rowe.pdf
+  accessed_at: '2026-09-04'
+  use: >-
+    Article identity and exact text cross-check for the logical/evidential
+    distinction, compact argument, qualified prevention conditions, fawn
+    example, inductive support, direct and indirect replies, Moore shift, and
+    friendly atheism. The course-hosted copy was not stored or assigned.
+- type: verified-reference-entry
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/trakakis-evidential-problem-of-evil.source.yaml
+  source_id: trakakis-evidential-problem-of-evil
+  verification_status: verified
+  url: https://iep.utm.edu/evil-evi/
+  accessed_at: '2026-09-04'
+  use: >-
+    Official section audit for standard theism, evil categories,
+    logical/evidential and direct/indirect distinctions, Rowe's premises and
+    cases, the P-to-Q inference, and the history of Rowe's formulations.
+- type: prior-completed-week-audits
+  paths:
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-02/source-audit.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/source-audit.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-05/source-audit.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-06/source-audit.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-07/source-audit.md
+  verification_status: verified
+  use: Logical-problem, free-will, natural-evil, value-relation, Scripture, and first-half synthesis continuity.
+validation_commands:
+- Baseline .venv/bin/python scripts/validate.py --mode draft
+- Baseline .venv/bin/python -m pytest -q
+- Initial post-generation .venv/bin/python scripts/validate.py --mode draft
+- Initial post-generation .venv/bin/python -m pytest -q
+- Week 8 YAML workload, component, required-file, lecture-section, word-count, TODO-marker, local-link, and write-scope audit
+- Week 8 source, claim-label, assessment-map, workload, authorship, copyright, pastoral-safety, and no-other-week audit
+- git diff --check
+- Final validation and tests including provenance
+validation_results:
+- command: Baseline .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings before editing.
+- command: Baseline .venv/bin/python -m pytest -q
+  status: passed
+  exit_code: 0
+  summary: All 6 tests passed before editing.
+- command: Initial post-generation .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings before provenance was added.
+- command: Initial post-generation .venv/bin/python -m pytest -q
+  status: passed
+  exit_code: 0
+  summary: All 6 tests passed before provenance was added.
+- command: Week 8 custom structural audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Lecture 3.0 + source study 4.0 + guided practice 1.5 + assessment 3.5
+    equals exactly 12.0 hours; all component entries reconcile; all required
+    lecture sections occur in order; both lectures are draft-audited; no
+    TODO-VERIFY marker remains; all 20 required Week 8 files exist; all
+    relative Markdown links resolve; and the lectures contain 3,853 and 3,906
+    counted words.
+- command: Week 8 content and assessment audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Rowe's compact and expanded formulations are distinguished; factual and
+    theological premises, greater-good and worse-evil conditions, induction,
+    Moore shift, response roles, total evidence, and friendly atheism are
+    controlled; the later Draper and skeptical-theist units are not preempted;
+    A-01-J07 follows the approved A-01 outcome map; A-05 reaches exactly 4.0
+    cumulative hours through Week 8; practice is explicitly ungraded; student
+    authorship and instructor-only separation are enforced; and no extended
+    copyrighted text, graphic case retelling, personal disclosure, victim
+    blaming, invented token explanation, or passive response to harm is used.
+- command: Prompt 06 write-scope and no-other-week audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Changes are limited to PHIL 241 Week 8, drafted_weeks production metadata
+    in course.yaml, and this provenance record. Weeks 1–7 and 9–15, the
+    canonical spreadsheet, curriculum.yaml, and curriculum.lock.yaml are
+    unchanged.
+- command: git diff --check
+  status: passed
+  exit_code: 0
+  summary: No whitespace errors found before the provenance record was added.
+- command: Initial final custom scope assertion
+  status: failed-and-corrected
+  exit_code: 1
+  summary: >-
+    The diagnostic incorrectly counted Git's +++ diff header as an added
+    content line. Repository draft validation and all tests still passed in
+    the same run; the assertion was corrected to exclude diff headers and did
+    not require a curriculum-content change.
+- command: Corrected final Week 8 custom audit including provenance
+  status: passed
+  exit_code: 0
+  summary: >-
+    All 22 changed files match the provenance inventory and are limited to
+    Week 8, the drafted_weeks metadata field, and provenance; no other week is
+    changed. Workload, component sums, outcome mapping, front matter, lecture
+    sections and word counts, source-audit state, TODO absence, local links,
+    assessment identity, AI declaration, and instructor-only flags passed.
+- command: Final validation and tests including provenance
+  status: passed
+  exit_code: 0
+  summary: >-
+    Draft validation completed with 0 errors and 0 warnings; all 6 pytest
+    tests passed; git diff check passed with provenance present.
+unresolved_items: []
+human_approval_required:
+- Independent human review of philosophical accuracy, the Rowe and Trakakis formulation distinctions, biblical and confessional evaluation, pastoral sensitivity, content-warning adequacy, copyright compliance, and fit to the student's lawful Peterson edition before Week 8 advances beyond draft.
+- Independent review of A-01-J07 grading, A-05 process fit, time estimates, instructor-material security, and AI-use boundaries before graded use.
+- Course-level source, theology, coherence, workload, copyright, and assessment audits before any later ready-for-audit or release state.
+commit_sha: null
