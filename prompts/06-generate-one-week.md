@@ -7,7 +7,7 @@ write_scope:
   - related source records
   - related instructor materials for that week
   - provenance/
-commit_allowed: false
+commit_allowed: true
 ---
 
 # Generate One Week of One Course

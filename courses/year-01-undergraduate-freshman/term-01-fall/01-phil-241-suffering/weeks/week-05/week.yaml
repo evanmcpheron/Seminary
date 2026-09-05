@@ -1,12 +1,82 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 course_id: 01-phil-241-suffering
 week_number: 5
-title: "TODO-VERIFY"
-status: shell
-estimated_hours: 0
-learning_outcomes: []
-lectures: []
-readings: []
-assignments: []
-assessments: []
-source_records: []
+title: Free Will and Moral Evil
+status: draft
+estimated_hours: 12.0
+learning_outcomes: [LO-01, LO-02, LO-03, LO-06]
+workload:
+  lectures: 3.0
+  required_reading_and_source_study: 4.0
+  guided_practice_and_discussion: 3.0
+  assessment_work: 2.0
+  total: 12.0
+lectures:
+- id: lecture-01
+  title: Defense, Theodicy, and the Explanatory Burden
+  file: lecture-01.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+- id: lecture-02
+  title: Plantinga's Free-Will Defense and Its Limits
+  file: lecture-02.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+readings:
+- source_id: peterson-problem-of-evil
+  assignment: 'Chapter 8: Alvin Plantinga, The Free Will Defense, pages 95–129'
+  estimated_hours: 2.5
+- source_id: lewis-problem-of-pain
+  assignment: 'Chapters 6–7: Human Pain and Human Pain, Continued'
+  estimated_hours: 1.5
+guided_practice:
+- id: week-05-study-guide
+  file: study-guide.md
+  estimated_hours: 1.5
+  graded: false
+- id: week-05-guided-discussion
+  file: discussion.md
+  estimated_hours: 1.0
+  graded: false
+- id: week-05-retrieval-practice
+  file: quiz.md
+  estimated_hours: 0.5
+  graded: false
+assignments:
+- id: A-01-J05
+  parent_assessment: A-01
+  title: Reading and Argument Journal 5
+  file: assignment.md
+  rubric: rubric.md
+  estimated_hours: 0.5
+- id: A-04-P01
+  parent_assessment: A-04
+  title: Midterm Preparation 1
+  file: assignment.md
+  rubric: rubric.md
+  estimated_hours: 1.5
+assessments:
+- id: A-01
+  weekly_item: A-01-J05
+  graded: true
+  estimated_hours: 0.5
+  learning_outcomes: [LO-01, LO-03, LO-06]
+- id: A-04
+  weekly_item: A-04-P01
+  graded: false
+  parent_assessment_graded_later: true
+  estimated_hours: 1.5
+  learning_outcomes: [LO-01, LO-02, LO-03]
+instructor_materials:
+- instructor-materials/study-guide-key.md
+- instructor-materials/retrieval-practice-key.md
+- instructor-materials/discussion-facilitation-guide.md
+- instructor-materials/journal-05-grading-guide.md
+- instructor-materials/a-04-preparation-guide.md
+source_records:
+- peterson-problem-of-evil
+- plantinga-god-freedom-evil
+- lewis-problem-of-pain
+- esv-2025
+- nasb-2020
+source_audit: source-audit.md
