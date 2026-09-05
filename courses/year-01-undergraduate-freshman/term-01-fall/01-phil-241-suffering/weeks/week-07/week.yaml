@@ -1,12 +1,98 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 course_id: 01-phil-241-suffering
 week_number: 7
-title: "TODO-VERIFY"
-status: shell
-estimated_hours: 0
-learning_outcomes: []
-lectures: []
-readings: []
-assignments: []
-assessments: []
-source_records: []
+title: First-Half Synthesis
+status: draft
+estimated_hours: 12.0
+learning_outcomes: [LO-01, LO-02, LO-03, LO-04]
+workload:
+  lectures: 3.0
+  required_reading_and_source_study: 4.0
+  guided_practice_and_discussion: 1.0
+  assessment_work: 4.0
+  total: 12.0
+lectures:
+- id: lecture-01
+  title: Lewis's Theodicy in Critical Perspective
+  file: lecture-01.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+- id: lecture-02
+  title: Historical and Logical Synthesis
+  file: lecture-02.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+readings:
+- source_id: lewis-problem-of-pain
+  assignment: 'Chapter 10: Heaven'
+  estimated_hours: 1.0
+- activity_id: week-07-week-01-source-review
+  assignment: Review the required Week 1 Lewis and Peterson sources
+  estimated_hours: 0.5
+- activity_id: week-07-week-02-source-review
+  assignment: Review the required Week 2 Scripture and Lewis sources
+  estimated_hours: 0.5
+- activity_id: week-07-week-03-source-review
+  assignment: Review the required Week 3 Peterson and Lewis sources
+  estimated_hours: 0.75
+- activity_id: week-07-weeks-04-05-source-review
+  assignment: Review the required Weeks 4–5 Peterson, Beebe, and Lewis sources
+  estimated_hours: 0.75
+- activity_id: week-07-week-06-source-review
+  assignment: Review the required Week 6 Peterson and Lewis sources
+  estimated_hours: 0.5
+guided_practice:
+- id: week-07-study-guide
+  file: study-guide.md
+  estimated_hours: 0.5
+  graded: false
+- id: week-07-guided-discussion
+  file: discussion.md
+  estimated_hours: 0.25
+  graded: false
+- id: week-07-midterm-readiness-check
+  file: quiz.md
+  estimated_hours: 0.25
+  graded: false
+assignments:
+- id: A-04
+  title: Midterm Examination
+  file: midterm.md
+  rubric: rubric.md
+  estimated_hours: 3.0
+- id: A-05-P01
+  parent_assessment: A-05
+  title: Comparative Analysis Question and Architecture
+  file: assignment.md
+  rubric: rubric.md
+  estimated_hours: 1.0
+assessments:
+- id: A-04
+  graded: true
+  mode: closed-book-timed-written
+  weight_percent: 15
+  estimated_hours: 3.0
+  cumulative_assessment_hours: 7.0
+  learning_outcomes: [LO-01, LO-02, LO-03, LO-04]
+- id: A-05
+  weekly_item: A-05-P01
+  graded: false
+  parent_assessment_graded_later: true
+  estimated_hours: 1.0
+  learning_outcomes: [LO-02, LO-03]
+instructor_materials:
+- instructor-materials/study-guide-key.md
+- instructor-materials/midterm-readiness-key.md
+- instructor-materials/discussion-facilitation-guide.md
+- instructor-materials/midterm-answer-key.md
+- instructor-materials/a-05-planning-guide.md
+source_records:
+- lewis-problem-of-pain
+- peterson-problem-of-evil
+- beebe-logical-problem-of-evil
+- mackie-evil-and-omnipotence
+- plantinga-god-freedom-evil
+- chisholm-defeat-of-good-and-evil
+- esv-2025
+- nasb-2020
+source_audit: source-audit.md

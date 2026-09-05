@@ -179,6 +179,6 @@ curriculum_version: 0.2.0
 production_metadata:
   first_production_prompt: 06-generate-one-week
   production_started_on: '2026-09-04'
-  drafted_weeks: [1, 2, 3, 4, 5, 6]
+  drafted_weeks: [1, 2, 3, 4, 5, 6, 7]
   latest_week_draft_source_audit: '2026-09-04'
 status: in-production
