@@ -1,0 +1,203 @@
+schema_version: 1.0.0
+run_id: 20260905-170142-06-generate-one-week-phil-241-week-09
+timestamp_utc: '2026-09-05T17:01:42Z'
+prompt_id: 06-generate-one-week
+scope: >-
+  Produce PHIL 241 — Suffering Week 9 only from the approved Prompt 05 course
+  design, verified sources, and completed Weeks 1–8: preserve LO-01, LO-02,
+  LO-03, and LO-05; generate two source-audited lectures and outlines on Paul
+  Draper's distributional argument and on likelihoods, priors, theodicy
+  expansions, and explanatory comparison; assign Peterson chapter 31 with a
+  bounded Rowe and Trakakis review; generate clearly ungraded study and
+  discussion practice; generate graded A-01 Journal 8 and A-02 Retrieval Quiz
+  4 with separate instructor materials; generate the ungraded three-hour A-05
+  probabilistic-comparison architecture; reconcile the week to exactly 12
+  hours; and update only drafted-week production metadata outside Week 9.
+agent_or_model: OpenAI Codex (GPT-5)
+branch: codex/phil-241-week-09
+base_commit: 17c632e6bf8f5ce8bb832f154938360c1276ace5
+inputs_read:
+- AGENTS.md
+- MASTER_PROMPT.md
+- PROJECT-DECISIONS.yaml
+- DISCLAIMER.md
+- THEOLOGICAL-COMMITMENTS.md
+- ACADEMIC-STANDARDS.md
+- SOURCE-POLICY.md
+- WRITING-STYLE-GUIDE.md
+- ASSESSMENT-POLICY.md
+- AI-USE-POLICY.md
+- QUALITY-ASSURANCE.md
+- prompts/06-generate-one-week.md
+- courses/AGENTS.md
+- curriculum/curriculum.yaml
+- curriculum/curriculum.lock.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/README.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/syllabus.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/learning-outcomes.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/assessment-map.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/bibliography.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/research-report.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/required-reading.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/primary-sources.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/recommended-reading.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/draper-pain-and-pleasure.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/rowe-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/trakakis-evidential-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-02/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-03/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-05/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-06/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-07/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/
+- provenance/20260905-021837-06-generate-one-week-phil-241-week-08.yaml
+- schemas/week.schema.json
+- schemas/course.schema.json
+- schemas/provenance.schema.json
+- scripts/validate.py
+- tests/test_scaffold.py
+- tests/test_validation.py
+files_created:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/rubric.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/source-audit.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/instructor-materials/study-guide-key.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/instructor-materials/discussion-facilitation-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/instructor-materials/journal-08-grading-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/instructor-materials/quiz-04-answer-key.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/instructor-materials/a-05-development-guide.md
+- provenance/20260905-170142-06-generate-one-week-phil-241-week-09.yaml
+files_modified:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/README.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/week.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/objectives.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/lecture-01-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/lecture-01.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/lecture-02-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/lecture-02.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/study-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/discussion.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/assignment.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/quiz.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-09/language-lesson-template.md
+sources_consulted:
+- type: approved-course-design
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+  use: >-
+    Authoritative Week 9 topics, lecture slots, outcomes, sources, assessments,
+    and exact 12-hour allocation.
+- type: verified-anthology-record
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+  source_id: peterson-problem-of-evil
+  verification_status: verified
+  use: >-
+    Second-edition bibliographic identity, DOI, ISBN, lawful student access,
+    and the approved recurring-anthology purchase.
+- type: publisher-record
+  url: https://undpress.nd.edu/9780268038472/the-problem-of-evil/
+  accessed_at: '2026-09-05'
+  use: Peterson second-edition identity and contributor cross-check.
+- type: anthology-chapter-record
+  url: https://www.jstor.org/stable/j.ctvpj7gm2.35
+  accessed_at: '2026-09-05'
+  use: >-
+    Verified chapter 31 title, Paul Draper authorship, pages 553–575, DOI, and
+    opening argument framing.
+- type: verified-primary-article-record-and-text-check
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/draper-pain-and-pleasure.source.yaml
+  source_id: draper-pain-and-pleasure
+  verification_status: verified
+  urls:
+  - https://doi.org/10.2307/2215486
+  - https://secularfrontier.infidels.org/wp-content/uploads/2022/02/draper-pain-and-pleasure-an-evidential-problem-for-theists.pdf
+  accessed_at: '2026-09-05'
+  use: >-
+    Article identity and exact text cross-check for theism, HI, O, antecedent
+    epistemic probability, biological usefulness, O1/O2/O3, WAP, T1/T2/T3,
+    prima facie significance, and offsetting evidence. No copy was stored or
+    assigned; the student's lawful route remains Peterson chapter 31.
+- type: prior-completed-week-audit
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/source-audit.md
+  verification_status: verified
+  use: >-
+    Rowe, Trakakis, apparent-gratuity, induction, response-role, Scripture, and
+    conclusion-scope continuity.
+validation_commands:
+- .venv/bin/python scripts/validate.py --mode draft
+- .venv/bin/python -m pytest -q
+- Focused Week 9 YAML workload, component, required-file, lecture-section, word-count, TODO-marker, local-link, and write-scope audit
+- Week 9 source, claim-label, assessment-map, workload, authorship, copyright, pastoral-safety, and no-other-week audit
+- git diff --check
+- Final validation and tests including provenance
+validation_results:
+- command: .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings before provenance was added.
+- command: .venv/bin/python -m pytest -q
+  status: passed
+  exit_code: 0
+  summary: All 22 tests passed before provenance was added.
+- command: Focused Week 9 structural audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Lecture 3.0 + source study 4.0 + guided practice 1.0 + assessment 4.0
+    equals exactly 12.0 hours; all component entries reconcile; A-05 reaches
+    exactly 7.0 cumulative hours; all 20 Week 9 files exist; both lectures
+    contain the required sections in order, are draft-audited, and contain
+    4,468 and 4,854 counted words; no TODO-VERIFY marker remains; all local
+    Markdown links resolve; and course status remains in-production.
+- command: Week 9 content and assessment audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Draper's theism, HI, O, O1/O2/O3, biological categories, likelihood claim,
+    WAP, T1/T2/T3, prima facie significance, and counterevidence allowance are
+    controlled; likelihood, prior, posterior, total evidence, evidence
+    dependence, and Rowe comparison remain distinct; Week 10 skeptical theism
+    is deferred; A-01-J08, A-02-Q04, and A-05-P03 match the approved outcome
+    and hour maps; practice is explicitly ungraded; student authorship and
+    instructor-only separation are enforced; and no extended copyrighted text,
+    graphic case research, victim blaming, invented probability, token-purpose
+    claim, or passive response to harm is used.
+- command: Prompt 06 write-scope and no-other-week audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Changes are limited to PHIL 241 Week 9, drafted_weeks production metadata
+    in course.yaml, and this provenance record. Weeks 1–8 and 10–15, the
+    canonical spreadsheet, curriculum.yaml, and curriculum.lock.yaml are
+    unchanged.
+- command: git diff --check
+  status: passed
+  exit_code: 0
+  summary: No whitespace errors were found.
+- command: Initial final focused assertion including provenance
+  status: failed-and-corrected
+  exit_code: 1
+  summary: >-
+    The diagnostic searched the provenance report for the literal name of the
+    verification placeholder that the report states is absent from Week 9.
+    The course content, repository draft validation, and tests all passed; the
+    assertion was corrected to apply the placeholder scan to curriculum files
+    and to validate the provenance report separately.
+- command: Final validation and tests including provenance
+  status: passed
+  exit_code: 0
+  summary: >-
+    Draft validation completed with 0 errors and 0 warnings; all 22 pytest
+    tests passed; focused structural and scope checks passed; and git diff
+    check passed with provenance present.
+unresolved_items: []
+human_approval_required:
+- Independent human review of philosophical accuracy, Draper's probability and theodicy-expansion arguments, Rowe comparison, confessional evaluation, biblical use, pastoral sensitivity, copyright compliance, and fit to the student's lawful Peterson edition before Week 9 advances beyond draft.
+- Independent review of A-01-J08 grading, A-02-Q04 security and scoring, A-05 process fit, time estimates, instructor-material separation, and AI-use boundaries before graded use.
+- Course-level source, theology, coherence, workload, copyright, and assessment audits before any later ready-for-audit or release state.
+commit_sha: null
