@@ -31,14 +31,18 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 2. Map assessments to outcomes.
 3. Allocate exactly the credit-hour workload.
 4. Design the 15-week sequence and final assessment.
-5. Specify human-evaluation requirements.
-6. Do not write lectures or full assignments.
+5. Specify human-evaluation requirements in structured `course.yaml` metadata.
+6. Apply stage calibration from `ACADEMIC-STANDARDS.md` and `QUALITY-ASSURANCE.md`; later-stage rigor must come from greater independence, primary-source engagement, methods, research, and evaluation rather than inflated lecture length.
+7. For every PhD course, set `external_evaluator_required: true` and `human_evaluation.mandatory_external_signoff: true`. For MDiv preaching, pastoral, ministry/field-education, and designated language-performance work, require qualified human evaluation. When signoff is mandatory, reserve `human_evaluation.completion_record_path` for the eventual human-created record.
+8. Identify which assessments require student-authored work and preserve the AI-use boundary explicitly.
+9. Do not write lectures or full assignments.
 
 ## Forbidden actions
 
 - Do not modify files outside the declared write scope.
 - Do not invent unverified facts or sources.
 - Do not begin a later prompt automatically.
+- Do not treat AI grading or AI approval as required human evaluation.
 - Do not commit unless the active prompt is explicitly overridden with owner authorization.
 
 ## Required validation
@@ -49,6 +53,8 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 
 - Course status advances from `researching` to `designed`.
 - Outcomes, assessment map, schedule, and workload are coherent.
+- Human-evaluation metadata is explicit and stage-appropriate.
+- PhD designs do not default to undergraduate-style lecture volume and identify qualified human oversight.
 - No substantive weekly content was generated.
 - The next production step is one approved week (`06`) or a more granular lecture/assignment/assessment prompt (`07`–`10`), subject to each prompt's preconditions.
 

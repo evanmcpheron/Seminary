@@ -1,0 +1,17 @@
+schema_version: 1.0.0
+review_id: TODO-REPLACE
+scope:
+  course_id: TODO-REPLACE
+review_type: other
+evaluator_role: TODO-REPLACE
+qualification_summary: TODO-REPLACE
+completed_on: YYYY-MM-DD
+decision: not-passed
+attested_by_human: false
+ai_generated_evaluation: true
+evidence_paths: []
+notes: >-
+  Replace template values only after an actual qualified human evaluation. Set
+  attested_by_human to true and ai_generated_evaluation to false only when the
+  evaluator personally attests the completed record. Do not
+  store sensitive pastoral, counseling, medical, or private devotional details.

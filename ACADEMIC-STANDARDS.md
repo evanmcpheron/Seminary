@@ -62,3 +62,15 @@ Typical ranges are 2,500–4,000 words for introductory undergraduate lectures, 
 - PhD years: qualified human supervision, comprehensive-exam review, dissertation supervision, and at least two additional readers are required for completion claims.
 
 Human evaluation forms live in `templates/evaluation/` and signed completion records belong in the relevant portfolio. Sensitive details must not be committed.
+
+## Longitudinal progression and difficulty calibration
+
+Rigor must increase by academic stage rather than by word count alone. At the end of each project year, run the longitudinal progression audit defined in `QUALITY-ASSURANCE.md` before releasing courses in the following year.
+
+The audit should expect progressively greater independence in source selection, primary-source analysis, argument construction, research design, oral defense, and cumulative synthesis. Scaffolding should decrease as demonstrated competence increases. Reading and writing length may increase when academically justified, but length is not a substitute for methodological difficulty, evidence quality, or independent judgment.
+
+Representative assignments and reading expectations should be periodically calibrated against publicly available syllabi, program handbooks, examination guidance, or comparable academic models from credible institutions. These comparisons establish difficulty benchmarks only; they do not authorize copying proprietary course material or claiming institutional equivalence.
+
+Doctoral work receives an explicit anti-drift check. PhD seminars should rely less on AI-authored lectures and more on primary-source analysis, historiography, methods, research presentations, seminar papers, colloquia, comprehensive preparation, and supervised original research. Dissertation years use research milestones and human committee review rather than fabricated weekly instruction.
+
+No AI system may count as the qualified human evaluator required by this policy.

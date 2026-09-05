@@ -13,9 +13,10 @@ Before editing anything, read:
 7. `WRITING-STYLE-GUIDE.md`
 8. `ASSESSMENT-POLICY.md`
 9. `AI-USE-POLICY.md`
-10. The active numbered prompt in `prompts/`
+10. `QUALITY-ASSURANCE.md`
+11. The active numbered prompt in `prompts/`
 
-The active numbered prompt defines the permitted write scope. The root constitution defines rules that the active prompt cannot relax.
+The active numbered prompt defines the permitted write scope. The root constitution and policy files define rules that the active prompt cannot relax.
 
 ## Operating rules
 
@@ -30,8 +31,12 @@ The active numbered prompt defines the permitted write scope. The root constitut
 - Do not copy copyrighted books, articles, answer keys, or transcripts into the repository beyond lawful quotation.
 - Produce lectures before assignments that depend on those lectures.
 - Default production unit: one course design or one course-week. Semester-wide shell generation is allowed; semester-wide full content generation is not.
+- Treat same-run or production-time source checks as developmental audits only. They never satisfy the independent Prompt 11-13 release gates.
+- Run full-course release audits in separate runs with clean task context and machine-readable audit manifests.
+- Never claim or fabricate a human evaluation, signature, supervisor approval, comprehensive-exam result, prospectus approval, chapter approval, or defense decision.
+- Run the annual longitudinal progression audit before releasing work in the following project year.
 - Run validation after every scoped generation task.
-- Record provenance for every AI generation run.
+- Record provenance for every AI generation or audit run.
 - Report changed files, validation results, unresolved items, and the next permitted prompt. Do not begin the next prompt automatically.
 
 ## Git rules

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/human-review.schema.json",
+  "title": "Qualified Human Review Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "review_id",
+    "scope",
+    "review_type",
+    "evaluator_role",
+    "qualification_summary",
+    "completed_on",
+    "decision",
+    "attested_by_human",
+    "ai_generated_evaluation"
+  ],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "review_id": {"type": "string", "minLength": 1},
+    "scope": {
+      "type": "object",
+      "properties": {
+        "course_id": {"type": "string", "minLength": 1},
+        "milestone_id": {"type": "string", "minLength": 1}
+      },
+      "anyOf": [
+        {"required": ["course_id"]},
+        {"required": ["milestone_id"]}
+      ],
+      "additionalProperties": true
+    },
+    "review_type": {
+      "enum": [
+        "senior-capstone",
+        "preaching",
+        "pastoral",
+        "ministry",
+        "language-performance",
+        "doctoral-course",
+        "comprehensive-exam",
+        "prospectus",
+        "dissertation-chapter",
+        "dissertation-defense",
+        "other"
+      ]
+    },
+    "evaluator_role": {"type": "string", "minLength": 1},
+    "qualification_summary": {"type": "string", "minLength": 1},
+    "completed_on": {"type": "string", "format": "date"},
+    "decision": {
+      "enum": ["pass", "pass-with-revisions", "not-passed"]
+    },
+    "attested_by_human": {"const": true},
+    "ai_generated_evaluation": {"const": false},
+    "evaluator_name": {"type": ["string", "null"]},
+    "evidence_paths": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/milestone.schema.json",
+  "title": "Doctoral or Human-Gated Milestone State",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "milestone_id",
+    "milestone_type",
+    "status",
+    "human_review_required",
+    "student_authorship_required"
+  ],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "milestone_id": {"type": "string", "minLength": 1},
+    "milestone_type": {
+      "enum": [
+        "comprehensive-exam-field",
+        "prospectus",
+        "dissertation-chapter",
+        "dissertation-defense",
+        "other-human-gated"
+      ]
+    },
+    "status": {
+      "enum": ["planned", "in-progress", "awaiting-human-review", "complete"]
+    },
+    "human_review_required": {"const": true},
+    "student_authorship_required": {"type": "boolean"},
+    "human_review_record_path": {"type": ["string", "null"]},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": true
+}

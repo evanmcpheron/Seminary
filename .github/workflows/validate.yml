@@ -29,8 +29,11 @@ jobs:
       - name: Verify bootstrap scaffold
         run: python scripts/bootstrap_repository.py --check
 
-      - name: Validate repository
+      - name: Validate draft invariants
         run: python scripts/validate.py --mode draft
+
+      - name: Validate release gates
+        run: python scripts/validate.py --mode release
 
       - name: Run tests
         run: pytest

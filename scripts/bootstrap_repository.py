@@ -11,8 +11,11 @@ REQUIRED_DIRECTORIES = [
 ]
 REQUIRED_FILES = [
     "README.md", "AGENTS.md", "MASTER_PROMPT.md", "PROJECT-DECISIONS.yaml",
-    "curriculum/curriculum.yaml", "schemas/course.schema.json",
-    "schemas/curriculum.schema.json", ".github/workflows/validate.yml"
+    "QUALITY-ASSURANCE.md", "curriculum/curriculum.yaml", "schemas/course.schema.json",
+    "schemas/curriculum.schema.json", "schemas/audit.schema.json",
+    "schemas/human-review.schema.json", "schemas/milestone.schema.json",
+    "scripts/course_fingerprint.py",
+    ".github/workflows/validate.yml"
 ]
 
 

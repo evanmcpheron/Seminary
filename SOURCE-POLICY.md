@@ -61,3 +61,14 @@ Use explicit signals when material could be confused:
 ## Failure behavior
 
 If a required bibliographic detail or source cannot be verified, mark it `TODO-VERIFY` and stop dependent content. Do not guess. A course cannot advance to `ready-for-audit` or `released` while required sources remain unverified.
+
+## Freshness and re-verification
+
+Verification has a time dimension. Before a course is released, required source records must satisfy the freshness limits in `QUALITY-ASSURANCE.md`.
+
+- Catalogs, websites, videos, and podcasts must have been rechecked within 180 days.
+- Books, articles, chapters, primary texts, reference works, and Scripture records must have been rechecked within 730 days when they are release-critical.
+
+Reverification updates `accessed_at` and confirms current access, URL, edition, transcript/media availability, and licensing or copyright facts where applicable. It does not require pretending that stable historical bibliographic facts have changed.
+
+Draft work may continue with an aging source when its underlying bibliographic identity remains verified, but release validation must block stale required-source access evidence until it is refreshed.
