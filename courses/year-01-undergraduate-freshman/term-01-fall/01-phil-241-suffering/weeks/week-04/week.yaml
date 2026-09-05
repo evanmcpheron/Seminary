@@ -1,12 +1,92 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 course_id: 01-phil-241-suffering
 week_number: 4
-title: "TODO-VERIFY"
-status: shell
-estimated_hours: 0
-learning_outcomes: []
-lectures: []
-readings: []
-assignments: []
-assessments: []
-source_records: []
+title: The Logical Problem of Evil
+status: draft
+estimated_hours: 12.0
+learning_outcomes: [LO-01, LO-02, LO-03, LO-05]
+workload:
+  lectures: 3.0
+  required_reading_and_source_study: 4.0
+  guided_practice_and_discussion: 2.5
+  assessment_work: 2.5
+  total: 12.0
+lectures:
+- id: lecture-01
+  title: Formal Consistency and the Logical Problem of Evil
+  file: lecture-01.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+- id: lecture-02
+  title: Mackie's Challenge and Theistic Replies
+  file: lecture-02.md
+  estimated_hours: 1.5
+  source_audit_status: draft-audited
+readings:
+- source_id: peterson-problem-of-evil
+  assignment: 'Chapter 7: J. L. Mackie, Evil and Omnipotence, pages 81–94'
+  estimated_hours: 2.25
+- source_id: beebe-logical-problem-of-evil
+  assignment: 'Sections 1–3 and 7–10; sections 4–6 as needed'
+  estimated_hours: 1.5
+- activity_id: week-04-cross-source-synthesis
+  assignment: Six-line cross-source synthesis using already completed Week 3 materials
+  estimated_hours: 0.25
+guided_practice:
+- id: week-04-study-guide
+  file: study-guide.md
+  estimated_hours: 1.5
+  graded: false
+- id: week-04-guided-discussion
+  file: discussion.md
+  estimated_hours: 1.0
+  graded: false
+assignments:
+- id: A-01-J04
+  parent_assessment: A-01
+  title: Reading and Argument Journal 4
+  file: assignment.md
+  rubric: rubric.md
+  estimated_hours: 0.5
+- id: A-03
+  parent_assessment: A-03
+  title: Argument Reconstruction Brief
+  file: assignment.md
+  rubric: rubric.md
+  estimated_hours: 1.5
+- id: A-02-Q02
+  parent_assessment: A-02
+  title: Retrieval Quiz 2
+  file: quiz.md
+  rubric: rubric.md
+  estimated_hours: 0.5
+assessments:
+- id: A-01
+  weekly_item: A-01-J04
+  graded: true
+  estimated_hours: 0.5
+  learning_outcomes: [LO-01, LO-03, LO-05]
+- id: A-02
+  weekly_item: A-02-Q02
+  graded: true
+  estimated_hours: 0.5
+  learning_outcomes: [LO-01, LO-02, LO-03]
+- id: A-03
+  weekly_item: A-03
+  graded: true
+  estimated_hours: 1.5
+  cumulative_assessment_hours: 5.0
+  learning_outcomes: [LO-01, LO-02]
+instructor_materials:
+- instructor-materials/study-guide-key.md
+- instructor-materials/discussion-facilitation-guide.md
+- instructor-materials/journal-04-grading-guide.md
+- instructor-materials/quiz-02-answer-key.md
+- instructor-materials/a-03-grading-guide.md
+source_records:
+- peterson-problem-of-evil
+- mackie-evil-and-omnipotence
+- beebe-logical-problem-of-evil
+- esv-2025
+- nasb-2020
+source_audit: source-audit.md

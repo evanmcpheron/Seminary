@@ -1,0 +1,188 @@
+schema_version: 1.0.0
+run_id: 20260905-001138-06-generate-one-week-phil-241-week-04
+timestamp_utc: '2026-09-05T00:11:38Z'
+prompt_id: 06-generate-one-week
+scope: >-
+  Produce PHIL 241 — Suffering Week 4 only from the approved Prompt 05 design,
+  schedule, verified sources, and completed Weeks 1–3: preserve LO-01, LO-02,
+  LO-03, and LO-05; generate two source-audited lectures and outlines on the
+  formal logical problem of evil, Mackie's argument, and theistic replies;
+  assign the approved Peterson/Mackie and Beebe readings; generate separate
+  guided practice, discussion, A-01 Journal 4, A-02 Quiz 2, and the completed
+  A-03 argument reconstruction brief with instructor-only grading materials;
+  reconcile the week to exactly 12 hours and update only drafted-week
+  production metadata outside the Week 4 directory.
+agent_or_model: OpenAI Codex (GPT-5)
+branch: codex/phil-241-week-04
+base_commit: 6541779976febce03f577049009b32ac955d8b51
+inputs_read:
+- AGENTS.md
+- MASTER_PROMPT.md
+- PROJECT-DECISIONS.yaml
+- DISCLAIMER.md
+- THEOLOGICAL-COMMITMENTS.md
+- ACADEMIC-STANDARDS.md
+- SOURCE-POLICY.md
+- WRITING-STYLE-GUIDE.md
+- ASSESSMENT-POLICY.md
+- AI-USE-POLICY.md
+- prompts/06-generate-one-week.md
+- courses/AGENTS.md
+- curriculum/curriculum.yaml
+- curriculum/curriculum.lock.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/syllabus.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/learning-outcomes.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/assessment-map.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/bibliography.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/mackie-evil-and-omnipotence.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/beebe-logical-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/esv-2025.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/nasb-2020.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-02/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-03/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/
+- provenance/20260904-205612-05-design-one-course-phil-241.yaml
+- provenance/20260904-211731-06-generate-one-week-phil-241-week-01.yaml
+- provenance/20260904-215238-06-generate-one-week-phil-241-week-02.yaml
+- provenance/20260904-223149-06-generate-one-week-phil-241-week-03.yaml
+- schemas/week.schema.json
+- schemas/course.schema.json
+- schemas/provenance.schema.json
+- scripts/validate.py
+- tests/test_scaffold.py
+- tests/test_validation.py
+files_created:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/source-audit.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/rubric.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/instructor-materials/study-guide-key.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/instructor-materials/discussion-facilitation-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/instructor-materials/journal-04-grading-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/instructor-materials/quiz-02-answer-key.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/instructor-materials/a-03-grading-guide.md
+- provenance/20260905-001138-06-generate-one-week-phil-241-week-04.yaml
+files_modified:
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/README.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/week.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/objectives.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/lecture-01-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/lecture-01.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/lecture-02-outline.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/lecture-02.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/study-guide.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/discussion.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/assignment.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/quiz.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/language-lesson-template.md
+sources_consulted:
+- type: approved-course-design
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+  use: Authoritative Week 4 topics, lecture slots, outcomes, assignments, milestones, and 12-hour allocation.
+- type: verified-book-record
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+  source_id: peterson-problem-of-evil
+  verification_status: verified
+  use: Second-edition bibliographic identity, DOI, ISBN, lawful-access requirement, and anthology structure.
+- type: publisher-record
+  url: https://undpress.nd.edu/9780268038472/the-problem-of-evil/
+  accessed_at: '2026-09-04'
+  use: Peterson second-edition publisher metadata.
+- type: chapter-record
+  url: https://www.jstor.org/stable/j.ctvpj7gm2.11
+  accessed_at: '2026-09-04'
+  use: Verified chapter 7 title, author, and print-edition page span 81–94.
+- type: verified-article-record
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/mackie-evil-and-omnipotence.source.yaml
+  source_id: mackie-evil-and-omnipotence
+  verification_status: verified
+  url: https://doi.org/10.1093/mind/LXIV.254.200
+  use: Original article identity, journal location, DOI, argument structure, and copyright-safe paraphrase control.
+- type: verified-reference-record-and-text-check
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/beebe-logical-problem-of-evil.source.yaml
+  source_id: beebe-logical-problem-of-evil
+  verification_status: verified
+  url: https://iep.utm.edu/evil-log/
+  accessed_at: '2026-09-04'
+  use: >-
+    Direct and indirect inconsistency, bridge principles, morally sufficient
+    reasons, defense/theodicy distinction, free-will defense, major objections,
+    and the limited consequence of answering the logical problem.
+- type: verified-scripture-records-and-prior-audits
+  paths:
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/esv-2025.source.yaml
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/nasb-2020.source.yaml
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-02/source-audit.md
+  - courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-03/source-audit.md
+  verification_status: verified
+  use: Canonical continuity, edition controls, and completed-production dependencies without reproducing extended Bible text.
+validation_commands:
+- Baseline .venv/bin/python scripts/validate.py --mode draft
+- Baseline .venv/bin/python -m pytest -q
+- Post-generation .venv/bin/python scripts/validate.py --mode draft
+- Post-generation .venv/bin/python -m pytest -q
+- Week 4 YAML workload, lecture-section, source-audit-state, TODO-marker, required-file, and local-link audit
+- Week 4 lecture word-count and source/claim/copyright/pastoral audit
+- Prompt 06 write-scope, no-other-week, and course-metadata diff audit
+- git diff --check
+- Final validation and tests including provenance
+validation_results:
+- command: Baseline .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings before editing.
+- command: Baseline .venv/bin/python -m pytest -q
+  status: passed
+  exit_code: 0
+  summary: All 6 tests passed before editing.
+- command: Initial post-generation .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings before the provenance file was added.
+- command: Initial post-generation .venv/bin/python -m pytest -q
+  status: passed
+  exit_code: 0
+  summary: All 6 tests passed before the provenance file was added.
+- command: Week 4 YAML workload, lecture-section, source-audit-state, TODO-marker, required-file, and local-link audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Lecture 3.0 + reading 4.0 + practice 2.5 + assessment 2.5 equals exactly
+    12.0 hours; component entries reconcile, all 14 required sections occur in
+    order in each lecture, the source audit is passed-for-draft, no TODO-VERIFY
+    marker remains, all required files exist, and every relative Markdown link
+    resolves.
+- command: Week 4 lecture word-count and source/claim/copyright/pastoral audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Lecture 1 has 3,536 words and Lecture 2 has 3,793 words; the lectures were
+    completed and audited before dependent graded work was produced; assigned
+    claims and locations were checked against verified records and the source
+    texts, interpretive and confessional claims are signaled, opposing positions
+    are represented charitably, and no extended copyrighted text, private case,
+    victim-blaming, or invented case-specific divine explanation appears.
+- command: Prompt 06 write-scope, no-other-week, and course-metadata diff audit
+  status: passed
+  exit_code: 0
+  summary: >-
+    Changes are limited to PHIL 241 Week 4, the drafted_weeks production field
+    in course.yaml, and this provenance record; Weeks 1–3, later weeks, the
+    canonical spreadsheet, and curriculum.lock.yaml are unchanged.
+- command: git diff --check
+  status: passed
+  exit_code: 0
+  summary: No whitespace errors found after normalizing Markdown list spacing.
+- command: Final validation and tests including provenance
+  status: passed
+  exit_code: 0
+  summary: Draft validation completed with 0 errors and 0 warnings; all 6 pytest tests passed; git diff check and custom Week 4 audits passed.
+unresolved_items: []
+human_approval_required:
+- Independent human review of philosophical accuracy, biblical interpretation, theological faithfulness, pastoral sensitivity, copyright compliance, answer-key security, and edition fit before Week 4 advances beyond draft.
+- Course-level source, theology, coherence, workload, copyright, and assessment audits before any later ready-for-audit or release state.
+commit_sha: null
