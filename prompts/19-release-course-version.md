@@ -21,6 +21,8 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 4. For project Year 2 or later, the previous project's year `quality/longitudinal/year-XX.audit.yaml` exists and passes.
 5. Required source access evidence satisfies the freshness limits in `QUALITY-ASSURANCE.md`.
 6. No `TODO-VERIFY` or `UNVERIFIED` markers remain in release-scoped course content.
+7. No blocking resource-acquisition violation identified in
+   `QUALITY-ASSURANCE.md` or the source/copyright audit remains.
 
 ## Authorized actions
 

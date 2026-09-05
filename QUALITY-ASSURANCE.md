@@ -37,6 +37,21 @@ Prompt 11 and Prompt 12 do not advance lifecycle status. Prompt 13 may advance a
 
 Prompt 19 may advance `ready-for-audit` to `released` only after release validation succeeds and all required human review is complete. If substantive course content changes after an audit, its fingerprint no longer matches and the affected release audits must be rerun.
 
+### Resource-acquisition blockers
+
+A course cannot advance through the audit/release gates while any required text
+uses a noncanonical designation, lacks a matching verified source record, or
+conflicts with that source record's acquisition category. A required purchase
+without structured evidence of meaningful use, or one whose `use_extent` is
+`isolated-excerpt`, is blocking. Any required-purchase Scripture source or any
+required Scripture source without a verified lawful USD 0 route is also
+blocking.
+
+The independent source/copyright audit must compare every purchase
+justification and claimed week of material use with the syllabus, schedule, and
+actual assigned readings. Passing schema validation does not substitute for
+that evidentiary check.
+
 ## 4. Source freshness
 
 Verification is not permanent. Release-candidate sources must be rechecked when their access evidence is older than the following default limits:
@@ -113,6 +128,8 @@ The validator checks that:
 - report paths exist;
 - all three course-audit fingerprints match the current release-scoped course content;
 - release-candidate source verification is fresh;
+- required-text acquisition designations, source-record reconciliation,
+  purchase justifications, and zero-cost Scripture access are valid;
 - required human-review records exist and pass;
 - completed human-gated milestone records resolve to passing human review; and
 - the prior-year longitudinal audit exists before releasing Year 2+ work.

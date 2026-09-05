@@ -12,7 +12,9 @@ doi: null
 url: https://iep.utm.edu/evil-evi/
 accessed_at: '2026-09-04'
 verification_status: verified
-access_category: recommended
+access_category: required-free
+free_access_url: https://iep.utm.edu/evil-evi/
+required_cost_usd: 0
 access_note: Full reference entry available without charge.
 cost_note: USD 0.
 copyright_note: Link and summarize; do not reproduce the entry at length.

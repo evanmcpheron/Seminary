@@ -19,6 +19,8 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 1. Course design is approved and `course.yaml` status is `designed` or `in-production`.
 2. Week objectives and workload are approved.
 3. Required sources are verified.
+4. The approved course `required_texts` and source-record acquisition
+   classifications reconcile under `SOURCE-POLICY.md`.
 
 ## Authorized actions
 
@@ -28,11 +30,17 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 4. Generate readings, study guide, guided discussion, assignment, quiz, rubric, and answer key only for this week.
 5. Respect the week's workload budget.
 6. Separate practice from graded work.
+7. Use additional verified sources for lecture scholarship when useful without
+   automatically making them student purchases or required readings.
 
 ## Forbidden actions
 
 - Do not modify files outside the declared write scope.
 - Do not invent unverified facts or sources.
+- Do not introduce a new student-required source or change an acquisition
+  designation outside the approved course design. If production establishes
+  that a new purchase is genuinely necessary, stop and require an explicit
+  Prompt 05 acquisition-design revision.
 - Do not begin a later prompt automatically.
 - Do not commit unless the active prompt is explicitly overridden with owner authorization.
 

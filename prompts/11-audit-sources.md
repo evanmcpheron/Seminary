@@ -23,7 +23,7 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 
 ## Authorized actions
 
-1. Verify bibliographic fields, access, links, quotations, page ranges, claim support, and copyright/licensing status.
+1. Verify bibliographic fields, access, links, quotations, page ranges, claim support, copyright/licensing status, and acquisition classifications.
 2. Flag uncited claims, inaccessible sources, unsupported quotations, and source records whose current-access evidence is stale under `QUALITY-ASSURANCE.md`.
 3. Do not replace sources merely for theological agreement.
 4. Require free alternatives for paid articles where feasible.
@@ -31,6 +31,16 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 6. Correct source records only when the correction is independently verified. Reverification may update `accessed_at` without changing stable bibliographic identity.
 7. For a full-course audit, update `course.yaml.source_verification_date` to the completed audit date after all required sources are rechecked.
 8. Preserve `course.yaml` lifecycle status. Prompt 11 does not advance a course to `ready-for-audit`.
+9. Audit purchase efficiency: reconcile every course required-text designation
+   with its verified source record, inspect each required purchase's structured
+   use claim, and compare the claimed weeks and extent with the syllabus,
+   schedule, and actual assigned readings.
+10. Treat a forced full-book purchase for an isolated or otherwise trivial
+    selection, missing purchase-justification metadata, purchase fragmentation,
+    any required-purchase Scripture source, or required Scripture without a
+    verified lawful USD 0 route as a blocking finding.
+11. Do not fail a course merely for the number of purchased books when every
+    purchase is independently supported by substantial pedagogical use.
 
 ## Forbidden actions
 
@@ -47,6 +57,9 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 ## Exit criteria
 
 - Every required source is verified or explicitly blocked.
+- Every required purchase is independently justified by actual assigned use,
+  and every required Scripture route is lawful, verified, and free to the
+  student.
 - No fabricated, unsupported, inaccessible, or copyright-invalid citation remains hidden.
 - Full-course audit report and machine-readable manifest agree on the verdict.
 - A full-course passing audit leaves `course.yaml` at `in-production`; lifecycle advancement occurs only after Prompt 13.

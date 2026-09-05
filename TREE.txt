@@ -328,6 +328,8 @@ templates/
       primary-sources.md
       recommended-reading.md
       required-reading.md
+      source-records/
+        source-record.template.yaml
       videos-and-lectures.md
     rubrics/
       rubric-template.md

@@ -9,10 +9,11 @@ source_records: [lewis-problem-of-pain, peterson-problem-of-evil]
 
 # Week 1 Required Reading and Source Study
 
-Use a lawful purchased, library, or licensed copy. Do not use or share an
-unauthorized scan. Page references for Lewis are intentionally omitted because
-pagination varies; the chapter titles are verified. The Peterson range is
-verified for the assigned second edition.
+Use the approved student-owned print or personally licensed digital editions
+of both required books. Do not use or share an unauthorized scan. Page
+references for Lewis are intentionally omitted because pagination varies; the
+chapter titles are verified. The Peterson range is verified for the assigned
+second edition.
 
 ## Required sources and time budget
 

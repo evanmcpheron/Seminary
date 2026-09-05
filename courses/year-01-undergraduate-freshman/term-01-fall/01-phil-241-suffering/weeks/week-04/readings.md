@@ -9,11 +9,12 @@ source_records: [peterson-problem-of-evil, mackie-evil-and-omnipotence, beebe-lo
 
 # Week 4 Required Reading and Source Study
 
-Use a lawful purchased, library, or licensed copy of Michael L. Peterson's
-anthology for Mackie and the free Internet Encyclopedia of Philosophy entry for
-Beebe. The assigned anthology chapter and page span are verified for the second
-edition. If using a licensed digital copy, also record its stable location
-markers because digital pagination can vary.
+Use the approved student-owned print or personally licensed digital edition of
+Michael L. Peterson's anthology for Mackie and the verified free Internet
+Encyclopedia of Philosophy entry for Beebe. The assigned anthology chapter and
+page span are verified for the second edition. If using a licensed digital
+edition, also record its stable location markers because digital pagination can
+vary.
 
 ## Required sources and time budget
 

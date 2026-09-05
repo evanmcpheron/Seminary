@@ -20,6 +20,8 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 2. Lecture outline is approved.
 3. Learning objectives are fixed.
 4. Sources are verified.
+5. The approved course `required_texts` and source-record acquisition
+   classifications reconcile under `SOURCE-POLICY.md`.
 
 ## Authorized actions
 
@@ -28,11 +30,16 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 3. Distinguish primary sources, consensus, disputes, confessional conclusions, and synthesis.
 4. Add formal citations, summary, questions, and verification section.
 5. Do not create dependent assignments.
+6. Additional verified lecture scholarship remains non-required unless an
+   explicit course-design revision approves it as student-required.
 
 ## Forbidden actions
 
 - Do not modify files outside the declared write scope.
 - Do not invent unverified facts or sources.
+- Do not introduce or elevate a source to `required-purchase`. If a new student
+  purchase proves necessary, stop and require an explicit Prompt 05
+  acquisition-design revision.
 - Do not begin a later prompt automatically.
 - Do not commit unless the active prompt is explicitly overridden with owner authorization.
 

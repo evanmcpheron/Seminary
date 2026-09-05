@@ -104,7 +104,8 @@ historical sources and major contemporary positions. As observed on 2026-09-04:
 - Observed two-ebook total: USD 44.98; Lewis ebook plus Peterson paperback:
   USD 52.99.
 - ESV text: USD 0 through the publisher's official site.
-- NASB 2020: price varies by binding; an existing licensed copy is acceptable.
+- NASB 2020: USD 0 through Bible Gateway's authorized online reader; any print
+  or digital purchase is optional.
 
 Prompt 05 must recheck prices, decide what is actually required, and minimize
 student cost. Optional high-cost works have free reference-work or anthology

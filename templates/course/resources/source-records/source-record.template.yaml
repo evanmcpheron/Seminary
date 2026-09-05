@@ -1,0 +1,26 @@
+# Copy this file to <source-id>.source.yaml and replace every placeholder before
+# treating it as a verified source record.
+source_id: TODO-VERIFY
+course_id: __COURSE_ID__
+source_type: book
+title: TODO-VERIFY
+authors: []
+publisher: null
+year: null
+edition: null
+isbn: null
+doi: null
+url: null
+accessed_at: null
+verification_status: unverified
+# Canonical values: required-purchase, required-free, required-access,
+# recommended, optional-reference, not-applicable.
+access_category: recommended
+# required-free uses a verified lawful URL and required_cost_usd: 0.
+free_access_url: null
+required_cost_usd: null
+# required-access documents the lawful library, borrowing, licensed, or other
+# non-purchase mechanism here.
+access_note: null
+cost_note: null
+copyright_note: null

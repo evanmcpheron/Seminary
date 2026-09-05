@@ -9,11 +9,10 @@ source_records: [lewis-problem-of-pain, peterson-problem-of-evil, beebe-logical-
 
 # Week 7 Required Reading and First-Half Source Review
 
-Use the lawful purchased, library, licensed, or approved free access route
-already specified in Weeks 1–6. The only new reading is C. S. Lewis, *The
-Problem of Pain*, chapter 10. The remaining time is structured review of
-sources already assigned and completed; it does not add a new chapter or page
-range.
+Use the approved personal editions or verified free-access routes already
+specified in Weeks 1–6. The only new reading is C. S. Lewis, *The Problem of
+Pain*, chapter 10. The remaining time is structured review of sources already
+assigned and completed; it does not add a new chapter or page range.
 
 ## Required sources and time budget
 

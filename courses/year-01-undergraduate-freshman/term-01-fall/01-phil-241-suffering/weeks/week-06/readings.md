@@ -9,11 +9,11 @@ source_records: [peterson-problem-of-evil, lewis-problem-of-pain]
 
 # Week 6 Required Reading and Source Study
 
-Use lawful purchased, library, or licensed copies of both required books. The
-Peterson chapter identities and print-edition page spans are verified for the
-approved second edition. Lewis is assigned by chapter because digital location
-markers and pagination can vary; record the edition and stable locations in
-the copy actually used.
+Use the approved student-owned print or personally licensed digital editions
+of both required books. The Peterson chapter identities and print-edition page
+spans are verified for the approved second edition. Lewis is assigned by
+chapter because digital location markers and pagination can vary; record the
+edition and stable locations in the copy actually used.
 
 ## Required sources and time budget
 

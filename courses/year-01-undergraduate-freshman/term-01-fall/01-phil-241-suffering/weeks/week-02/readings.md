@@ -10,13 +10,16 @@ source_records: [esv-2025, nasb-2020, lewis-problem-of-pain]
 # Week 2 Required Reading and Source Study
 
 Read every biblical assignment in both the ESV Text Edition 2025 and the NASB
-2020. Use the publisher-hosted ESV text and a lawful purchased, library, or
-licensed NASB 2020 copy. The comparison is for close reading; it is not a
-translation-ranking exercise. Record meaningful differences, but do not infer a
-doctrinal disagreement from wording alone.
+2020. Use the verified free [ESV online text](https://www.esv.org/) and
+[NASB 2020 online text](https://www.biblegateway.com/versions/New-American-Standard-Bible-NASB/).
+Required Scripture access costs USD 0; any student-selected print or digital
+edition is optional. The comparison is for close reading; it is not a
+translation-ranking exercise. Record meaningful differences, but do not infer
+a doctrinal disagreement from wording alone.
 
-Use a lawful purchased, library, or licensed copy of C. S. Lewis's *The Problem
-of Pain*. Pagination varies, so the Lewis assignment is by verified chapter.
+Use the approved student-owned print or personally licensed digital edition of
+C. S. Lewis's *The Problem of Pain*. Pagination varies, so the Lewis assignment
+is by verified chapter.
 
 ## Required sources and time budget
 

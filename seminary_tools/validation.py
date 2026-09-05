@@ -23,6 +23,26 @@ PASSING_HUMAN_REVIEW_DECISIONS = {"pass", "pass-with-revisions"}
 FAST_AGING_SOURCE_TYPES = {"catalog", "website", "video", "podcast"}
 FAST_AGING_SOURCE_DAYS = 180
 STABLE_SOURCE_DAYS = 730
+CANONICAL_ACQUISITION_DESIGNATIONS = {
+    "required-purchase",
+    "required-free",
+    "required-access",
+    "recommended",
+    "optional-reference",
+    "not-applicable",
+}
+COURSE_REQUIRED_TEXT_DESIGNATIONS = {
+    "required-purchase",
+    "required-free",
+    "required-access",
+}
+PURCHASE_USE_EXTENTS = {
+    "whole-work",
+    "substantial-portion",
+    "multiple-selections",
+    "recurring-reference",
+    "isolated-excerpt",
+}
 
 
 NON_SUBSTANTIVE_COURSE_METADATA_KEYS = {
@@ -66,6 +86,161 @@ def parse_record_date(value: Any) -> date | None:
         except ValueError:
             return None
     return None
+
+
+def is_nonempty_string(value: Any) -> bool:
+    return isinstance(value, str) and bool(value.strip())
+
+
+def validate_source_acquisition(source_file: Path, source: dict[str, Any], report: Report) -> None:
+    access_category = source.get("access_category")
+    if access_category not in CANONICAL_ACQUISITION_DESIGNATIONS:
+        report.error(f"{source_file}: noncanonical access_category: {access_category!r}")
+        return
+
+    if access_category == "required-free":
+        if source.get("verification_status") != "verified":
+            report.error(f"{source_file}: required-free access must be verified")
+        if not is_nonempty_string(source.get("free_access_url")):
+            report.error(f"{source_file}: required-free access lacks a verified free_access_url")
+        if source.get("required_cost_usd") != 0:
+            report.error(f"{source_file}: required-free access must record required_cost_usd: 0")
+
+    if access_category == "required-access" and not is_nonempty_string(source.get("access_note")):
+        report.error(f"{source_file}: required-access lacks a documented lawful access mechanism")
+
+    if source.get("source_type") == "scripture":
+        if access_category in {"required-purchase", "required-access"}:
+            report.error(f"{source_file}: Scripture cannot be classified as {access_category}")
+        if source.get("required_cost_usd") != 0:
+            report.error(f"{source_file}: Scripture must record required_cost_usd: 0")
+
+
+def resolve_course_source_record(
+    course_file: Path,
+    course_id: Any,
+    source_id: str,
+    source_records_by_id: dict[str, list[tuple[dict[str, Any], Path]]],
+    report: Report,
+) -> tuple[dict[str, Any], Path] | None:
+    candidates = source_records_by_id.get(source_id) or []
+    local_candidates = [entry for entry in candidates if course_file.parent in entry[1].parents]
+    if len(local_candidates) == 1:
+        source, source_file = local_candidates[0]
+        if source.get("course_id") not in {None, course_id}:
+            report.error(
+                f"{course_file}: required source_id {source_id!r} resolves to {source_file}, "
+                f"but its course_id does not match {course_id!r}"
+            )
+            return None
+        return source, source_file
+    if len(local_candidates) > 1:
+        report.error(f"{course_file}: required source_id is ambiguous within the course: {source_id}")
+        return None
+
+    scoped_candidates = [entry for entry in candidates if entry[0].get("course_id") in {None, course_id}]
+    if len(scoped_candidates) == 1:
+        return scoped_candidates[0]
+    if len(scoped_candidates) > 1:
+        report.error(f"{course_file}: required source_id is ambiguous across source records: {source_id}")
+    elif candidates:
+        report.error(f"{course_file}: required source_id has no source record scoped to this course: {source_id}")
+    else:
+        report.error(f"{course_file}: required source_id cannot be resolved to a source record: {source_id}")
+    return None
+
+
+def validate_course_resource_acquisition(
+    course_file: Path,
+    course: dict[str, Any],
+    source_records_by_id: dict[str, list[tuple[dict[str, Any], Path]]],
+    report: Report,
+) -> None:
+    required_texts = course.get("required_texts")
+    if not isinstance(required_texts, list):
+        report.error(f"{course_file}: designed course must provide a required_texts list")
+        return
+
+    seen_source_ids: set[str] = set()
+    course_week_count = course.get("instructional_weeks")
+    for index, item in enumerate(required_texts):
+        label = f"{course_file}: required_texts[{index}]"
+        if not isinstance(item, dict):
+            report.error(f"{label}: required text must be a structured object")
+            continue
+
+        source_id = item.get("source_id")
+        designation = item.get("designation")
+        if not is_nonempty_string(source_id):
+            report.error(f"{label}: source_id is required")
+            continue
+        if source_id in seen_source_ids:
+            report.error(f"{label}: duplicate required source_id {source_id!r}")
+        seen_source_ids.add(source_id)
+
+        if designation not in CANONICAL_ACQUISITION_DESIGNATIONS:
+            report.error(f"{label}: noncanonical designation: {designation!r}")
+        elif designation not in COURSE_REQUIRED_TEXT_DESIGNATIONS:
+            report.error(f"{label}: designation {designation!r} does not belong in required_texts")
+
+        if designation == "required-purchase":
+            use_extent = item.get("use_extent")
+            if use_extent not in PURCHASE_USE_EXTENTS:
+                report.error(f"{label}: required-purchase lacks a canonical use_extent")
+            elif use_extent == "isolated-excerpt":
+                report.error(f"{label}: required-purchase cannot use use_extent 'isolated-excerpt'")
+
+            instructional_weeks = item.get("instructional_weeks")
+            if not isinstance(instructional_weeks, list) or not instructional_weeks:
+                report.error(f"{label}: required-purchase lacks instructional_weeks")
+            else:
+                week_keys = {(type(week).__name__, repr(week)) for week in instructional_weeks}
+                if len(instructional_weeks) != len(week_keys):
+                    report.error(f"{label}: instructional_weeks must not contain duplicates")
+                for week in instructional_weeks:
+                    if not isinstance(week, int) or isinstance(week, bool) or week < 1:
+                        report.error(f"{label}: instructional_weeks contains an invalid week: {week!r}")
+                    elif isinstance(course_week_count, int) and week > course_week_count:
+                        report.error(
+                            f"{label}: instructional week {week} exceeds the course's "
+                            f"{course_week_count} instructional weeks"
+                        )
+
+            if not is_nonempty_string(item.get("purchase_justification")):
+                report.error(f"{label}: required-purchase lacks purchase_justification")
+
+        resolved = resolve_course_source_record(
+            course_file,
+            course.get("course_id"),
+            source_id,
+            source_records_by_id,
+            report,
+        )
+        if resolved is None:
+            continue
+        source, source_file = resolved
+        if source.get("verification_status") != "verified":
+            report.error(f"{label}: required source record is not verified: {source_file}")
+
+        source_category = source.get("access_category")
+        if designation != source_category:
+            report.error(
+                f"{label}: designation {designation!r} conflicts with source record "
+                f"access_category {source_category!r} in {source_file}"
+            )
+
+        if source.get("source_type") == "scripture" and designation != "required-free":
+            report.error(f"{label}: required Scripture must use designation 'required-free'")
+
+    for source_id, entries in source_records_by_id.items():
+        for source, source_file in entries:
+            if course_file.parent not in source_file.parents:
+                continue
+            if source.get("access_category") in COURSE_REQUIRED_TEXT_DESIGNATIONS and source_id not in seen_source_ids:
+                report.error(
+                    f"{course_file}: required source record {source_id!r} is missing from course required_texts: "
+                    f"{source_file}"
+                )
 
 
 def source_age_limit_days(source_type: str | None) -> int:
@@ -416,6 +591,7 @@ def validate_repository(root: Path, mode: str = "draft") -> Report:
     for source_file in root.rglob("*.source.yaml"):
         data = load_yaml(source_file) or {}
         validate_schema(data, root / "schemas/source.schema.json", str(source_file), report)
+        validate_source_acquisition(source_file, data, report)
         source_id = data.get("source_id")
         if source_id:
             source_records_by_id.setdefault(source_id, []).append((data, source_file))
@@ -492,6 +668,7 @@ def validate_repository(root: Path, mode: str = "draft") -> Report:
             )
 
         if status in {"designed", "in-production", "ready-for-audit", "released"}:
+            validate_course_resource_acquisition(course_file, data, source_records_by_id, report)
             expected_files = ["README.md", "syllabus.md", "schedule.md", "bibliography.md", "learning-outcomes.md", "policies.md"]
             for filename in expected_files:
                 if not (course_file.parent / filename).exists():

@@ -53,6 +53,10 @@ Never invent a source, author, title, edition, publisher, year, ISBN, DOI, journ
 
 When verification is unavailable, write `TODO-VERIFY` and stop dependent generation. Required unverified sources block a course from advancing to audit or release.
 
+Use only the canonical acquisition designations in `SOURCE-POLICY.md`. A
+`required-purchase` must be independently justified by meaningful course use;
+an isolated excerpt cannot force purchase of a complete work.
+
 Separate primary-source claims, broad scholarly consensus, contested interpretations, confessional conclusions, and curriculum synthesis. Do not manufacture consensus.
 
 ## 9. Copyright
@@ -68,6 +72,11 @@ Lectures must include objectives, key terms, preparation, outline, full text, pr
 ## 11. Bible and language standards
 
 Use ESV as the primary English reading text, NASB 2020 as required comparison, NIV as regular additional comparison, and NLT only for light reading or readability comparison. Other translations may be used when academically justified.
+
+All required Scripture access must use a verified lawful free route. No Bible
+edition may be a required purchase or contribute more than USD 0 to curriculum
+cost; any student-selected print, Kindle, Logos, study-Bible, or other purchase
+is optional.
 
 Teach reconstructed Koine pronunciation as the primary Greek model while building recognition of common Erasmian equivalents. Teach modern Israeli/Sephardic classroom pronunciation for Hebrew, together with Masoretic pointing and historical phonology where appropriate. Include audio recitation and oral parsing when practical.
 

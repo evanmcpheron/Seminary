@@ -9,8 +9,8 @@ This is a verified source inventory for later design, not a reading schedule.
   many available bindings.
   [Source record](source-records/esv-2025.source.yaml)
 - *New American Standard Bible 2020*. The Lockman Foundation verifies the 2020
-  revision. No single ISBN or price applies across bindings; an existing
-  licensed copy is sufficient for later comparative use.
+  revision, and Bible Gateway provides an authorized online reader at no charge.
+  Any student-selected print or digital edition is optional.
   [Source record](source-records/nasb-2020.source.yaml)
 
 ## Philosophical and theological primary-source collection

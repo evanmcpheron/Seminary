@@ -9,10 +9,11 @@ source_records: [peterson-problem-of-evil, rowe-problem-of-evil, trakakis-eviden
 
 # Week 8 Required Reading — Rowe and the Evidential Inference
 
-Use a lawful purchased, library, or licensed copy of Peterson and the free
-official IEP entry. The Peterson assignment identifies an exact verified
-chapter and a named contribution; it does not invent a subrange where the
-student's print or digital edition may divide the debate differently.
+Use the approved student-owned print or personally licensed digital edition of
+Peterson and the verified free official IEP entry. The Peterson assignment
+identifies an exact verified chapter and a named contribution; it does not
+invent a subrange where the student's print or digital edition may divide the
+debate differently.
 
 ## Content notice and study boundary
 

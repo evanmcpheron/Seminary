@@ -10,23 +10,22 @@ verification_date: 2026-09-04
 # Course Bibliography
 
 All adopted and recommended items below have verified source records created by
-Prompt 04. The access label is a Prompt 05 design decision. Prices are not part
-of the course requirement because they change; current access notes remain in
-the linked records. Students must obtain lawful purchased, library,
-publisher-hosted, or licensed access.
+Prompt 04. The access label is a Prompt 05 design decision. Observed prices can
+change; current access notes remain in the linked records. Students must use the
+specified lawful purchase or non-purchase route.
 
-## Required purchase or licensed-copy access
+## Required purchases
 
 - Lewis, C. S. *The Problem of Pain*. Publisher-listed paperback ed. HarperOne,
-  2015. ISBN 9780060652968. **Required purchase; library or licensed ebook access
-  is acceptable.** [Verified record](resources/source-records/lewis-problem-of-pain.source.yaml)
+  2015. ISBN 9780060652968. **Required purchase: the complete ten-chapter work
+  is assigned across weeks 1–7 and revisited in week 11.**
+  [Verified record](resources/source-records/lewis-problem-of-pain.source.yaml)
 - Peterson, Michael L., ed. *The Problem of Evil: Selected Readings*. 2nd ed.
   University of Notre Dame Press, 2016. ISBN 9780268038472. DOI:
-  10.2307/j.ctvpj7gm2. **Required purchase; library or licensed ebook access is
-  acceptable.** [Verified record](resources/source-records/peterson-problem-of-evil.source.yaml)
-- *New American Standard Bible 2020*. The Lockman Foundation, 2020. **Required
-  existing licensed copy or purchase; no particular binding is required.**
-  [Verified record](resources/source-records/nasb-2020.source.yaml)
+  10.2307/j.ctvpj7gm2. **Required purchase: recurring selections are assigned
+  across thirteen instructional weeks, consolidating many primary and critical
+  readings in one anthology.**
+  [Verified record](resources/source-records/peterson-problem-of-evil.source.yaml)
 
 ## Required free resources
 
@@ -34,8 +33,14 @@ publisher-hosted, or licensed access.
   Philosophy*. Accessed September 4, 2026. <https://iep.utm.edu/evil-log/>.
   **Required free.** [Verified record](resources/source-records/beebe-logical-problem-of-evil.source.yaml)
 - *The Holy Bible, English Standard Version*. ESV Text Edition 2025. Crossway,
-  2001. <https://www.esv.org/about/>. **Required free online; a licensed print
-  copy is also acceptable.** [Verified record](resources/source-records/esv-2025.source.yaml)
+  2001. <https://www.esv.org/>. **Required free online; any student-selected
+  print or digital purchase is optional.**
+  [Verified record](resources/source-records/esv-2025.source.yaml)
+- *New American Standard Bible 2020*. The Lockman Foundation, 2020.
+  <https://www.biblegateway.com/versions/New-American-Standard-Bible-NASB/>.
+  **Required free through an authorized online reader; any student-selected
+  print or digital purchase is optional.**
+  [Verified record](resources/source-records/nasb-2020.source.yaml)
 - Perrine, Timothy. “Skeptical Theism.” In *Stanford Encyclopedia of
   Philosophy*, Spring 2023 archive. January 13, 2023.
   <https://plato.stanford.edu/archives/spr2023/entries/skeptical-theism/>.
@@ -46,7 +51,7 @@ publisher-hosted, or licensed access.
 - “Eastern Traditions: Why Are Suffering and Ritual Vital?” Hosted by Robert
   Lawrence Kuhn. *Closer To Truth*. Video, 26:47. April 29, 2024.
   <https://closertotruth.com/video/eastern-traditions-why-are-suffering-and-ritual-vital/>.
-  **Required free media; official-page transcript available.**
+  **Required free; official-page video and transcript available.**
   [Verified record](resources/source-records/closer-to-truth-eastern-traditions.source.yaml)
 
 ## Recommended and optional primary scholarship

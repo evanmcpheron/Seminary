@@ -9,11 +9,12 @@ source_records: [peterson-problem-of-evil, lewis-problem-of-pain]
 
 # Week 3 Required Reading and Source Study
 
-Use lawful purchased, library, or licensed copies of Michael L. Peterson's
-anthology and C. S. Lewis's *The Problem of Pain*. The Peterson assignment uses
-the verified chapter numbers and titles in the second edition. Page numbers are
-not required because print and licensed digital locations can differ. The
-student should record the location system used by the acquired copy.
+Use the approved student-owned print or personally licensed digital editions
+of Michael L. Peterson's anthology and C. S. Lewis's *The Problem of Pain*.
+The Peterson assignment uses the verified chapter numbers and titles in the
+second edition. Page numbers are not required because print and licensed
+digital locations can differ. The student should record the location system
+used by the acquired copy.
 
 The anthology orders Aquinas, Leibniz, and Hume before its later Augustinian
 theodicy section. Study the sources in the historical order below so that the

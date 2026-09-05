@@ -9,12 +9,14 @@ edition: ESV Text Edition 2025
 isbn: null
 doi: null
 url: https://www.esv.org/about/
-accessed_at: '2026-09-04'
+accessed_at: '2026-09-05'
 verification_status: verified
 access_category: required-free
+free_access_url: https://www.esv.org/
+required_cost_usd: 0
 verification_sources:
 - https://www.esv.org/about/
 - https://www.crossway.org/permissions/
 access_note: The publisher provides the biblical text online without charge; print formats vary.
-cost_note: USD 0 for publisher-hosted online access.
+cost_note: Required publisher-hosted online access costs USD 0; any student-selected print or digital purchase is optional.
 copyright_note: ESV quotations must follow Crossway's current permissions guidelines.

@@ -1,0 +1,154 @@
+schema_version: 1.0.0
+run_id: 20260905-162120-resource-acquisition-policy
+timestamp_utc: '2026-09-05T16:21:20Z'
+prompt_id: owner-resource-acquisition-policy
+scope: >-
+  Establish and enforce the repository-wide canonical acquisition vocabulary,
+  purchase-efficiency rule, and zero-cost Scripture rule; update the research,
+  design, production, audit, and release workflow; strengthen schemas and
+  deterministic validation; update templates; and reconcile the currently
+  instantiated PHIL 241 course and its verified source records without changing
+  curriculum identity or unrelated course content.
+agent_or_model: OpenAI Codex (GPT-5)
+branch: main
+base_commit: 28ff4df673f095667509c5fd7b37ceb7763f6070
+inputs_read:
+- AGENTS.md
+- MASTER_PROMPT.md
+- PROJECT-DECISIONS.yaml
+- DISCLAIMER.md
+- THEOLOGICAL-COMMITMENTS.md
+- ACADEMIC-STANDARDS.md
+- SOURCE-POLICY.md
+- WRITING-STYLE-GUIDE.md
+- ASSESSMENT-POLICY.md
+- AI-USE-POLICY.md
+- QUALITY-ASSURANCE.md
+- PROMPT-FLOW.md
+- prompts/00-master-project-constitution.md
+- prompts/04-research-one-course.md
+- prompts/05-design-one-course.md
+- prompts/06-generate-one-week.md
+- prompts/07-generate-one-lecture.md
+- prompts/08-generate-one-assignment.md
+- prompts/11-audit-sources.md
+- prompts/19-release-course-version.md
+- courses/AGENTS.md
+- curriculum/curriculum.yaml
+- curriculum/curriculum.lock.yaml
+- schemas/course.schema.json
+- schemas/source.schema.json
+- schemas/provenance.schema.json
+- seminary_tools/validation.py
+- tests/test_scaffold.py
+- tests/test_validation.py
+- templates/course/
+- templates/week/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/*.source.yaml
+files_created:
+- templates/course/resources/source-records/source-record.template.yaml
+- provenance/20260905-162120-resource-acquisition-policy.yaml
+files_modified:
+- MASTER_PROMPT.md
+- PROJECT-DECISIONS.yaml
+- QUALITY-ASSURANCE.md
+- SOURCE-POLICY.md
+- TREE.txt
+- WRITING-STYLE-GUIDE.md
+- prompts/00-master-project-constitution.md
+- prompts/04-research-one-course.md
+- prompts/05-design-one-course.md
+- prompts/06-generate-one-week.md
+- prompts/07-generate-one-lecture.md
+- prompts/08-generate-one-assignment.md
+- prompts/11-audit-sources.md
+- prompts/19-release-course-version.md
+- schemas/course.schema.json
+- schemas/source.schema.json
+- seminary_tools/validation.py
+- templates/course/bibliography.md
+- templates/course/course.yaml
+- templates/course/resources/required-reading.md
+- templates/course/syllabus.md
+- templates/week/readings.md
+- tests/test_validation.py
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/course.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/syllabus.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/bibliography.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/research-report.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/primary-sources.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/beebe-logical-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/closer-to-truth-eastern-traditions.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/esv-2025.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/lewis-problem-of-pain.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/nasb-2020.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/perrine-skeptical-theism.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/peterson-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/resources/source-records/trakakis-evidential-problem-of-evil.source.yaml
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-01/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-02/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-03/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-04/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-05/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-06/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-07/readings.md
+- courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/weeks/week-08/readings.md
+sources_consulted:
+- type: publisher-access-statement
+  url: https://www.esv.org/about/
+  accessed_at: '2026-09-05'
+  use: >-
+    Crossway identifies the ESV and states that it is available free digitally,
+    supporting required-free access through the publisher's online reader.
+- type: translation-publisher-record
+  url: https://www.lockman.org/new-american-standard-bible-nasb/about-nasb-2020/
+  accessed_at: '2026-09-05'
+  use: The Lockman Foundation's official record verifies the NASB 2020 identity.
+- type: authorized-online-reader
+  url: https://www.biblegateway.com/versions/New-American-Standard-Bible-NASB/
+  accessed_at: '2026-09-05'
+  use: >-
+    Bible Gateway identifies The Lockman Foundation as publisher, identifies the
+    2020 update, and supplies the NASB 2020 text for online reading without
+    requiring a student purchase.
+- type: approved-course-design-and-assigned-readings
+  path: courses/year-01-undergraduate-freshman/term-01-fall/01-phil-241-suffering/schedule.md
+  use: >-
+    Verified that Lewis is read completely and revisited, and that the Peterson
+    anthology supplies repeated selections across thirteen instructional weeks.
+validation_commands:
+- .venv/bin/pytest -q
+- .venv/bin/python scripts/validate.py --mode draft
+- .venv/bin/python scripts/validate.py --mode release
+- .venv/bin/python scripts/bootstrap_repository.py --check
+- .venv/bin/python -m json.tool schemas/course.schema.json
+- .venv/bin/python -m json.tool schemas/source.schema.json
+- git diff --check
+validation_results:
+- command: .venv/bin/pytest -q
+  status: passed
+  exit_code: 0
+  summary: All 22 tests passed, including nine focused acquisition-policy tests.
+- command: .venv/bin/python scripts/validate.py --mode draft
+  status: passed
+  exit_code: 0
+  summary: Validation completed with 0 errors and 0 warnings.
+- command: .venv/bin/python scripts/validate.py --mode release
+  status: passed
+  exit_code: 0
+  summary: Release validation completed with 0 errors and 0 warnings.
+- command: .venv/bin/python scripts/bootstrap_repository.py --check
+  status: passed
+  exit_code: 0
+  summary: Bootstrap scaffold consistency check passed.
+- command: JSON schema parsing
+  status: passed
+  exit_code: 0
+  summary: The modified course and source schemas parsed successfully.
+- command: git diff --check
+  status: passed
+  exit_code: 0
+  summary: No whitespace errors were found.
+unresolved_items: []
+human_approval_required: []

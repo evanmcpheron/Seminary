@@ -31,6 +31,8 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 
 - Do not modify files outside the declared write scope.
 - Do not invent unverified facts or sources.
+- Do not introduce a new required reading or student purchase outside the
+  approved course design; require an explicit design revision first.
 - Do not begin a later prompt automatically.
 - Do not commit unless the active prompt is explicitly overridden with owner authorization.
 

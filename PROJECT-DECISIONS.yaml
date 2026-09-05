@@ -72,11 +72,28 @@ writing:
 resources:
   formats_allowed: [print, Kindle, Logos]
   budget: reasonable_quality_first_avoid_unnecessary_cost
+  canonical_acquisition_designations:
+    - required-purchase
+    - required-free
+    - required-access
+    - recommended
+    - optional-reference
+    - not-applicable
+  required_purchase_requires_meaningful_use: true
+  required_purchase_isolated_excerpt_allowed: false
+  unnecessary_purchase_fragmentation: forbidden
+  arbitrary_required_purchase_book_limit: none
+  multiple_required_purchases_allowed_when_each_is_justified: true
   public_library_access: true
   subscription_database_access_assumed: false
   free_article_alternative_where_feasible: true
   lower_cost_book_alternative_only_if_quality_matches: true
   expensive_language_tools_allowed_with_alternative_on_request: true
+  scripture_required_purchase_allowed: false
+  scripture_required_access_designation: required-free
+  scripture_curriculum_budget_cost_usd: 0
+  scripture_free_access_route_must_be_verified: true
+  student_selected_scripture_purchase_is_optional: true
 
 assessment:
   undergraduate_minimum_progression_grade: C

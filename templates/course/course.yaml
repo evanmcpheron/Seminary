@@ -18,6 +18,9 @@ course_description: "__CATALOG_DESCRIPTION__"
 curriculum_description: TODO-VERIFY
 confessional_framework: broadly_evangelical_protestant
 learning_outcomes: []
+# Designed entries must contain source_id and a canonical designation. Every
+# required-purchase also contains use_extent, instructional_weeks, and
+# purchase_justification; isolated-excerpt is forbidden for purchases.
 required_texts: []
 recommended_texts: []
 assessment_breakdown: []
@@ -28,6 +31,8 @@ primary_instructor_role: independent_curriculum_facilitator
 external_evaluator_required: false
 biblical_languages_required: []
 software_required: []
+# These preferences must resolve to required-free Scripture source records with
+# verified lawful access and required_cost_usd: 0.
 required_bible_editions: [ESV, NASB_2020]
 major_assignments: []
 final_assessment_type: TODO-VERIFY

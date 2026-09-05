@@ -76,18 +76,31 @@ The complete measurement map is in
 
 ## Required materials
 
-### Purchase or licensed-copy access
+### Required purchases
 
 - C. S. Lewis, *The Problem of Pain*, HarperOne publisher-listed paperback
-  edition, 2015, ISBN 9780060652968.
+  edition, 2015, ISBN 9780060652968. The complete work is assigned across the
+  first half of the course and revisited later.
 - Michael L. Peterson, ed., *The Problem of Evil: Selected Readings*, 2nd ed.,
-  University of Notre Dame Press, 2016, ISBN 9780268038472.
-- *New American Standard Bible 2020*. An existing licensed print or digital copy
-  is acceptable; no particular binding is required.
+  University of Notre Dame Press, 2016, ISBN 9780268038472. Its selections are
+  used throughout nearly the entire course and consolidate material that would
+  otherwise require many separate works.
 
-### Free online access
+Each of these two books is a required personal purchase because of its sustained
+use. A lawful print or personally licensed digital format is acceptable.
 
-- *The Holy Bible, English Standard Version*, ESV Text Edition 2025.
+### Required free Scripture access
+
+- *The Holy Bible, English Standard Version*, ESV Text Edition 2025, through
+  <https://www.esv.org/>.
+- *New American Standard Bible 2020*, through the authorized online reader at
+  <https://www.biblegateway.com/versions/New-American-Standard-Bible-NASB/>.
+
+Required Scripture access costs USD 0. A student may choose a print, Kindle,
+Logos, study-Bible, or other edition, but no Bible purchase is required.
+
+### Other required free online access
+
 - James R. Beebe, “Logical Problem of Evil,” *Internet Encyclopedia of
   Philosophy*.
 - Nick Trakakis, “The Evidential Problem of Evil,” *Internet Encyclopedia of
@@ -98,8 +111,8 @@ The complete measurement map is in
   2024, 26:47, with transcript on the official page.
 
 Links, access designations, optional works, and full verified records appear in
-[bibliography.md](bibliography.md). Students must use lawful purchased, library,
-publisher-hosted, or licensed copies.
+[bibliography.md](bibliography.md). Students must use the lawful purchase or
+non-purchase access route specified for each item.
 
 ## Instructional pattern
 

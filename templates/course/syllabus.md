@@ -12,9 +12,12 @@ TODO-VERIFY
 
 TODO-VERIFY
 
-## Required texts
+## Required texts and access
 
-TODO-VERIFY
+List each approved `required-purchase`, `required-free`, or `required-access`
+item from `course.yaml`. Explain why each purchase is substantially used and
+identify the lawful route for each non-purchase requirement. Required Scripture
+access always costs USD 0; any student-selected Bible purchase is optional.
 
 ## Workload
 

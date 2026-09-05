@@ -8,7 +8,8 @@
     "source_type",
     "title",
     "verification_status",
-    "accessed_at"
+    "accessed_at",
+    "access_category"
   ],
   "properties": {
     "source_id": {
@@ -93,9 +94,29 @@
       "enum": [
         "required-purchase",
         "required-free",
+        "required-access",
         "recommended",
         "optional-reference",
         "not-applicable"
+      ]
+    },
+    "free_access_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "required_cost_usd": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "access_note": {
+      "type": [
+        "string",
+        "null"
       ]
     },
     "copyright_note": {
@@ -105,5 +126,90 @@
       ]
     }
   },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "access_category": {
+            "const": "required-free"
+          }
+        },
+        "required": [
+          "access_category"
+        ]
+      },
+      "then": {
+        "required": [
+          "free_access_url",
+          "required_cost_usd"
+        ],
+        "properties": {
+          "verification_status": {
+            "const": "verified"
+          },
+          "free_access_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required_cost_usd": {
+            "const": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "access_category": {
+            "const": "required-access"
+          }
+        },
+        "required": [
+          "access_category"
+        ]
+      },
+      "then": {
+        "required": [
+          "access_note"
+        ],
+        "properties": {
+          "access_note": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_type": {
+            "const": "scripture"
+          }
+        },
+        "required": [
+          "source_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "required_cost_usd"
+        ],
+        "properties": {
+          "access_category": {
+            "enum": [
+              "required-free",
+              "recommended",
+              "optional-reference",
+              "not-applicable"
+            ]
+          },
+          "required_cost_usd": {
+            "const": 0
+          }
+        }
+      }
+    }
+  ],
   "additionalProperties": true
 }

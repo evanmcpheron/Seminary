@@ -9,11 +9,11 @@ source_records: [peterson-problem-of-evil, plantinga-god-freedom-evil, lewis-pro
 
 # Week 5 Required Reading and Source Study
 
-Use lawful purchased, library, or licensed copies of both required books. The
-Plantinga selection and its print-edition page span are verified for the
-approved Peterson second edition. Lewis is assigned by chapter because digital
-location markers and pagination can vary; record the edition and stable
-locations in the copy actually used.
+Use the approved student-owned print or personally licensed digital editions
+of both required books. The Plantinga selection and its print-edition page span
+are verified for the approved Peterson second edition. Lewis is assigned by
+chapter because digital location markers and pagination can vary; record the
+edition and stable locations in the copy actually used.
 
 ## Required sources and time budget
 

@@ -27,11 +27,17 @@ Before taking any action, apply `AGENTS.md` and complete its required reading or
 1. Verify catalog description and prerequisites against authoritative sources; if locked identity metadata conflicts with an authoritative source, stop and report the discrepancy rather than changing the lock.
 2. Research primary sources, textbooks, articles, reference works, media, and comparable academic models.
 3. Verify every bibliographic field.
-4. Mark access category and cost.
-5. Provide free article alternatives where feasible.
-6. Write or update `research-report.md` and the scoped verified source records.
-7. Update `course.yaml` only for research-state metadata: `prerequisites`, `corequisites`, `source_verification_date`, `known_unresolved_questions`, and `status: researching`. Do not populate learning outcomes, assessments, schedule design, or other Prompt 05 fields.
-8. Do not design weekly content.
+4. Research current price and access facts, verify lawful free, public-domain,
+   open-license, library/borrowing, chapter/article, anthology, and lower-cost
+   alternatives where academically appropriate, and record the evidence in the
+   source records.
+5. Distinguish those access facts from Prompt 05's final pedagogical decision to
+   require a purchase. Identify strong textbook and core-source candidates
+   without making every useful book a required purchase.
+6. Provide free article alternatives where feasible.
+7. Write or update `research-report.md` and the scoped verified source records.
+8. Update `course.yaml` only for research-state metadata: `prerequisites`, `corequisites`, `source_verification_date`, `known_unresolved_questions`, and `status: researching`. Do not populate learning outcomes, assessments, schedule design, or other Prompt 05 fields.
+9. Do not design weekly content.
 
 ## Forbidden actions
 
@@ -48,6 +54,8 @@ Run `python scripts/validate.py --mode draft` and the relevant tests. Add a prov
 
 - `research-report.md` is complete.
 - Required resources are verified or explicitly blocked with `TODO-VERIFY`.
+- Access routes, dated price evidence, and academically sound alternatives are
+  explicit, while final required-purchase decisions remain for Prompt 05.
 - Unresolvable items are explicit.
 - `course.yaml` has status `researching`.
 - No syllabus, assessment design, weekly schedule, or lecture content was generated.

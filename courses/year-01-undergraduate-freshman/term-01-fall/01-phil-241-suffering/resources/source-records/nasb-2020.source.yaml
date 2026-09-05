@@ -8,10 +8,15 @@ year: 2020
 edition: NASB 2020
 isbn: null
 doi: null
-url: https://www.lockman.org/nasb-2020/
-accessed_at: '2026-09-04'
+url: https://www.lockman.org/new-american-standard-bible-nasb/about-nasb-2020/
+accessed_at: '2026-09-05'
 verification_status: verified
-access_category: required-purchase
-access_note: An existing licensed digital or print copy is acceptable; bindings and prices vary.
-cost_note: Variable by binding; no single edition-specific price applies.
+access_category: required-free
+free_access_url: https://www.biblegateway.com/versions/New-American-Standard-Bible-NASB/
+required_cost_usd: 0
+verification_sources:
+- https://www.lockman.org/new-american-standard-bible-nasb/about-nasb-2020/
+- https://www.biblegateway.com/versions/New-American-Standard-Bible-NASB/
+access_note: Bible Gateway identifies The Lockman Foundation as publisher and provides the NASB 2020 text for online reading without charge.
+cost_note: Required online access costs USD 0; any student-selected print, Kindle, Logos, study-Bible, or other edition is optional.
 copyright_note: NASB quotations must follow The Lockman Foundation's current permissions policy.

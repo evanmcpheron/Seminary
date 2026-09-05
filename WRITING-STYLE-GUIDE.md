@@ -63,6 +63,10 @@ ai_use_declaration:
 - NLT may be used for light reading or readability comparison, but not as the sole basis of close exegesis.
 - Other academic translations may be consulted when a course objective requires them.
 
+These translation preferences never create a Bible-purchase requirement.
+Required Scripture readings must use the verified lawful free access specified
+by `SOURCE-POLICY.md`; any student-selected Bible purchase is optional.
+
 ## Original-language conventions
 
 - Greek pronunciation: reconstructed Koine as the primary instructional model; students should recognize common Erasmian equivalents.
